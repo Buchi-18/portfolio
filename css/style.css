@@ -155,10 +155,10 @@ body {
   transform: rotate(-90deg);
   transform-origin: left;
   letter-spacing: 0.4rem;
-  animation: scrollArrow 1.8s infinite ease-in-out;
-  animation-iteration-count: 5;
+  /* animation: scrollArrow 1.8s infinite ease-in-out;
+  animation-iteration-count: 5; */
 }
-.scroll-arrow::before {
+/* .scroll-arrow::before {
   position: absolute;
   bottom: 30px;
   left: -10px;
@@ -178,7 +178,7 @@ body {
   background-color: var(--base-text);
   transform: rotate(-30deg);
   transform-origin: left;
-}
+} */
 @keyframes scrollArrow {
   from {
     bottom: 40px;

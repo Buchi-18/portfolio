@@ -153,7 +153,6 @@ body {
 /* Main image */
 /* ****************************** */
 .main-image {
-  position: relative;
   height: 100vh;
   background-image: url(../img/main-image-pc.png);
   background-position: center;
@@ -180,8 +179,8 @@ body {
   position: absolute;
   bottom: 40px;
   left: 60px;
-  transform: rotate(-90deg);
-  transform-origin: left;
+  /* transform: rotate(-90deg);
+  transform-origin: left; */
   letter-spacing: 0.4rem;
   /* animation: scrollArrow 1.8s infinite ease-in-out;
   animation-iteration-count: 5; */

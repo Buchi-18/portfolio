@@ -175,9 +175,10 @@ body {
   letter-spacing: 0.3rem;
   white-space: nowrap;
 }
-.scroll-arrow {
+.main-image .scroll-arrow {
+  display: block;
   position: absolute;
-  bottom: 40px;
+  top: 90vh;
   left: 60px;
   /* transform: rotate(-90deg);
   transform-origin: left; */

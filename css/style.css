@@ -37,8 +37,14 @@ button {
 img {
   width: 100%;
 }
+/* ****************************** */
+/* common */
+/* ****************************** */
 body {
   color: var(--base-text);
+}
+.section-title {
+  font-family: "Yomogi", cursive;
 }
 /* ****************************** */
 /* header */
@@ -114,6 +120,7 @@ body {
     transform: translateY(calc(- 100vh - 80px));
     opacity: 0;
     transition: all 0.3s;
+    transition-delay: 0.05s;
   }
   #headerLists.open {
     height: calc(100vh - 80px);
@@ -250,8 +257,5 @@ body {
 @media screen and (max-width: 750px) {
   .wrapper {
     width: var(--width-sp);
-  }
-  .section-title {
-    font-family: "Yomogi", cursive;
   }
 }

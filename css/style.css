@@ -7,7 +7,7 @@
   --width-tb: 80%;
   --width-sp: 92%;
   /* ***** color ***** */
-  --base-text: #444;
+  --base-text: rgba(68, 68, 68, 1);
 }
 *,
 *::before,
@@ -110,15 +110,24 @@ body {
     padding: 5%;
     width: 100vw;
     height: 0;
-    background-color: rgba(253, 253, 253, 0.9);
+    background-color: rgba(253, 253, 253, 0);
     transform: translateY(calc(- 100vh - 80px));
-    opacity: 0;
+    transition: all 0.3s;
+  }
+  #headerLists li a {
+    display: block;
+    color: rgba(68, 68, 68, 0);
+    transform: translateY(-100vh);
     transition: all 0.3s;
   }
   #headerLists.open {
     height: calc(100vh - 80px);
     transform: translateY(0);
-    opacity: 1;
+    background-color: rgba(253, 253, 253, 0.9);
+  }
+  #headerLists.open li a {
+    color: rgba(68, 68, 68, 1);
+    transform: translateY(0);
   }
   #mobileMenu {
     display: block;
@@ -153,6 +162,7 @@ body {
 /* ****************************** */
 .main-image {
   height: 100vh;
+  height: 100dvh;
   background-image: url(../img/main-image-pc.png);
   background-position: center;
   background-size: 90%;
@@ -184,7 +194,6 @@ body {
   letter-spacing: 0.4rem;
   animation: scrollArrow 1.3s infinite ease 0s;
   animation-iteration-count: 5;
-  perspective: 1000;
 }
 .scroll-arrow::before {
   position: absolute;
@@ -195,6 +204,8 @@ body {
   height: 1.35px;
   background-color: var(--base-text);
   transform-origin: left;
+  animation: arrowColor 1.3s infinite ease 0s;
+  animation-iteration-count: 5;
 }
 .scroll-arrow::after {
   position: absolute;
@@ -206,19 +217,22 @@ body {
   background-color: var(--base-text);
   transform: rotate(-30deg);
   transform-origin: left;
+  animation: arrowColor 1.3s infinite ease 0s;
+  animation-iteration-count: 5;
 }
 @keyframes scrollArrow {
-  from {
-    bottom: 40px;
+  100% {
+    bottom: -5px;
+    color: rgba(68, 68, 68, 0);
   }
-
-  to {
-    bottom: 10px;
+}
+@keyframes arrowColor {
+  100% {
+    background-color: rgba(68, 68, 68, 0);
   }
 }
 @media screen and (max-width: 750px) {
   .main-image {
-    height: 100dvh;
     background-position: 45% 50%;
     background-size: 230%;
   }

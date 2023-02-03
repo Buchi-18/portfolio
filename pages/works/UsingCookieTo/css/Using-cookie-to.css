@@ -1,0 +1,59 @@
+/* ********** Main contents ********** */
+#visitedCount {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10% 20%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 2px 1px 5px #b4b4b4;
+}
+#visitedCount .strong {
+  font-size: 2.5rem;
+}
+/* ********** button ********** */
+.button-area {
+  text-align: center;
+}
+.btn {
+  margin: 20px;
+  width: 35%;
+  padding: 15px;
+  font-size: 1.35rem;
+  border-radius: 5px;
+  color: #fff;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+.btn.blue {
+  background-color: #0171bb;
+  box-shadow: 2px 2px 2px #003457;
+}
+.btn.red {
+  background-color: #bb0101;
+  box-shadow: 2px 2px 2px #5d0101;
+}
+/* ******************** */
+/* タブレット */
+/* ******************** */
+@media screen and (max-width: 960px) {
+  .btn {
+    width: var(--width-tb);
+    margin: 20px 0;
+  }
+}
+/* ******************** */
+/* スマホ */
+/* ******************** */
+@media screen and (max-width: 750px) {
+  #visitedCount {
+    font-size: 1.2rem;
+  }
+  #visitedCount .strong {
+    font-size: 2rem;
+  }
+  .btn {
+    width: var(--width-sp);
+    margin: 10px 0;
+  }
+}

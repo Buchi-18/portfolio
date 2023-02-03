@@ -1,0 +1,53 @@
+.summary {
+  margin: 100px 0;
+}
+.index-wrap {
+  position: relative;
+}
+.index-wrap ol {
+  padding: 5%;
+}
+.index-wrap li {
+  margin: 0 20px 15px 0;
+  padding: 5px 0 5px 20px;
+  border-left: 8px solid #999;
+  border-bottom: 1px solid #999;
+}
+.index-wrap li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.index-wrap .deco-char {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: "Yomogi", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  color: #999;
+  text-shadow: 3px 3px 5px #fff;
+  transform: rotate(-10deg);
+}
+#slider::before,
+#modal::before,
+#cookie::before {
+  display: block;
+  height: 3rem;
+  margin-top: -3rem;
+  content: "";
+}
+.work-title {
+  font-family: "Yomogi", cursive;
+  text-align: center;
+  margin: 150px 0 25px;
+}
+.work-item {
+  margin-bottom: 50px;
+}
+.description li {
+  list-style-type: square;
+  margin-left: 20px;
+  font-size: 0.8rem;
+  line-height: 1.25;
+}

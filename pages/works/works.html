@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Works_BUCHI</title>
+    <!-- ***** css ***** -->
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../00_pages_css/pages.css" />
+    <!-- ***** google font ***** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Yomogi&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: rgba(235, 235, 235, 1)">
+    <header>
+      <div class="header-bg"></div>
+      <div class="header-wrap">
+        <h1 class="site-title">
+          <a href="../../index.html"
+            ><img src="../../img/site-title.svg" alt="site-title"
+          /></a>
+        </h1>
+        <nav>
+          <ul id="headerLists">
+            <li><a href="../../index.html">TOP</a></li>
+            <!-- <li><a href="#">WORKS</a></li> -->
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">README</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="mobileMenu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <p class="summary">
+          SlickやjQuery-cookie.jsなどの便利系プラグインを使った機能を、素のJavaScriptを使って出来るだけ忠実に再現しました。
+        </p>
+        <div class="index-wrap">
+          <p class="index-title">INDEX</p>
+          <ol>
+            <li><a href="#slider">Slider（slick）</a></li>
+            <li><a href="#modal">Modal（Lity）</a></li>
+            <li>
+              <a href="#cookie">
+                Using cookie to ...<span class="sp-hidden"
+                  >（cookie.js）</span
+                ></a
+              >
+            </li>
+          </ol>
+          <span class="deco-char">WORKS</span>
+        </div>
+
+        <div class="work-wrap">
+          <div id="slider">
+            <h2 class="work-title">Slider（slick）</h2>
+
+            <div class="work-item">
+              <!-- jQuery -->
+              <div class="embed-code-pen">
+                <p
+                  class="codepen"
+                  data-height="480"
+                  data-default-tab="result"
+                  data-slug-hash="dyjWPgN"
+                  data-user="Buchi_18"
+                  style="
+                    height: 300px;
+                    box-sizing: border-box;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid;
+                    margin: 1em 0;
+                    padding: 1em;
+                  "
+                >
+                  <span
+                    >See the Pen
+                    <a href="https://codepen.io/Buchi_18/pen/dyjWPgN">
+                      Untitled</a
+                    >
+                    by Buchi_18 (<a href="https://codepen.io/Buchi_18"
+                      >@Buchi_18</a
+                    >) on <a href="https://codepen.io">CodePen</a>.</span
+                  >
+                </p>
+                <script
+                  async
+                  src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+                ></script>
+              </div>
+              <div class="description">
+                <p>
+                  <span class="bold sp-hidden"
+                    >▲ jQueryとSlickを使用したスライダー機能</span
+                  >
+                  <span class="bold pc-hidden">▲ jQueryとSlickを使用</span>
+                </p>
+              </div>
+            </div>
+            <div class="work-item">
+              <!-- vanilla.js -->
+              <div class="embed-code-pen">
+                <p
+                  class="codepen"
+                  data-height="480"
+                  data-default-tab="result"
+                  data-slug-hash="bGjoXmw"
+                  data-user="Buchi_18"
+                  style="
+                    height: 300px;
+                    box-sizing: border-box;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid;
+                    margin: 1em 0;
+                    padding: 1em;
+                  "
+                >
+                  <span
+                    >See the Pen
+                    <a href="https://codepen.io/Buchi_18/pen/bGjoXmw">
+                      Untitled</a
+                    >
+                    by Buchi_18 (<a href="https://codepen.io/Buchi_18"
+                      >@Buchi_18</a
+                    >) on <a href="https://codepen.io">CodePen</a>.</span
+                  >
+                </p>
+                <script
+                  async
+                  src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+                ></script>
+              </div>
+              <div class="description">
+                <p>
+                  <span class="bold sp-hidden"
+                    >▲ jQueryを使用していないスライダー機能</span
+                  >
+                </p>
+                <span class="bold pc-hidden">▲ jQuery使用無し</span>
+                <ul>
+                  <li>Element.animate()メソッドを使用</li>
+                  <li>センターモーのオン/オフ機能実装</li>
+                  <li>
+                    ウインドウ幅によって、画像枚数を変更するレスポンシブ対応実装
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-wrap">
+          <div id="modal">
+            <h2 class="work-title">Modal（Lity）</h2>
+
+            <div class="work-item">
+              <!-- jQuery -->
+              <div class="embed-code-pen"></div>
+              <div class="description">
+                <p>
+                  <span class="bold sp-hidden"
+                    >▲ jQueryとSlickを使用したスライダー機能</span
+                  >
+                  <span class="bold pc-hidden">▲ jQueryとSlickを使用</span>
+                </p>
+              </div>
+            </div>
+            <div class="work-item">
+              <!-- vanilla.js -->
+              <div class="embed-code-pen"></div>
+              <div class="description">
+                <p>
+                  <span class="bold sp-hidden"
+                    >▲ jQueryを使用していないスライダー機能</span
+                  >
+                </p>
+                <span class="bold pc-hidden">▲ jQuery使用無し</span>
+                <ul>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+    <script src="../../js/main.js"></script>
+  </body>
+</html>

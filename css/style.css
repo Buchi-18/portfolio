@@ -16,7 +16,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-ul {
+ul,
+ol {
   list-style: none;
 }
 a {
@@ -50,11 +51,20 @@ body {
 .pc-hidden {
   display: none;
 }
+.sp-hidden {
+  display: inline-block;
+}
+.bold {
+  font-weight: bold;
+}
 @media screen and (max-width: 960px) {
 }
 @media screen and (max-width: 750px) {
   .pc-hidden {
-    display: block;
+    display: inline-block;
+  }
+  .sp-hidden {
+    display: none;
   }
 }
 /* ****************************** */
@@ -288,6 +298,9 @@ body {
   padding: 4px 6px;
   color: #fff;
 }
+.contents-image span:hover {
+  background-color: #0000ee;
+}
 /* ******************** */
 /* タブレット */
 /* ******************** */
@@ -303,8 +316,5 @@ body {
   .wrapper {
     width: var(--width-sp);
     padding: 5% 5% 0;
-  }
-  .contents-wrap p {
-    font-size: 0.7rem;
   }
 }

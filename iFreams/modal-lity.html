@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- jquery-3.6.3 -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+      integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ********** ********** ********** -->
+    <!-- ********** Using lity ********** -->
+    <!-- ********** ********** ********** -->
+    <div id="usingLity" class="wrapper">
+      <ul class="contents-wrap">
+        <li>
+          <p>
+            <a href="#01" data-lity="data-lity">
+              <div>
+                <img src="./img/thumbnail-b.jpg" alt="サムネイル" />
+              </div>
+            </a>
+          </p>
+          <div id="01" class="lity-hide">
+            <div class="content-space">
+              <div class="notes">
+                ※クリックすると再生が始まります。<br />
+                周囲の状況、音量にご注意ください。
+              </div>
+              <a
+                href="./video/video_b_640*360.mp4"
+                target="_blank"
+                rel="noopener"
+              >
+                <p class="play-wrap">
+                  <i class="fa-solid fa-circle-play"></i>
+                  <img src="./img/thumbnail-b.jpg" alt="サムネイル" />
+                </p>
+              </a>
+              <div class="content-description">
+                <p class="content-date">2023.01.24</p>
+                <p class="content-title">テスト動画テスト動画テスト動画</p>
+                <a href="./index.html"> TOPページ </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <p>
+            <a href="#02" data-lity="data-lity">
+              <div>
+                <img src="./img/thumbnail-g.jpg" alt="サムネイル" />
+              </div>
+            </a>
+          </p>
+          <div id="02" class="lity-hide">
+            <div class="content-space">
+              <div class="notes">
+                ※クリックすると再生が始まります。<br />
+                周囲の状況、音量にご注意ください。
+              </div>
+              <a
+                href="./video/video_g_640*360.mp4"
+                target="_blank"
+                rel="noopener"
+              >
+                <p class="play-wrap">
+                  <i class="fa-solid fa-circle-play"></i>
+                  <img src="./img/thumbnail-g.jpg" alt="サムネイル" />
+                </p>
+              </a>
+              <div class="content-description">
+                <p class="content-date">2023.01.24</p>
+                <p class="content-title">テスト動画テスト動画テスト動画</p>
+                <a href="./index.html"> TOPページ </a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!--  lity.js  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lity/1.6.6/lity.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/1.6.6/lity.js"></script>
+    <!--  //lity.js  -->
+  </body>
+</html>

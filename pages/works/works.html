@@ -13,11 +13,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Yomogi&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Yomogi&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body style="background-color: rgba(235, 235, 235, 1)">
+  <body style="background: var(--base-bg)">
     <header>
       <div class="header-bg"></div>
       <div class="header-wrap">
@@ -63,9 +63,9 @@
           <span class="deco-char">WORKS</span>
         </div>
 
-        <div class="work-wrap">
+        <section class="work-wrap">
           <div id="slider">
-            <h2 class="work-title">Slider（slick）</h2>
+            <h2 class="page-section-title">Slider（slick）</h2>
 
             <div class="work-item">
               <!-- jQuery -->
@@ -164,20 +164,70 @@
               </div> -->
             </div>
           </div>
-        </div>
-
-        <div class="work-wrap">
+        </section>
+        <!-- ************************* -->
+        <!-- Modal -->
+        <!-- ************************* -->
+        <section class="work-wrap">
           <div id="modal">
-            <h2 class="work-title">Using cookie to ...</h2>
-
+            <h2 class="page-section-title">Modal（Lity）</h2>
             <div class="work-item">
               <div id="inlineFrameWrap">
-                <!-- <div class="iframe-header">
-                  <p>vanilla.js</p>
-                </div> -->
                 <iframe
                   id="iframe"
-                  src="../../iFreams/Using-cookie-to/Using-cookie-to.html"
+                  src="../../iFreams/modal-lity.html"
+                  frameborder="0"
+                ></iframe>
+              </div>
+              <div class="description">
+                <p>
+                  <span class="bold sp-hidden"
+                    >▲ jQueryとLityを使用してモーダルウインドウをポップアップ</span
+                  >
+                </p>
+                <span class="bold pc-hidden">▲ jQueryとLityを使用</span>
+            </div>
+            <h2 class="page-section-title">Modal（Vanilla.js）</h2>
+            <div class="work-item">
+              <div id="inlineFrameWrap">
+                <iframe
+                  id="iframe"
+                  src=""
+                  frameborder="0"
+                ></iframe>
+              </div>
+              <div class="description">
+                <p>
+                  <span class="bold sp-hidden"
+                    >▲ jQueryとLityを使用してモーダルウインドウをポップアップ</span
+                  >
+                </p>
+                <span class="bold pc-hidden">▲ jQueryとLityを使用</span>
+                <ul>
+                  <li>★★★★★★★</li>
+                  <li>★★★★★★★</li>
+                  <li>★★★★★★★</li>
+                </ul>
+              </div>
+              <div class="iframe-footer">
+                <a href=""
+                  >githubを見に行く</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ************************* -->
+        <!-- Using cookie to ... -->
+        <!-- ************************* -->
+        <section class="work-wrap">
+          <div id="cookie">
+            <h2 class="page-section-title">Using cookie to ...</h2>
+            <div class="work-item">
+              <div id="inlineFrameWrap">
+                <iframe
+                  id="iframe"
+                  src="../../iFreams/Using-cookie-to.html"
                   frameborder="0"
                 ></iframe>
               </div>
@@ -187,7 +237,7 @@
                     >▲ jQuery使用なしでcookieを使って訪問回数を取得</span
                   >
                 </p>
-                <span class="bold pc-hidden">▲ jQuery使用無し</span>
+                <span class="bold pc-hidden">▲ jQueryとLityを使用</span>
                 <ul>
                   <li>★★★★★★★</li>
                   <li>★★★★★★★</li>
@@ -195,11 +245,13 @@
                 </ul>
               </div>
               <div class="iframe-footer">
-                <a href="https://github.com/Buchi-18/Using-cookies-to-...">githubを見に行く</a>
+                <a href="https://github.com/Buchi-18/using-cookies-to-..."
+                  >githubを見に行く</a
+                >
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </main>
 

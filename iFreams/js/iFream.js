@@ -1,16 +1,19 @@
-"use strict"
+"use strict";
 
-const inlineFrame = document.getElementById("inlineFrameWrap");
-const iFrame = document.getElementById("iframe");
-const frameWidth = inlineFrame.clientWidth
+const inlineFrames = document.querySelectorAll("#inlineFrameWrap");
+const iFrames = document.querySelectorAll("iframe");
 
-setFrameWidth ()
+setFrameWidth();
 
 window.addEventListener("scroll", function () {
-  setFrameWidth ()
+  setFrameWidth();
 });
 
-function setFrameWidth (){
-  iFrame.style.width = `${inlineFrame.clientWidth}px`;
+function setFrameWidth() {
+  inlineFrames.forEach(function (inlineFrame) {
+    const frameWidth = inlineFrame.clientWidth;
+    iFrames.forEach(function (iFrame) {
+      iFrame.style.width = `${inlineFrame.clientWidth}px`;
+    });
+  });
 }
-

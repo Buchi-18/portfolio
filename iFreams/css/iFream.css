@@ -1,0 +1,22 @@
+#inlineFrameWrap {
+  width: 100%;
+}
+#iframe {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin: 0 auto;
+  height: 500px;
+  background: rgb(245, 245, 245);
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px rgb(200, 200, 200);
+}
+.iframe-footer a {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.7rem;
+  background: var(--base-text);
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-align: center;
+  color: rgb(245, 245, 245);
+}

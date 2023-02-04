@@ -13,4 +13,6 @@ reloadBtn.addEventListener("click", function () {
 
 deleteBtn.addEventListener("click", function () {
   deleteCookie("visitedCount");
+  deleteCookie("test-name");
+  deleteCookie("test-user");
 });

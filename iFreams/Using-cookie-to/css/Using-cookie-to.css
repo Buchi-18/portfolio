@@ -1,24 +1,33 @@
 /* ********** Main contents ********** */
-#visitedCount {
-  display: inline-block;
-  margin: 20px 0;
-  padding: 10% 20%;
-  font-size: 1.5rem;
-  font-weight: bold;
+.container{
+  margin-top: 1%;
+}
+.counter-bg {
+  width: 90vw;
+  height: 35vh;
   box-shadow: 2px 1px 5px #b4b4b4;
+  display: table-cell;
+  vertical-align: middle;
+}
+#visitedCount {
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
 }
 #visitedCount .strong {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 /* ********** button ********** */
 .button-area {
+  margin-top: 30px;
   text-align: center;
 }
 .btn {
   margin: 20px;
   width: 35%;
-  padding: 15px;
-  font-size: 1.35rem;
+  padding: 12px;
+  font-size: 0.8rem;
   border-radius: 5px;
   color: #fff;
 }
@@ -46,11 +55,17 @@
 /* スマホ */
 /* ******************** */
 @media screen and (max-width: 750px) {
+  h1{
+    font-size: 1.5rem;
+  }
+  .container{
+    margin-top: 5%;
+  }
   #visitedCount {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   #visitedCount .strong {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .btn {
     width: var(--width-sp);

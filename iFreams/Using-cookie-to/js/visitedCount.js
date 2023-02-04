@@ -1,7 +1,7 @@
 "use strict";
 
-setCookie("name", "value1", { "max-age": 360 });
-setCookie("user", "value2", { "max-age": 360 });
+setCookie("test-name", "value1", { "max-age": 360 });
+setCookie("test-user", "value2", { "max-age": 360 });
 
 const cookies = document.cookie; // クッキーを全部取得
 const cookieName = "visitedCount"; //判定用の名前

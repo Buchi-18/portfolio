@@ -160,13 +160,7 @@ h3 {
     width: 100vw;
     height: 0;
     background-color: rgba(235, 235, 235, 0);
-    transform: translateY(calc(- 100vh - 80px));
-    transition: all 0.3s;
-  }
-  #headerLists li a {
-    display: block;
-    color: rgba(68, 68, 68, 0);
-    transform: translateY(-100vh);
+    transform: translate(100vw);
     transition: all 0.3s;
   }
   #headerLists.open {
@@ -174,10 +168,24 @@ h3 {
     transform: translateY(0);
     background-color: rgba(235, 235, 235, 0.9);
   }
+  /* モバイル確認で問題なければ削除0205 */
+  /* #headerLists li {
+    transform: translateY(-100vh);
+    transition: all 0.3s;
+  }
+  #headerLists.open li {
+    transform: translateY(0);
+  }
+  #headerLists li a {
+    display: block;
+    color: rgba(68, 68, 68, 0);
+    transform: translateY(-100vh);
+    transition: all 0.3s;
+  }
   #headerLists.open li a {
     color: rgba(68, 68, 68, 1);
     transform: translateY(0);
-  }
+  } */
   #mobileMenu {
     display: block;
     position: fixed;

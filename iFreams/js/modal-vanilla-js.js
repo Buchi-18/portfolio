@@ -76,10 +76,6 @@ function modalIsOpen(id) {
 <div class="content-description">
   <p class="content-date">${date}</p>
   <p class="content-title">${title}</p>`
-  // videoLink.setAttribute("href", videoUrl);
-  // imgLink.setAttribute("src", imgUrl);
-  // imgLink.setAttribute("alt", alt);
-  // imgLink.setAttribute("alt", title);
 }
 //モーダルクローズメソッド
 function modalIsClose() {

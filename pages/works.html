@@ -1,204 +1,159 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Works_BUCHI</title>
-    <!-- ***** css ***** -->
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="./css/pages.css" />
-    <link rel="stylesheet" href="../iFreams/css/iFream.css" />
-    <!-- ***** google font ***** -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Yomogi&display=swap"
-      rel="stylesheet"
-    />
-    <!-- ***** font awesome ***** -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body style="background: var(--base-bg)">
-    <header>
-      <div class="header-bg"></div>
-      <div class="header-wrap">
-        <h1 class="site-title">
-          <a href="../index.html"
-            ><img src="../img/site-title.svg" alt="site-title"
-          /></a>
-        </h1>
-        <nav>
-          <ul id="headerLists">
-            <li><a href="../index.html">TOP</a></li>
-            <!-- <li><a href="#">WORKS</a></li> -->
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">README</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div id="mobileMenu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </header>
 
-    <main>
-      <div class="wrapper">
-        <p class="summary">
-          SlickやjQuery-cookie.jsなどの便利系プラグインを使った機能を、素のJavaScriptを使って出来るだけ忠実に再現しました。
-        </p>
-        <div class="index-wrap">
-          <p class="index-title">INDEX</p>
-          <ol>
-            <li><a href="#slider">Slider（slick）</a></li>
-            <li><a href="#modal">Modal（Lity）</a></li>
-            <li>
-              <a href="#cookie">
-                Using cookie to ...<span class="sp-hidden"
-                  >（cookie.js）</span
-                ></a
-              >
-            </li>
-          </ol>
-          <span class="deco-char">WORKS</span>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Works_BUCHI</title>
+  <!-- ***** css ***** -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/pages.css">
+  <link rel="stylesheet" href="../iFreams/css/iFream.css">
+  <!-- ***** google font ***** -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Yomogi&display=swap"
+    rel="stylesheet">
+  <!-- ***** font awesome ***** -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body style="background: var(--base-bg)">
+  <header>
+    <div class="header-bg"></div>
+    <div class="header-wrap">
+      <h1 class="site-title">
+        <a href="../index.html"><img src="../img/site-title.svg" alt="site-title"></a>
+      </h1>
+      <nav>
+        <ul id="headerLists">
+          <li><a href="../index.html">TOP</a></li>
+          <!-- <li><a href="#">WORKS</a></li> -->
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">README</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="mobileMenu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <p class="summary">
+        SlickやjQuery-cookie.jsなどの便利系プラグインを使った機能を、素のJavaScriptを使って出来るだけ忠実に再現しました。
+      </p>
+      <div class="index-wrap">
+        <p class="index-title">INDEX</p>
+        <ol>
+          <li><a href="#slider">Slider（slick）</a></li>
+          <li><a href="#modal">Modal（Lity）</a></li>
+          <li>
+            <a href="#cookie">
+              Using cookie to ...<span class="sp-hidden">（cookie.js）</span></a>
+          </li>
+        </ol>
+        <span class="deco-char">WORKS</span>
+      </div>
+      <!-- ************************* -->
+      <!-- Slider -->
+      <!-- ************************* -->
+      <section id="slider" class="work-wrap">
+        <h2 class="page-section-title">Slider（slick）</h2>
+        <div class="work-item"></div>
+      </section>
+      <hr>
+      <hr>
+      <!-- ************************* -->
+      <!-- Modal -->
+      <!-- ************************* -->
+      <section id="modal" class="work-wrap">
+        <div class="modal-bg"></div>
+        <!-- Modal（Lity） -->
+        <div class="work-item">
+          <h2 class="page-section-title">Modal（Lity）</h2>
+          <div class="iframe-header">
+            <a href="#">
+              githubでsrcを見る<span><i class="fa-brands fa-github"
+                  style="padding-left: 8px; font-size: 18px"></i></span></a>
+          </div>
+          <div id="inlineFrameWrap">
+            <iframe id="iframe" src="../iFreams/modal-lity.html" style="height: 450px" frameborder="0"></iframe>
+          </div>
+          <div class="description">
+            <p>
+              <span class="bold sp-hidden">▲&nbsp;jQueryとLityを使用してモーダルウインドウをポップアップ</span>
+            </p>
+            <span class="bold pc-hidden">▲&nbsp;jQueryとLityを使用</span>
+          </div>
         </div>
-        <!-- ************************* -->
-        <!-- Slider -->
-        <!-- ************************* -->
-        <section class="work-wrap">
-          <div id="slider">
-            <h2 class="page-section-title">Slider（slick）</h2>
-            <div class="work-item"></div>
+        <!-- Modal（Vanilla.js） -->
+        <div class="work-item">
+          <h2 class="page-section-title">Modal（Vanilla.js）</h2>
+          <div class="iframe-header">
+            <a href="#">
+              githubでsrcを見る<span><i class="fa-brands fa-github"
+                  style="padding-left: 8px; font-size: 18px"></i></span></a>
           </div>
-        </section>
-        <hr />
-        <hr />
-        <!-- ************************* -->
-        <!-- Modal -->
-        <!-- ************************* -->
-        <section class="work-wrap">
-          <div id="modal">
-            <!-- Modal（Lity） -->
-            <div class="work-item">
-              <h2 class="page-section-title">Modal（Lity）</h2>
-              <div class="iframe-header">
-                <a href="#">
-                  githubでsrcを見る<span
-                    ><i
-                      class="fa-brands fa-github"
-                      style="padding-left: 8px; font-size: 18px"
-                    ></i></span
-                ></a>
-              </div>
-              <div id="inlineFrameWrap">
-                <iframe
-                  id="iframe"
-                  src="../iFreams/modal-lity.html"
-                  style="height: 450px"
-                  frameborder="0"
-                ></iframe>
-              </div>
-              <div class="description">
-                <p>
-                  <span class="bold sp-hidden"
-                    >▲
-                    jQueryとLityを使用してモーダルウインドウをポップアップ</span
-                  >
-                </p>
-                <span class="bold pc-hidden">▲ jQueryとLityを使用</span>
-              </div>
-            </div>
-            <!-- Modal（Vanilla.js） -->
-            <div class="work-item">
-              <h2 class="page-section-title">Modal（Vanilla.js）</h2>
-              <div class="iframe-header">
-                <a href="#">
-                  githubでsrcを見る<span
-                    ><i
-                      class="fa-brands fa-github"
-                      style="padding-left: 8px; font-size: 18px"
-                    ></i></span
-                ></a>
-              </div>
-              <div id="inlineFrameWrap">
-                <iframe
-                  id="iframe"
-                  src="../iFreams/modal-vanilla-js.html"
-                  style="height: 450px"
-                  frameborder="0"
-                ></iframe>
-              </div>
-              <div class="description">
-                <p>
-                  <span class="bold sp-hidden"
-                    >▲
-                    jQueryとLityを使用してモーダルウインドウをポップアップ</span
-                  >
-                </p>
-                <span class="bold pc-hidden">▲ jQueryとLityを使用</span>
-                <ul>
-                  <li>★★★★★★★</li>
-                  <li>★★★★★★★</li>
-                  <li>★★★★★★★</li>
-                </ul>
-              </div>
-            </div>
+          <div id="inlineFrameWrap">
+            <iframe id="iframe" src="../iFreams/modal-vanilla-js.html" style="height: 450px" frameborder="0"></iframe>
           </div>
-        </section>
-        <hr />
-        <hr />
-        <!-- ************************* -->
-        <!-- Using cookie to ... -->
-        <!-- ************************* -->
-        <section class="work-wrap">
-          <div id="cookie">
-            <div class="work-item">
-              <h2 class="page-section-title">Using cookie to ...</h2>
-              <div class="iframe-header">
-                <a href="#">
-                  githubでsrcを見る<span
-                    ><i
-                      class="fa-brands fa-github"
-                      style="padding-left: 8px; font-size: 18px"
-                    ></i></span
-                ></a>
-              </div>
-              <div id="inlineFrameWrap">
-                <iframe
-                  id="iframe"
-                  src="../iFreams/Using-cookie-to.html"
-                  style="height: 380px"
-                  frameborder="0"
-                ></iframe>
-              </div>
-              <div class="description">
-                <p>
-                  <span class="bold sp-hidden"
-                    >▲ jQuery使用なしでcookieを使って訪問回数を取得</span
-                  >
-                </p>
-                <span class="bold pc-hidden">▲ jQueryとLityを使用</span>
-                <ul>
-                  <li>★★★★★★★</li>
-                  <li>★★★★★★★</li>
-                  <li>★★★★★★★</li>
-                </ul>
-              </div>
-            </div>
+          <div class="description">
+            <p>
+              <span class="bold sp-hidden">▲&nbsp;jQueryとLityを使用してモーダルウインドウをポップアップ</span>
+            </p>
+            <span class="bold pc-hidden">▲&nbsp;jQueryとLityを使用</span>
+            <ul>
+              <li>
+                モーダルが閉じる際のフェードアウトのアニメーションは
+                @keyframes（css）、setTimeout()（js）で調整
+              </li>
+              <li>Escキーで、モーダルが閉じる機能</li>
+            </ul>
           </div>
-        </section>
-      </div>
-    </main>
+        </div>
+      </section>
+      <hr>
+      <hr>
+      <!-- ************************* -->
+      <!-- Using cookie to ... -->
+      <!-- ************************* -->
+      <section id="cookie" class="work-wrap">
+        <div class="work-item">
+          <h2 class="page-section-title">Using cookie to ...</h2>
+          <div class="iframe-header">
+            <a href="#">
+              githubでsrcを見る<span><i class="fa-brands fa-github"
+                  style="padding-left: 8px; font-size: 18px"></i></span></a>
+          </div>
+          <div id="inlineFrameWrap">
+            <iframe id="iframe" src="../iFreams/Using-cookie-to.html" style="height: 380px" frameborder="0"></iframe>
+          </div>
+          <div class="description">
+            <p>
+              <span class="bold sp-hidden">▲&nbsp;jQuery使用なしでcookieを使って訪問回数を取得</span>
+            </p>
+            <span class="bold pc-hidden">▲&nbsp;jQueryとLityを使用</span>
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
 
-    <footer></footer>
-    <script src="../iFreams/js/iFream.js"></script>
-  </body>
+  <footer></footer>
+  <script src="../js/main.js"></script>
+  <script src="../iFreams/js/iFream.js"></script>
+</body>
+
 </html>

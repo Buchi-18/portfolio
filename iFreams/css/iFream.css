@@ -5,18 +5,18 @@
   margin-bottom: 0;
   padding-bottom: 0;
   margin: 0 auto;
-  height: 480px;
   background: rgb(245, 245, 245);
-  border-radius: 8px;
-  box-shadow: 3px 3px 3px rgb(200, 200, 200);
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0px 3px 3px rgb(200, 200, 200);
 }
-.iframe-footer a {
+.iframe-header a {
   display: block;
-  margin-top: 15px;
+  text-align: right;
+  color: var(--dark-txt);
+  padding: 10px 20px 7px;
   font-size: var(--txt-xSmall);
-  background: var(--dark-txt);
-  border-radius: 8px;
-  padding: 10px 20px;
-  text-align: center;
+  background: rgb(68, 68, 68);
+  border-radius: 8px 8px 0 0;
   color: var(--light-txt);
+  box-shadow: 0px -3px 3px rgb(200, 200, 200);
 }

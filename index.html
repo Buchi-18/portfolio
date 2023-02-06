@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BUCHI</title>
-  <!-- ***** css ***** -->
+  <!-- ********** css ********** -->
   <link rel="stylesheet" href="./css/style.css">
-  <!-- ***** google font ***** -->
+  <!-- ********** google font ********** -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -25,7 +25,13 @@
       </h1>
       <nav>
         <ul id="headerLists">
-          <li><a href="./pages/works.html">WORKS</a></li>
+          <li id="worksMenu" class="works-menu"><a href="#works">WORKS</a>
+            <ul class="work-cell">
+              <li><a href="./pages/works/js-work.html">JavaScript&nbsp;Work</a></li>
+              <li><a href="">Adobe&nbsp;Work</a></li>
+              <li><a href="">App&nbsp;Work</a></li>
+            </ul>
+          </li>
           <li><a href="#">ABOUT</a></li>
           <li><a href="#">README</a></li>
         </ul>
@@ -44,19 +50,36 @@
   </div>
   <main>
     <div class="wrapper">
-      <section>
+      <!-- ************************* -->
+      <!-- Works -->
+      <!-- ************************* -->
+      <section id="works">
         <h2 class="section-title">WORKS</h2>
+        <!-- ********** js-work ********** -->
         <div class="contents-wrap">
-          <a href="./pagesworks.html">
+          <a href="./pages/works/js-work.html">
             <div class="contents-card">
               <div class="contents-image">
-                <img src="./img/work-js.jpg" alt="javascript-works">
+                <img src="./img/js-work.jpg" alt="javascript-works">
                 <span>See more</span>
               </div>
             </div>
           </a>
           <p>
             jQueryのプラグインを使った機能を<br class="pc-hidden">素のJavaScriptで再現
+          </p>
+        </div> <!-- ********** work-adobe ********** -->
+        <div class="contents-wrap">
+          <a href="#">
+            <div class="contents-card">
+              <div class="contents-image">
+                <img src="./img/adobe-work.jpg" alt="javascript-works">
+                <span>See more</span>
+              </div>
+            </div>
+          </a>
+          <p>
+            illustratorやPhotoshopを使用した作品
           </p>
         </div>
       </section>

@@ -141,8 +141,8 @@ h3 {
   position: relative;
 }
 .work-cell {
-  background-color: rgba(235, 235, 235, 0.9);
-  padding: 0 100px 10px 10px;
+  background-color: #ebebebe6;
+  padding: 0 300px 10px 10px;
   border-radius: 0 0 0 10px;
   position: absolute;
   top: 80px;

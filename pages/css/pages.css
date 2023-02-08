@@ -99,6 +99,11 @@
   object-fit: cover;
   /* object-position: top; */
 }
-.adobe-work-item{
-
+.comparison-all{
+  display: flex;
+  justify-content: space-between;
 }
+.comparison-all img{
+  width: 49%;
+}
+

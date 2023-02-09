@@ -12,6 +12,17 @@ deleteCookie(cookieName);
 // ****************************************
 // export function
 // ****************************************
+// ビジットカウントの取得
+export function getCurrentCount() {
+  const cookiesArrays = cookies.split("; ");
+  cookiesArrays.forEach(function (array) {
+    let checkArray = [];
+    checkArray = array.split("=");
+    if (checkArray[0] !== cookieName) return;
+    count = parseInt(checkArray[1]);
+  });
+  return count = count + 1;
+}
 // 訪問回数の表示
 export function updateCookie(visitedCount) {
   if (cookies.indexOf(cookieName) === -1) {
@@ -20,7 +31,6 @@ export function updateCookie(visitedCount) {
     render(count);
   } else if (cookies.indexOf(cookieName) > -1) {
     getCurrentCount();
-    count++;
     setCookie(cookieName, count, { "max-age": 360 });
     render(count);
   }
@@ -54,17 +64,6 @@ function setCookie(name, value, addOptions = {}) {
     }
   }
   document.cookie = updatedCookie;
-}
-// ビジットカウントの取得
-function getCurrentCount() {
-  const cookiesArrays = cookies.split("; ");
-  cookiesArrays.forEach(function (array) {
-    let checkArray = [];
-    checkArray = array.split("=");
-    if (checkArray[0] !== cookieName) return;
-    count = parseInt(checkArray[1]);
-  });
-  return count;
 }
 // 表示内容の取得
 function render(count) {

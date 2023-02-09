@@ -346,8 +346,11 @@ h3 {
 /* ****************************** */
 .wrapper {
   width: var(--width-pc);
-  padding: 10% 5% 0;
+  padding: 0 5%;
   margin: 0 auto 15px;
+}
+#works{
+  margin-top: 10%;
 }
 #works::before {
   display: block;

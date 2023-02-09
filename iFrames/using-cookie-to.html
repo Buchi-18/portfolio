@@ -33,88 +33,121 @@
   <div id="layerImgBoard">
     <div class="layer-img-bg"></div>
     <div class="layer-img">
-      <a href="">
-        <img src="../img/js-work.jpg" alt="">
-      </a>
+      <div id="imgCell">
+      </div>
       <div class="layer-close-btn">
         <i class="fa-solid fa-xmark"></i>
         <br>
         <span>close</span>
       </div>
     </div>
-
-    <style>
-      #layerImgBoard .layer-img-bg {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(5, 5, 5, 0);
-        visibility: hidden;
-        -webkit-transition: all 0.6s ease-in 0s;
-        -o-transition: all 0.6s ease-in 0s;
-        transition: all 0.6s ease-in 0s;
-      }
-
-      #layerImgBoard .layer-img {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(100%, -50%);
-        -ms-transform: translate(100%, -50%);
-        transform: translate(100%, -50%);
-        width: 70vw;
-        -webkit-transition: all 0.4s ease-in-out 0.2s;
-        -o-transition: all 0.4s ease-in-out 0.2s;
-        transition: all 0.4s ease-in-out 0.2s;
-      }
-
-      #layerImgBoard .layer-close-btn {
-        cursor: pointer;
-        margin-top: 15px;
-        text-align: center;
-        font-weight: 700;
-        color: var(--light-txt);
-      }
-
-      #layerImgBoard .layer-close-btn .fa-xmark {
-        font-size: var(--txt-large);
-      }
-
-      #layerImgBoard.showLayer .layer-img-bg {
-        visibility: visible;
-        background: rgba(5, 5, 5, 0.9);
-      }
-
-      #layerImgBoard.showLayer .layer-img {
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-      }
-    </style>
-    <script type="module">
-      "use strict"
-      import { getCurrentCount } from "./js/using-cookie-to-js/visitedCount.js";
-
-      const layerImgBoard = document.getElementById("layerImgBoard");
-      const layerCloseBtn = document.querySelector(".layer-close-btn");
-      const countNum = getCurrentCount();
-
-      if (countNum % 3 === 0) {
-        setTimeout(function () {
-          layerImgBoard.classList.add("showLayer")
-        }, 1000)
-      } else {
-        layerImgBoard.classList.remove("showLayer")
-      }
-
-      layerCloseBtn.addEventListener("click", function () {
-        layerImgBoard.classList.remove("showLayer");
-      })
-    </script>
   </div>
 
+  <div id="layerMsg">※count数が三の倍数の時<br class=".pc-hidden">１秒後にレイヤーボード表示</div>
+
+  <style>
+    #layerImgBoard .layer-img-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(5, 5, 5, 0);
+      visibility: hidden;
+      -webkit-transition: all 0.3s ease-in 0s;
+      -o-transition: all 0.3s ease-in 0s;
+      transition: all 0.3s ease-in 0s;
+    }
+
+    #layerImgBoard .layer-img {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(100%, -50%);
+      -ms-transform: translate(100%, -50%);
+      transform: translate(100%, -50%);
+      width: 60vw;
+      -webkit-transition: transform 0.7s ease-in 0s;
+      -o-transition: transform 0.7s ease-in 0s;
+      transition: transform 0.7s ease-in 0s;
+    }
+
+    #layerImgBoard .layer-close-btn {
+      cursor: pointer;
+      margin-top: 15px;
+      text-align: center;
+      font-weight: 700;
+      color: var(--light-txt);
+    }
+
+    #layerImgBoard .layer-close-btn .fa-xmark {
+      font-size: var(--txt-large);
+    }
+
+    #layerImgBoard.showLayer .layer-img-bg {
+      visibility: visible;
+      background: rgba(5, 5, 5, 0.9);
+    }
+
+    #layerImgBoard.showLayer .layer-img {
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+    #layerMsg {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 960px) {
+      #layerImgBoard .layer-img {
+        width: 75vw;
+      }
+    }
+
+    @media screen and (max-width: 750px) {
+      #layerImgBoard .layer-img {
+        width: 90vw;
+      }
+    }
+  </style>
+
+  <script type="module">
+    "use strict"
+    import { getCurrentCount } from "./js/using-cookie-to-js/visitedCount.js";
+
+    const imgCell = document.getElementById("imgCell");
+    const layerMsg = document.getElementById("layerMsg");
+    const layerImgBoard = document.getElementById("layerImgBoard");
+    const layerCloseBtn = document.querySelector(".layer-close-btn");
+    const countNum = getCurrentCount();
+
+    let layer = [
+      { href: "", src: "../img/js-work.jpg", alt: "" },
+      { href: "", src: "../img/adobe-work.jpg", alt: "" },
+      { href: "", src: "../img/js-work.jpg", alt: "" },
+      { href: "", src: "../img/adobe-work.jpg", alt: "" }
+    ]
+    let randomNum = Math.floor(Math.random() * layer.length);
+    if (countNum % 3 === 0) {
+      layerMsg.style.color = "#bb0101"
+      layerMsg.style.fontWeight = "600"
+      imgCell.innerHTML = `
+        <a href="">
+          <img src=${layer[randomNum].src} alt="">
+        </a>
+        `
+      setTimeout(function () {
+        layerImgBoard.classList.add("showLayer")
+      }, 1000)
+    } else {
+      layerImgBoard.classList.remove("showLayer")
+    }
+
+    layerCloseBtn.addEventListener("click", function () {
+      layerImgBoard.classList.remove("showLayer");
+    })
+  </script>
 
   <script type="module" src="../iFrames/js/using-cookie-to-js/usingCookieTo.js"></script>
 </body>

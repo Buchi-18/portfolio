@@ -19,11 +19,11 @@
 }
 /* ********** button ********** */
 .button-area {
-  margin-top: 30px;
+  margin-top: 10px;
   text-align: center;
 }
 .btn {
-  margin: 20px;
+  margin: 8px;
   width: 35%;
   padding: 12px;
   font-size: var(--txt-xSmall);
@@ -47,7 +47,6 @@
 @media screen and (max-width: 960px) {
   .btn {
     width: var(--width-tb);
-    margin: 20px 0;
   }
 }
 /* ******************** */
@@ -62,6 +61,5 @@
   }
   .btn {
     width: var(--width-sp);
-    margin: 10px 0;
   }
 }

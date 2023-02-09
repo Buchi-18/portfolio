@@ -2,9 +2,11 @@
 /* common */
 /* ****************************** */
 .summary {
-  margin: 100px 0;
+  margin-top: 10%;
+  padding-top: 100px;
 }
 .index-wrap {
+  margin-top: 25%;
   position: relative;
 }
 .index-wrap ol {
@@ -67,6 +69,7 @@
   margin-bottom: 5%;
 }
 .description li {
+  margin-bottom: 12px;
   list-style-type: square;
   margin-left: 20px;
   font-size: var(--txt-xSmall);
@@ -99,11 +102,10 @@
   object-fit: cover;
   /* object-position: top; */
 }
-.comparison-all{
+.comparison-all {
   display: flex;
   justify-content: space-between;
 }
-.comparison-all img{
+.comparison-all img {
   width: 49%;
 }
-

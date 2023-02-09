@@ -52,9 +52,9 @@
         height: 100vh;
         background: rgba(5, 5, 5, 0);
         visibility: hidden;
-        -webkit-transition: all 0.6s ease-in 0.2s;
-        -o-transition: all 0.6s ease-in 0.2s;
-        transition: all 0.6s ease-in 0.2s;
+        -webkit-transition: all 0.6s ease-in 0s;
+        -o-transition: all 0.6s ease-in 0s;
+        transition: all 0.6s ease-in 0s;
       }
 
       #layerImgBoard .layer-img {
@@ -65,9 +65,9 @@
         -ms-transform: translate(100%, -50%);
         transform: translate(100%, -50%);
         width: 70vw;
-        -webkit-transition: all 0.4s ease-in-out 0.5s;
-        -o-transition: all 0.4s ease-in-out 0.5s;
-        transition: all 0.4s ease-in-out 0.5s;
+        -webkit-transition: all 0.4s ease-in-out 0.2s;
+        -o-transition: all 0.4s ease-in-out 0.2s;
+        transition: all 0.4s ease-in-out 0.2s;
       }
 
       #layerImgBoard .layer-close-btn {
@@ -102,7 +102,9 @@
       const countNum = getCurrentCount();
 
       if (countNum % 3 === 0) {
-        layerImgBoard.classList.add("showLayer")
+        setTimeout(function () {
+          layerImgBoard.classList.add("showLayer")
+        }, 1000)
       } else {
         layerImgBoard.classList.remove("showLayer")
       }

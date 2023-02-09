@@ -13,7 +13,7 @@ function setFrameWidth() {
   inlineFrames.forEach(function (inlineFrame) {
     const frameWidth = inlineFrame.clientWidth;
     iFrames.forEach(function (iFrame) {
-      iFrame.style.width = `${inlineFrame.clientWidth}px`;
+      iFrame.style.width = `${frameWidth}px`;
     });
   });
 }

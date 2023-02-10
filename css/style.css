@@ -402,6 +402,6 @@ h3 {
 @media screen and (max-width: 750px) {
   .wrapper {
     width: var(--width-sp);
-    padding: 5% 5% 0;
+    padding: 0 5%;
   }
 }

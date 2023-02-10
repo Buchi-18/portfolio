@@ -1,7 +1,7 @@
 /* ********** Main contents ********** */
-/* .container {
-  margin-top: 1%;
-} */
+  .container {
+    margin-top: 10%;
+  }
 .counter-bg {
   width: 90vw;
   height: 35vh;
@@ -53,9 +53,6 @@
 /* スマホ */
 /* ******************** */
 @media screen and (max-width: 750px) {
-  .container {
-    margin-top: 5%;
-  }
   #visitedCount .strong {
     font-size: var(--txt-large);
   }

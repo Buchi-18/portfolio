@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="slider" class="wrapper">
+        <!-- sliderBox1 -->
+        <div id="slideBox1">
+            <p>slideBox1</p>
+            <p>transform,transition,no prefixes</p>
+            <img src="https://dummyimage.com/600x400/000/fff" alt="">
+        </div>
+        <button class="btn">Button</button>
+        <!-- sliderBox2 -->
+        <div id="slideBox2">
+            <p>slideBox2</p>
+            <p>transform,transition,add prefixes</p>
+            <img src="https://dummyimage.com/600x400/000/fff" alt="">
+        </div>
+        <button class="btn">Button</button>
+        <!-- sliderBox3 -->
+        <div id="slideBox3">
+            <p>slideBox3</p>
+            <p>transform,transition,add prefixes</p>
+            <img src="https://dummyimage.com/600x400/000/fff" alt="">
+        </div>
+        <button class="btn">Button</button>
+    </div>
+</body>
+
+</html>
+
+<style>
+    p {
+        padding: 0;
+        margin: 0;
+        line-height: 1;
+    }
+
+    img {
+        height: 200px;
+    }
+
+    button {
+        margin-bottom: 50px;
+    }
+
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    #slideBox1 {
+        transform: translateX(90%);
+        transition: all 0.5s ease-in-out 0s;
+    }
+
+    #slider.open #slideBox1 {
+        transform: translateX(0);
+    }
+
+    #slideBox2 {
+        -webkit-transform: translateX(90%);
+        -ms-transform: translateX(90%);
+        transform: translateX(90%);
+        -webkit-transition: all 0.5s ease-in-out 0s;
+        -o-transition: all 0.5s ease-in-out 0s;
+        transition: all 0.5s ease-in-out 0s;
+    }
+
+    #slider.open #slideBox2 {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    #slideBox3 {
+        animation: revers 0.5s ease-in-out 0s both;
+    }
+
+    #slider.open #slideBox3 {
+        animation: slider 0.5s ease-in-out 0s both;
+    }
+
+    @keyframes slider {
+        100% {
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes revers {
+        100% {
+            -webkit-transform: translateX(90%);
+            -ms-transform: translateX(90%);
+            transform: translateX(90%);
+        }
+    }
+</style>
+
+<script>
+    const slider = document.getElementById("slider");
+    const buttons = document.querySelectorAll(".btn")
+
+    buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+            slider.classList.toggle("open")
+        })
+    })
+
+</script>

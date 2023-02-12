@@ -32,7 +32,7 @@ videos.forEach(function (video) {
   <li class="content-cell" data-id=${dataId}>
   <p class="thumbnail-title">${title}</p>
           <div>
-            <img src=${imgUrl} alt=${alt} title=${title}/>
+            <img src=${imgUrl} alt=${alt} title=${title}>
           </div>
         </li>
   `;
@@ -66,16 +66,17 @@ function modalIsOpen(id) {
   modal.classList.remove("closed");
   modalBg.classList.remove("closed");
   const { date, videoUrl, imgUrl, alt, title } = videos[id];
-  document.getElementById("videoWrap").innerHTML =
-  ` <a id="videoLink" href="${videoUrl}" target="_blank" rel="noopener">
+  document.getElementById(
+    "videoWrap"
+  ).innerHTML = ` <a id="videoLink" href="${videoUrl}" target="_blank" rel="noopener">
   <p class="play-wrap">
     <i class="fa-solid fa-circle-play"></i>
-    <img id="imgLink" src="${imgUrl}" alt="${alt}" title="${title}" />
+    <img id="imgLink" src="${imgUrl}" alt="${alt}" title="${title}" >
   </p>
 </a>
 <div class="content-description">
   <p class="content-date">${date}</p>
-  <p class="content-title">${title}</p>`
+  <p class="content-title">${title}</p>`;
 }
 //モーダルクローズメソッド
 function modalIsClose() {

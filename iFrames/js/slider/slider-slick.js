@@ -21,7 +21,7 @@ newSlideData.forEach(function (slideData) {
         src=${slideData.url}
         alt=${slideData.alt}
         title=${slideData.title}
-      />
+      >
     </a>
   </div>`).appendTo(".slider");
 });

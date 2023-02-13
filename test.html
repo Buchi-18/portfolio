@@ -13,41 +13,92 @@
 <body>
     <!-- //************************* //************************* -->
     <!-- //************************* //************************* -->
-    <!--HTML-->
-
-    <div 
-    class="drag" 
-    style=" width: 100%; height: 50px; border: 1px solid #666; background-color: #fff;">drag</div>
+    <button id="long-press">Long Press</button>
+    <!-- <button id="long-push">Long Press</button> -->
+    <a id="long-push" href="">foo</a>
+    <a id="long" href="#slideBox2">bar</a>
 
     <script>
+        let pushSecond = 2;
+        let pushTime = 0;
+        let timerCount = 0;
+        const pushBtn = document.getElementById("long-push");
 
-    document.querySelector(".drag").style.transform = "translate(100px, 50px)"
+        pushBtn.addEventListener("mousedown", pushStart);
+        pushBtn.addEventListener("mouseup", pushEnd);
+    // tabindex = "-1"
 
-        function dragger(selector, func) {
-            let isDrag = false;
-            let dragX;
-            selector.addEventListener("mousedown", function (e) {
-                e.preventDefault();
-                isDrag = true;
-                dragStartX = e.x;
-            });
-            document.body.addEventListener("mousemove", function (e) {
-                if (isDrag) {
-                    e.dragX = e.x - dragStartX;
-                    func(e);
+        function pushStart(e) {
+            pushTime = setInterval(function () {
+                timerCount++;
+                console.log(timerCount);
+                if (timerCount > 5) {
+                    pushBtn.addEventListener("click",function(e){
+                        console.log(timerCount);
+                        timerCount = 0;
+                    })
+
                 }
-            });
-            //drag cancel
-            document.body.addEventListener("mouseup", function (e) {
-                isDrag = false;
-            });
-            document.body.addEventListener("mouseleave", function (e) {
-                e.preventDefault();
-                isDrag = false;
-            });
+            }, 100)
+        }
+        function pushEnd() {
+            console.log("foo");
+            clearInterval(pushTime);
+            timerCount = 0;
         }
 
+
+        // pushStart()
+
+
+
+
+
+        const longPress = {
+            //プロパティ
+            el: '',
+            count: 0,
+            second: 1,
+            interval: 10,
+            timerId: 0,
+
+            //メソッド
+            init: function (param) {
+                //引数のパラメータ取得
+                this.el = document.querySelector(param.el);
+                this.second = param.second;
+                //イベントリスナー
+                this.el.addEventListener('mousedown', () => { this.start() }, false);
+                this.el.addEventListener('mouseup', () => { this.end() }, false);
+            },
+            start: function () {
+                this.timerId = setInterval(() => {
+
+                    this.count++;
+                    console.log(this.count);
+                    if (this.count / 100 === this.second) {
+                        //長押し判定時の処理
+                        console.log(this.count);
+                    }
+
+                }, this.interval);
+            },
+            end: function () {
+                clearInterval(this.timerId);
+                this.count = 0;
+            },
+            myFunc: function () {
+                alert('ボタンを' + this.second + '秒長押ししました！');
+            }
+        }
+
+        //初期化
+        longPress.init({
+            el: '#long-press', //長押しの判定を取りたい要素のセレクタを指定する
+            second: 1   //長押しの秒数を指定する
+        });
     </script>
+
     <!-- //************************* //************************* -->
     <!-- //************************* //************************* -->
 

@@ -22,49 +22,13 @@ if (window.matchMedia("(max-width: 750px)").matches) {
 } else {
   slidesToShow = 3;
 }
-
-/* ************************* ************************* 
-test
-・２枚目以降のスライド時にドラッグが機能しない。
-・長押し判定と分岐処理
- ************************* ************************* */
-let isDrag = false;
-let dragStartX;
-let dragEndX;
-let dragLength;
-let moveSlide;
-
-
-slider.addEventListener("mousedown", function (e) {
-  isDrag = true;
-  dragStartX = e.x;
-});
-slider.addEventListener("mousemove", function (e) {
-  dragEndX = e.x;
-  if (isDrag) {
-    dragLength = dragEndX - dragStartX;
-    moveSlide = Math.round(dragLength / cell_width);
-    console.log(moveSlide);
-    slider.style.transform = `translateX(${dragLength}px)`;
-  }
-});
-slider.addEventListener("mouseup", function () {
-  isDrag = false;
-  slider.style.transform = `translateX(${cell_width * moveSlide}px)`;
-});
-/* ************************* ************************* 
- ************************* ************************* */
-
 // 要素取得後、スクリプト実行
 window.onload = function () {
   getSlideWidth(slidesToShow);
   checkCenterMode();
   slideRender();
   btnRender();
-  setInterval(function () {
-    if (!isSlide) return;
-    slideAnimation();
-  }, 3350);
+  setAnimation();
   // イベントハンドラーの呼び出し
   addEventListeners();
 };
@@ -72,10 +36,9 @@ window.onload = function () {
 // **************************************************
 // メソッド
 // **************************************************
-
-//centerModeの判定 *************************
+//センターモードの判定 *************************
 function checkCenterMode() {
-  //centerModeがtrueの時、配列の先頭を画面の中央に配置
+  //センターモードがtrueの時、配列の先頭を画面の中央に配置
   if (centerMode) {
     if (slidesToShow % 2 === 0) {
       const num = slidesToShow / 2;
@@ -96,7 +59,7 @@ function checkCenterMode() {
 function slideRender() {
   newSlideData.forEach(function (slideData) {
     slider.innerHTML += `<li class="vanillaSlider-cell">
-  <a draggable = "false"; href="#">
+  <a draggable = "false"; href="">
     <img
       draggable = "false";
       data-index ="${slideData.index}"
@@ -144,6 +107,17 @@ function addEventListeners() {
     }
   });
 }
+//スライドアニメーション インターバル *************************
+let animationId;
+function setAnimation() {
+  animationId = setInterval(function () {
+    if (!isSlide) return;
+    slideAnimation();
+  }, 3350);
+}
+function stopAnimation() {
+  clearInterval(animationId);
+}
 //スライドアニメーション *************************
 function slideAnimation() {
   slider.animate(
@@ -184,6 +158,33 @@ function reverseSlideAnimation() {
   newSlideData.unshift(item);
   slider.innerHTML = "";
   slideRender();
+}
+//スライドドラッグ時のアニメーション処理 *************************
+//スライドドラッグ時のアニメーション処理 *************************
+//スライドドラッグ時のアニメーション処理 *************************
+  slider.addEventListener("mousedown", function (e) {
+    let isDrag = true;
+    let dragStartX = e.x;
+    hasDragSlider(isDrag, dragStartX);
+  });
+function hasDragSlider(isDrag, dragStartX) {
+  let dragLength = 0;
+  let moveSlide = 0;
+  slider.addEventListener("mousemove", function (e) {
+    if (!isDrag) return;
+    let dragEndX = e.x;
+    dragLength = dragEndX - dragStartX;
+    moveSlide = dragLength / cell_width;
+  });
+  slider.addEventListener("mouseup", function () {
+    isDrag = false;
+    if (moveSlide > 0.15) {
+      reverseSlideAnimation();
+    } else if (moveSlide < -0.15) {
+      isFirstRound = false;
+      slideAnimation();
+    }
+  });
 }
 //セレクトボタンクリック時の処理 *************************
 function selectedSlideBtn(e) {

@@ -68,7 +68,7 @@ function modalIsOpen(id) {
   const { date, videoUrl, imgUrl, alt, title } = videos[id];
   document.getElementById(
     "videoWrap"
-  ).innerHTML = ` <a id="videoLink" href="${videoUrl}" target="_blank" rel="noopener">
+  ).innerHTML = ` <a id="videoLink" href="${videoUrl}" target="_blank" rel="noreferrer noopener">
   <p class="play-wrap">
     <i class="fa-solid fa-circle-play"></i>
     <img id="imgLink" src="${imgUrl}" alt="${alt}" title="${title}" >

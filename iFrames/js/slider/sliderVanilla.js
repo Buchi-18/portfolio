@@ -6,7 +6,7 @@ const slider = document.getElementById("vanillaSlider");
 const btnArea = document.getElementById("btnArea");
 const vanillaArrows = document.getElementById("vanillaArrows");
 
-//各変数宣言
+//変数の宣言
 let newSlideData = [...slideData]; //配列のシャローコピー
 let isFirstRound = true; //１回目のアニメーション時の挙動調整用
 let centerMode = true; //センターモードの指定
@@ -55,17 +55,19 @@ function checkCenterMode() {
     }
   }
 }
+
 //スライド表示 *************************
 function slideRender() {
   newSlideData.forEach(function (slideData) {
+    const { index, url, alt, title, href } = slideData;
     slider.innerHTML += `<li class="vanillaSlider-cell">
-  <a draggable = "false"; href="">
+  <a draggable = "false"; href="../../iFrames/slide-link-dummy.html">
     <img
       draggable = "false";
-      data-index ="${slideData.index}"
-      src=${slideData.url}
-      alt=${slideData.alt}
-      title=${slideData.title}
+      data-index ="${index}"
+      src=${url}
+      alt=${alt}
+      title=${title}
     />
   </a>
 </li>`;
@@ -103,29 +105,23 @@ function addEventListeners() {
   // ↑↑↑ マウスオーバー時スライド停止 ↑↑↑
   // ↓↓↓ ドラッグ・スアイプで前後にスライド ↓↓↓
   slider.addEventListener("mousedown", function (e) {
-    console.log("mousedown");
     dragInit(e);
   });
   slider.addEventListener("mousemove", function (e) {
-    console.log("mousemove");
     getDragMove(e);
   });
   slider.addEventListener("mouseup", function () {
-    console.log("mouseup");
     dragEnd();
   });
   slider.addEventListener("touchstart", function (e) {
-    console.log("touchstart");
     e.preventDefault();
     dragInit(e);
   });
   slider.addEventListener("touchmove", function (e) {
-    console.log("touchmove");
     e.preventDefault();
     getDragMove(e);
   });
   slider.addEventListener("touchend", function (e) {
-    console.log("touchend");
     e.preventDefault();
     dragEnd();
   });
@@ -202,12 +198,14 @@ function isSmartPhone() {
     return false;
   }
 }
+//変数の宣言
 let isDrag = false;
-let dragStartX = 0;
-let dragLength = 0;
-let moveSlide = 0;
+let dragStartX, dragLength, moveSlide;
 
+//マウスダウン・画面タッチ時の処理
 function dragInit(e) {
+  dragLength = 0;
+  moveSlide = 0;
   isDrag = true;
   if (isSmartPhone()) {
     dragStartX = e.touches[0].pageX;
@@ -215,6 +213,7 @@ function dragInit(e) {
     dragStartX = e.x;
   }
 }
+//ドラッグ・スワイプ時の処理
 function getDragMove(e) {
   if (!isDrag) return;
   let dragEndX;
@@ -228,6 +227,7 @@ function getDragMove(e) {
     moveSlide = dragLength / cell_width;
   }
 }
+//マウスアップ・タッチエンド時の処理
 function dragEnd() {
   isDrag = false;
   if (moveSlide > 0.15) {

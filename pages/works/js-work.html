@@ -84,18 +84,6 @@
       <!-- ************************* -->
       <!-- Slider -->
       <!-- ************************* -->
-      <button id="btn" style="font-size: larger;">btn</button>
-      <script>
-        document.getElementById("btn").addEventListener("click", function(){
-          console.log("clicked");
-        })
-        document.getElementById("btn").addEventListener("touchstart", function(){
-          console.log("touched");
-        })
-        document.getElementById("btn").addEventListener("touchmove", function(){
-          console.log("moved");
-        })
-      </script>
       <section id="slider" class="work-wrap">
         <!-- Slider（slick） -->
         <h2 class="page-section-title">Slider（slick）</h2>
@@ -130,11 +118,12 @@
             <p>
               <span class="bold sp-hidden">▲&nbsp;jQueryとSlickを使用してスライダー機能を実装</span>
             </p>
-            <span class="bold pc-hidden">▲&nbsp;jQueryとSlickを使用</span>
+            <span class="bold pc-hidden">▲&nbsp;jQuery使用無し</span>
             <ul>
               <li>スライドアニメーションはWeb Animations APIを使用</li>
               <li>centerMode = true;で先頭のスライドを中央表示（複数枚時）</li>
-              <li>テスト02</li>
+              <li>スマホでスワイプの確認は<a href="https://buchi-18.github.io/slier_vanilla/" target="_blank"
+                  rel="noreferrer noopener"> <span class="bold">こちら</span>&nbsp;(GitHub Pages)</a></li>
             </ul>
           </div>
         </div>
@@ -178,7 +167,7 @@
             <p>
               <span class="bold sp-hidden">▲&nbsp;jQueryとLityを使用してモーダルウインドウをポップアップ</span>
             </p>
-            <span class="bold pc-hidden">▲&nbsp;jQueryとLityを使用</span>
+            <span class="bold pc-hidden">▲&nbsp;jQuery使用無し</span>
             <ul>
               <li>
                 モーダルが閉じる際のフェードアウトのアニメーションは
@@ -202,7 +191,6 @@
               githubでsrcを見る<span><i class="fa-brands fa-github"
                   style="padding-left: 8px; font-size: 18px"></i></span></a>
           </div>
-          <!-- ../../iFrames/using-cookie-to.html -->
           <div id="inlineFrameWrap">
             <iframe id="iframe" src="../../iFrames/using-cookie-to.html" style="height: 400px" frameborder="0"></iframe>
           </div>
@@ -210,7 +198,7 @@
             <p>
               <span class="bold sp-hidden">▲&nbsp;jQuery使用なしでcookieを使って訪問回数を取得</span>
             </p>
-            <span class="bold pc-hidden">▲&nbsp;jQueryとLityを使用</span>
+            <span class="bold pc-hidden">▲&nbsp;jQuery使用無し</span>
             <ul>
               <li>Document.cookieを使用してcookieを操作</li>
               <li>cookieで計測した訪問回数が三の倍数の時にイメージレイヤーを表示（Reloadから1秒後）</li>
@@ -219,6 +207,11 @@
           </div>
         </div>
       </section>
+
+      <div class="banner">
+        <img src="https://dummyimage.com/600x150/000/fff" alt="#">
+        <img src="https://dummyimage.com/600x150/000/fff" alt="#">
+      </div>
     </div>
   </main>
 

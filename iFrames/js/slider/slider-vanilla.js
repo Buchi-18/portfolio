@@ -112,12 +112,15 @@ function addEventListeners() {
     dragEnd();
   });
   slider.addEventListener("touchstart", function (e) {
+    e.preventDefault()
     dragInit(e);
   });
   slider.addEventListener("touchmove", function (e) {
+    e.preventDefault();
     getDragMove(e);
   });
-  slider.addEventListener("touchend", function () {
+  slider.addEventListener("touchend", function (e) {
+    e.preventDefault();
     dragEnd();
   });
   // ↑↑↑ ドラッグ・スアイプで前後にスライド ↑↑↑
@@ -191,19 +194,16 @@ let dragLength = 0;
 let moveSlide = 0;
 
 function dragInit(e) {
-  event.preventDefault();
   isDrag = true;
   dragStartX = e.x;
 }
 function getDragMove(e) {
-  event.preventDefault();
   if (!isDrag) return;
   let dragEndX = e.x;
   dragLength = dragEndX - dragStartX;
   moveSlide = dragLength / cell_width;
 }
 function dragEnd() {
-  event.preventDefault();
   isDrag = false;
   if (moveSlide > 0.15) {
     reverseSlideAnimation();

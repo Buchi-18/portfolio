@@ -84,6 +84,18 @@
       <!-- ************************* -->
       <!-- Slider -->
       <!-- ************************* -->
+      <button id="btn" style="font-size: larger;">btn</button>
+      <script>
+        document.getElementById("btn").addEventListener("click", function(){
+          console.log("clicked");
+        })
+        document.getElementById("btn").addEventListener("touchstart", function(){
+          console.log("touched");
+        })
+        document.getElementById("btn").addEventListener("touchmove", function(){
+          console.log("moved");
+        })
+      </script>
       <section id="slider" class="work-wrap">
         <!-- Slider（slick） -->
         <h2 class="page-section-title">Slider（slick）</h2>

@@ -103,16 +103,19 @@ function addEventListeners() {
   // ↑↑↑ マウスオーバー時スライド停止 ↑↑↑
   // ↓↓↓ ドラッグ・スアイプで前後にスライド ↓↓↓
   slider.addEventListener("mousedown", function (e) {
+    e.preventDefault();
     dragInit(e);
   });
   slider.addEventListener("mousemove", function (e) {
+    e.preventDefault();
     getDragMove(e);
   });
-  slider.addEventListener("mouseup", function () {
+  slider.addEventListener("mouseup", function (e) {
+    e.preventDefault();
     dragEnd();
   });
   slider.addEventListener("touchstart", function (e) {
-    e.preventDefault()
+    e.preventDefault();
     dragInit(e);
   });
   slider.addEventListener("touchmove", function (e) {
@@ -196,14 +199,19 @@ let moveSlide = 0;
 function dragInit(e) {
   isDrag = true;
   dragStartX = e.x;
+  console.log("touch start");
+  console.log(dragStartX);
 }
 function getDragMove(e) {
   if (!isDrag) return;
   let dragEndX = e.x;
   dragLength = dragEndX - dragStartX;
   moveSlide = dragLength / cell_width;
+  console.log("touch move");
+  console.log(dragLength);
 }
 function dragEnd() {
+  console.log("touch end");
   isDrag = false;
   if (moveSlide > 0.15) {
     reverseSlideAnimation();

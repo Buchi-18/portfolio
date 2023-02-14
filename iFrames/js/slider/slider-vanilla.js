@@ -115,7 +115,9 @@ function addEventListeners() {
     dragEnd();
   });
   slider.addEventListener("touchstart", function (e) {
+    console.log("touch start listener");
     e.preventDefault();
+    console.log("touch start preventDefault");
     dragInit(e);
   });
   slider.addEventListener("touchmove", function (e) {
@@ -199,19 +201,15 @@ let moveSlide = 0;
 function dragInit(e) {
   isDrag = true;
   dragStartX = e.x;
-  console.log("touch start");
-  console.log(dragStartX);
+  console.log("touch start func");
 }
 function getDragMove(e) {
   if (!isDrag) return;
   let dragEndX = e.x;
   dragLength = dragEndX - dragStartX;
   moveSlide = dragLength / cell_width;
-  console.log("touch move");
-  console.log(dragLength);
 }
 function dragEnd() {
-  console.log("touch end");
   isDrag = false;
   if (moveSlide > 0.15) {
     reverseSlideAnimation();

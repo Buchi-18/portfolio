@@ -14,13 +14,14 @@ if (window.matchMedia("(max-width: 750px)").matches) {
 
 //配列の数分スライドを挿入
 newSlideData.forEach(function (slideData) {
+  const { index, url, alt, title, href } = slideData;
   $(`<div class="slider-cell">
-    <a href="#">
+    <a href="../../iFrames/slide-link-dummy.html">
       <img
-        data-index ="${slideData.index}"
-        src=${slideData.url}
-        alt=${slideData.alt}
-        title=${slideData.title}
+        data-index ="${index}"
+        src=${url}
+        alt=${alt}
+        title=${title}
       >
     </a>
   </div>`).appendTo(".slider");

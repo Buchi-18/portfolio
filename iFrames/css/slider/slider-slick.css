@@ -15,8 +15,9 @@
 }
 .slick-dots button {
   font-size: 0.8rem;
+  font-family:monospace, serif;
   border-radius: 50%;
-  padding: 3px 7px;
+  padding: 2px 7px;
   margin: 0 7px;
   background-color: #efefef;
   border: 1px solid #666;

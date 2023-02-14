@@ -68,6 +68,9 @@
 .work-item {
   margin-bottom: 5%;
 }
+.description ul{
+  margin-top: 12px;
+}
 .description li {
   margin-bottom: 12px;
   list-style-type: square;

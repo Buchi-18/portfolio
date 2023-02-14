@@ -103,28 +103,29 @@ function addEventListeners() {
   // ↑↑↑ マウスオーバー時スライド停止 ↑↑↑
   // ↓↓↓ ドラッグ・スアイプで前後にスライド ↓↓↓
   slider.addEventListener("mousedown", function (e) {
-    e.preventDefault();
+    console.log("mousedown");
     dragInit(e);
   });
   slider.addEventListener("mousemove", function (e) {
-    e.preventDefault();
+    console.log("mousemove");
     getDragMove(e);
   });
-  slider.addEventListener("mouseup", function (e) {
-    e.preventDefault();
+  slider.addEventListener("mouseup", function () {
+    console.log("mouseup");
     dragEnd();
   });
   slider.addEventListener("touchstart", function (e) {
-    console.log("touch start listener");
+    console.log("touchstart");
     e.preventDefault();
-    console.log("touch start preventDefault");
     dragInit(e);
   });
   slider.addEventListener("touchmove", function (e) {
+    console.log("touchmove");
     e.preventDefault();
     getDragMove(e);
   });
   slider.addEventListener("touchend", function (e) {
+    console.log("touchend");
     e.preventDefault();
     dragEnd();
   });
@@ -193,6 +194,14 @@ function reverseSlideAnimation() {
   slideRender();
 }
 //スライドドラッグ・スワイプ時のアニメーション処理 *************************
+// デバイス判定
+function isSmartPhone() {
+  if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+    return true;
+  } else {
+    return false;
+  }
+}
 let isDrag = false;
 let dragStartX = 0;
 let dragLength = 0;
@@ -200,14 +209,24 @@ let moveSlide = 0;
 
 function dragInit(e) {
   isDrag = true;
-  dragStartX = e.x;
-  console.log("touch start func");
+  if (isSmartPhone()) {
+    dragStartX = e.touches[0].pageX;
+  } else {
+    dragStartX = e.x;
+  }
 }
 function getDragMove(e) {
   if (!isDrag) return;
-  let dragEndX = e.x;
-  dragLength = dragEndX - dragStartX;
-  moveSlide = dragLength / cell_width;
+  let dragEndX;
+  if (isSmartPhone()) {
+    dragEndX = e.touches[0].pageX;
+    dragLength = dragEndX - dragStartX;
+    moveSlide = dragLength / cell_width;
+  } else {
+    dragEndX = e.x;
+    dragLength = dragEndX - dragStartX;
+    moveSlide = dragLength / cell_width;
+  }
 }
 function dragEnd() {
   isDrag = false;

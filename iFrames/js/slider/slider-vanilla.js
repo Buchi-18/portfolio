@@ -85,18 +85,43 @@ function btnRender() {
 }
 //イベントハンドラー *************************
 function addEventListeners() {
+  // ↓↓↓ スライド番号・矢印ボタンクリック時の処理 ↓↓↓
   document.body.addEventListener("click", function (e) {
     selectedSlideBtn(e);
   });
   vanillaArrows.addEventListener("click", function (e) {
     selectedArrowBtn(e);
   });
+  // ↑↑↑ スライド番号・矢印ボタンクリック時の処理 ↑↑↑
+  // ↓↓↓ マウスオーバー時スライド停止 ↓↓↓
   slider.addEventListener("mouseover", function () {
     isSlide = false;
   });
   slider.addEventListener("mouseout", function () {
     isSlide = true;
   });
+  // ↑↑↑ マウスオーバー時スライド停止 ↑↑↑
+  // ↓↓↓ ドラッグ・スアイプで前後にスライド ↓↓↓
+  slider.addEventListener("mousedown", function (e) {
+    dragInit(e);
+  });
+  slider.addEventListener("mousemove", function (e) {
+    getDragMove(e);
+  });
+  slider.addEventListener("mouseup", function () {
+    dragEnd();
+  });
+  slider.addEventListener("touchstart", function (e) {
+    dragInit(e);
+  });
+  slider.addEventListener("touchmove", function (e) {
+    getDragMove(e);
+  });
+  slider.addEventListener("touchend", function () {
+    dragEnd();
+  });
+  // ↑↑↑ ドラッグ・スアイプで前後にスライド ↑↑↑
+  // ↓↓↓ ウインドウリサイズ時のスライドセルリサイズ処理 ↓↓↓
   window.addEventListener("resize", function () {
     if (window.matchMedia("(max-width: 750px)").matches) {
       cellResize(1);
@@ -159,32 +184,30 @@ function reverseSlideAnimation() {
   slider.innerHTML = "";
   slideRender();
 }
-//スライドドラッグ時のアニメーション処理 *************************
-//スライドドラッグ時のアニメーション処理 *************************
-//スライドドラッグ時のアニメーション処理 *************************
-  slider.addEventListener("mousedown", function (e) {
-    let isDrag = true;
-    let dragStartX = e.x;
-    hasDragSlider(isDrag, dragStartX);
-  });
-function hasDragSlider(isDrag, dragStartX) {
-  let dragLength = 0;
-  let moveSlide = 0;
-  slider.addEventListener("mousemove", function (e) {
-    if (!isDrag) return;
-    let dragEndX = e.x;
-    dragLength = dragEndX - dragStartX;
-    moveSlide = dragLength / cell_width;
-  });
-  slider.addEventListener("mouseup", function () {
-    isDrag = false;
-    if (moveSlide > 0.15) {
-      reverseSlideAnimation();
-    } else if (moveSlide < -0.15) {
-      isFirstRound = false;
-      slideAnimation();
-    }
-  });
+//スライドドラッグ・スワイプ時のアニメーション処理 *************************
+let isDrag = false;
+let dragStartX = 0;
+let dragLength = 0;
+let moveSlide = 0;
+
+function dragInit(e) {
+  isDrag = true;
+  dragStartX = e.x;
+}
+function getDragMove(e) {
+  if (!isDrag) return;
+  let dragEndX = e.x;
+  dragLength = dragEndX - dragStartX;
+  moveSlide = dragLength / cell_width;
+}
+function dragEnd() {
+  isDrag = false;
+  if (moveSlide > 0.15) {
+    reverseSlideAnimation();
+  } else if (moveSlide < -0.15) {
+    isFirstRound = false;
+    slideAnimation();
+  }
 }
 //セレクトボタンクリック時の処理 *************************
 function selectedSlideBtn(e) {

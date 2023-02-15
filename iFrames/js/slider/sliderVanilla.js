@@ -114,7 +114,6 @@ function addEventListeners() {
     dragEnd();
   });
   slider.addEventListener("touchstart", function (e) {
-    e.preventDefault();
     dragInit(e);
   });
   slider.addEventListener("touchmove", function (e) {
@@ -122,7 +121,6 @@ function addEventListeners() {
     getDragMove(e);
   });
   slider.addEventListener("touchend", function (e) {
-    e.preventDefault();
     dragEnd();
   });
   // ↑↑↑ ドラッグ・スアイプで前後にスライド ↑↑↑

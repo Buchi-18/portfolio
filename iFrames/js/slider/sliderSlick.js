@@ -16,9 +16,9 @@ if (window.matchMedia("(max-width: 750px)").matches) {
 newSlideData.forEach(function (slideData) {
   const { index, url, alt, title, href } = slideData;
   $(`<div class="slider-cell">
-    <a href="../../iFrames/slide-link-dummy.html">
+    <a href=${href}>
       <img
-        data-index ="${index}"
+        data-index =${index}
         src=${url}
         alt=${alt}
         title=${title}

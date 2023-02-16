@@ -61,7 +61,8 @@ function slideRender() {
   newSlideData.forEach(function (slideData) {
     const { index, url, alt, title, href } = slideData;
     slider.innerHTML += `<li class="vanillaSlider-cell">
-  <a draggable = "false"; href=${href}>
+  <a draggable = "false"; href=${href}  target="_blank"
+          rel="noopener noreferrer nofollow">
     <img
       draggable = "false"
       data-index =${index}

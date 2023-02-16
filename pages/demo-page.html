@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>demo_Buchi</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="demo-page">
+    <div class="contents-wrap">
+      <div class="demo-main-text">
+        DEMO PAGE.
+      </div>
+      <p class="demo-page-logo"><img src="../img/site-title.svg" alt=""></p>
+      <ul>
+        <li><a href="TOP">TOP</a></li>
+        <li><a href="TOP">WORKS</a></li>
+        <li><a href="TOP">ABOUT</a></li>
+        <li><a href="TOP">README</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <style>
+    .demo-page {
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      background-color: #333;
+    }
+
+    .contents-wrap {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+
+    .demo-main-text {
+      white-space: nowrap;
+      font-size: 5em;
+      text-align: center;
+      line-height: 0.95em;
+      font-weight: bold;
+      color: #FFF;
+      text-shadow:
+        0 0 0.10em #2962FF,
+        0 0 0.15em #2962FF,
+        0 0 0.80em #2962FF,
+        0 0 1.00em #2962FF;
+    }
+
+    .contents-wrap ul {
+      display: flex;
+      justify-content: center;
+    }
+    .contents-wrap li {
+      padding: 30px 20px 20px;
+      list-style: none;
+    }
+
+    .contents-wrap a {
+      white-space: nowrap;
+      color: #FFF;
+      text-shadow:
+        0 0 0.10em #2962FF,
+        0 0 0.15em #2962FF,
+        0 0 0.80em #2962FF,
+        0 0 1.00em #2962FF;
+        text-decoration: underline;
+    }
+
+    .demo-page-logo {
+      position: absolute;
+      top: 30px;
+      left: -20px;
+      width: 120px;
+      transform: rotate(30deg);
+      filter: drop-shadow(2px 2px 2px #fff);
+      opacity: 0.8;
+    }
+  </style>
+</body>
+
+</html>

@@ -61,10 +61,10 @@ function slideRender() {
   newSlideData.forEach(function (slideData) {
     const { index, url, alt, title, href } = slideData;
     slider.innerHTML += `<li class="vanillaSlider-cell">
-  <a draggable = "false"; href="../../iFrames/slide-link-dummy.html">
+  <a draggable = "false"; href=${href}>
     <img
-      draggable = "false";
-      data-index ="${index}"
+      draggable = "false"
+      data-index =${index}
       src=${url}
       alt=${alt}
       title=${title}

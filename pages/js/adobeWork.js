@@ -4,7 +4,7 @@ import { adobeWorkData } from "../js/adobeWorkData.js";
 // アニメーションスピード
 const duration = 1000;
 const photoRow = document.querySelector(".photo-row");
-const Rows = document.querySelectorAll(".photo-row > li");
+const rows = document.querySelectorAll(".photo-row > li");
 
 let dataNum = adobeWorkData.length;
 let randNum = Math.floor(Math.random() * dataNum);
@@ -26,7 +26,7 @@ setInterval(function () {
 
 //レンダー関数 *************************
 function render() {
-  Rows.forEach(function (row) {
+  rows.forEach(function (row) {
     const { url, alt, title, href } = adobeWorkData[showNum];
     row.innerHTML = `<a href=${href} target="_blank"
     rel="noopener noreferrer">

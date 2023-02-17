@@ -59,6 +59,7 @@
       display: flex;
       justify-content: center;
     }
+
     .contents-wrap li {
       padding: 30px 20px 20px;
       list-style: none;
@@ -72,7 +73,7 @@
         0 0 0.15em #2962FF,
         0 0 0.80em #2962FF,
         0 0 1.00em #2962FF;
-        text-decoration: underline;
+      text-decoration: underline;
     }
 
     .demo-page-logo {
@@ -83,6 +84,32 @@
       transform: rotate(30deg);
       filter: drop-shadow(2px 2px 2px #fff);
       opacity: 0.8;
+    }
+
+    @media screen and (max-width: 750px) {
+      .demo-main-text {
+        font-size: 12vw;
+        text-shadow:
+          0 0 0.05em #2962FF,
+          0 0 0.065em #2962FF,
+          0 0 0.40em #2962FF,
+          0 0 0.60em #2962FF;
+      }
+
+      .contents-wrap a {
+        font-size: 2vw;
+      }
+
+      .demo-page-logo {
+        top: -40%;
+        left: 50%;
+        width: 70vw;
+        transform: translateX(-50%) rotate(30deg);
+        filter: drop-shadow(2px 2px 2px #fff);
+        opacity: 0.3;
+      z-index: -1;
+
+      }
     }
   </style>
 </body>

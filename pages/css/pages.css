@@ -41,6 +41,9 @@
   text-align: center;
   margin: 60px 0 15px;
 }
+.work-wrap {
+  padding-bottom: 15%;
+}
 @media screen and (max-width: 960px) {
 }
 @media screen and (max-width: 750px) {
@@ -59,13 +62,7 @@
   margin-top: -2.5rem;
   content: "";
 }
-/* クラスメイ整理 */
-/* クラスメイ整理 */
-/* クラスメイ整理 */
-.work-wrap {
-  padding-bottom: 15%;
-}
-.work-item {
+.js-work-item {
   margin-bottom: 5%;
 }
 .description ul {
@@ -97,6 +94,9 @@
 /* ****************************** */
 /* adobe work */
 /* ****************************** */
+main {
+  overflow: hidden;
+}
 .top-video-box {
   /* height: calc(100vh - 80px); */
   height: 100vh;
@@ -108,10 +108,79 @@
   object-fit: cover;
   /* object-position: top; */
 }
-.comparison-all {
+.adobe-img-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
-.comparison-all img {
+.adobe-img-flex img {
   width: 49%;
+}
+.adobe-work-item {
+  background: #fff;
+  padding: 2%;
+  border-radius: 10px;
+  text-align: center;
+}
+.adobe-work-item dl dt {
+  font-weight: 700;
+}
+.comparison-all,
+.comparison-eye {
+  margin-bottom: 100px;
+}
+.comparison-mouth {
+  margin-bottom: 30px;
+}
+.gif-image {
+  margin: 3% auto;
+  width: 95%;
+}
+.gif-image img {
+  border-radius: 5px;
+}
+.photo-row {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: flex;
+
+  overflow: hidden;
+}
+.photo-row li {
+  min-width: 25vw;
+  transform: translateX(-12.5vw);
+}
+.photo-row li img {
+  width: 25vw;
+  width: 100%;
+}
+.adobe-work-text {
+  padding-left: 10px;
+  margin-top: 30vw;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 960px) {
+  .comparison-all,
+  .comparison-eye {
+    margin-bottom: 70px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .comparison-all,
+  .comparison-eye {
+    margin-bottom: 50px;
+  }
+}
+
+#other ul{
+  padding: 60px 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#other ul li{
+  width: 47.5%;
+  margin-bottom: 30px;
+}
+#other ul li:nth-child(2n){
+  margin-left: 5%;
 }

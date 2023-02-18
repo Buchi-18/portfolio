@@ -1,6 +1,16 @@
 /* ****************************** */
 /* common */
 /* ****************************** */
+#slider::before,
+#modal::before,
+#cookie::before,
+#digitalMakeover::before,
+#combinePhoto::before {
+  display: block;
+  height: 2.5rem;
+  margin-top: -2.5rem;
+  content: "";
+}
 .summary {
   margin-top: 10%;
   padding-top: 100px;
@@ -54,14 +64,6 @@
 /* ****************************** */
 /* javascript work */
 /* ****************************** */
-#slider::before,
-#modal::before,
-#cookie::before {
-  display: block;
-  height: 2.5rem;
-  margin-top: -2.5rem;
-  content: "";
-}
 .js-work-item {
   margin-bottom: 5%;
 }
@@ -143,12 +145,15 @@ main {
   left: 0;
   width: 100%;
   display: flex;
-
   overflow: hidden;
 }
 .photo-row li {
   min-width: 25vw;
   transform: translateX(-12.5vw);
+  background-color: #fff;
+  border-top: 2px solid #efefef;
+  border-bottom: 2px solid #efefef;
+  border-left: 2px solid #efefef;
 }
 .photo-row li img {
   width: 25vw;
@@ -172,15 +177,15 @@ main {
   }
 }
 
-#other ul{
+#other ul {
   padding: 60px 20px 30px;
   display: flex;
   flex-wrap: wrap;
 }
-#other ul li{
+#other ul li {
   width: 47.5%;
   margin-bottom: 30px;
 }
-#other ul li:nth-child(2n){
+#other ul li:nth-child(2n) {
   margin-left: 5%;
 }

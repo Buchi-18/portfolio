@@ -80,6 +80,9 @@ h3 {
 .bold {
   font-weight: 700;
 }
+.banner {
+  margin: 15% 5%;
+}
 .banner img {
   margin: 10px 0;
   border-radius: 4px;
@@ -92,6 +95,9 @@ h3 {
 @media screen and (max-width: 960px) {
 }
 @media screen and (max-width: 750px) {
+  h3 {
+    font-size: 1.15rem;
+  }
   .pc-hidden {
     display: inline-block;
   }
@@ -371,6 +377,11 @@ h3 {
   content: "";
 }
 .section-title {
+  line-height: 1;
+  padding: 0 0 10px 20px;
+  margin: 0 3% 10% 3%;
+  border-left: 8px solid #999;
+  border-bottom: 1px solid #999;
   font-size: var(--txt-xLarge);
   color: rgba(68, 68, 68, 0.9);
   text-shadow: 2px 2px 3px #fff;
@@ -379,11 +390,65 @@ h3 {
   margin-top: 3%;
   margin-bottom: 100px;
 }
-.contents-wrap p {
-  font-size: var(--txt-xSmall);
-  text-align: right;
+.contents-wrap:last-child {
+  margin-bottom: 0;
+}
+.contents-wrap a {
   color: var(--dark-txt);
 }
+.contents-wrap .hero-contents {
+  margin: 0 calc(50% - 50vw);
+  padding: 0 5%;
+  width: 100vw;
+}
+.hero-contents li {
+  width: 100%;
+  margin-bottom: 15%;
+}
+.hero-contents li:last-child {
+  margin-bottom: 0;
+}
+.hero-contents li img {
+  display: block;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+.hero-contents dl {
+  margin: 10px auto;
+  padding: 0 10%;
+  max-width: 900px;
+}
+.hero-contents dt {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.hero-contents dd {
+  padding: 0 0 5px 3px;
+  font-size: var(--txt-xSmall);
+}
+.material ul {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  height: 28vw;
+  max-height: 250px;
+}
+.material li {
+  margin: 0 2%;
+  width: 28vw;
+  max-width: 250px;
+}
+.material p {
+  text-align: center;
+  margin-top: 1%;
+  font-size: var(--txt-xSmall);
+}
+.contents-text {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .contents-image {
   position: relative;
 }
@@ -400,6 +465,20 @@ h3 {
 .contents-image:hover span {
   background-color: #0000ee;
 }
+#about dl {
+  margin: 20px 0;
+}
+#about .about-card {
+  display: flex;
+  margin: 20% 0;
+}
+#about .about-card-img {
+  width: 30%;
+  margin-right: 30px;
+}
+#about .about-card-text {
+  width: 70%;
+}
 @media screen and (max-width: 960px) {
   .wrapper {
     width: var(--width-tb);
@@ -409,6 +488,17 @@ h3 {
   .wrapper {
     width: var(--width-sp);
     padding: 0 5%;
+  }
+  #about .about-card {
+    flex-direction: column;
+  }
+  #about .about-card-img {
+    margin: 0 auto;
+    width: 100%;
+  }
+  #about .about-card-text {
+    margin: 0 auto;
+    width: 100%;
   }
 }
 /* ****************************** */

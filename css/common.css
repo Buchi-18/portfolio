@@ -13,8 +13,8 @@
   --width-tb: 80%;
   --width-sp: 92%;
   /* ***** color ***** */
-  --base-bg: rgb(235, 235, 235);
-  --header-bg: rgba(235, 235, 235, 0.9);
+  --base-bg: rgb(228, 228, 228);
+  --light-bg: rgba(235, 235, 235, 0.9);
   --dark-txt: rgb(68, 68, 68);
   --light-txt: rgb(245, 245, 245);
 }
@@ -117,36 +117,8 @@ h3 {
   left: 0;
   width: 100vw;
   height: 80px;
-  background-color: var(--header-bg);
   z-index: 100;
 }
-/* ↓↓↓ header bg-transparent ↓↓↓ */
-.bg-transparent .header-bg,
-.bg-transparent .work-cell {
-  background: transparent;
-}
-.bg-transparent .site-title {
-  filter: drop-shadow(1px 1px 2px var(--header-bg));
-}
-.bg-transparent #headerLists li a {
-  text-shadow: 0.5px 0.5px 0 var(--header-bg), -0.5px 0.5px 0 var(--header-bg),
-    0.5px -0.5px 0 var(--header-bg), -0.5px -0.5px 0 var(--header-bg),
-    1px 1px 2px var(--header-bg);
-}
-.bg-transparent #mobileMenu .bar {
-  box-shadow: 0.5px 0.5px 0 var(--header-bg), -0.5px 0.5px 0 var(--header-bg),
-    0.5px -0.5px 0 var(--header-bg), -0.5px -0.5px 0 var(--header-bg);
-}
-.bg-transparent #headerLists {
-  margin-top: 0;
-}
-.bg-transparent #headerLists.open {
-  height: 100vh;
-  padding-top: 80px;
-  transform: translateY(0);
-  background-color: var(--header-bg);
-}
-/* ↑↑↑ header bg-transparent ↑↑↑ */
 .header-wrap {
   position: fixed;
   top: 0;
@@ -162,6 +134,7 @@ h3 {
 .site-title {
   width: 180px;
   height: 80px;
+  filter: drop-shadow(1px 1px 2px var(--light-bg));
 }
 .site-title a img {
   display: block;
@@ -177,6 +150,9 @@ h3 {
 #headerLists li a {
   color: var(--dark-txt);
   font-weight: 700;
+  text-shadow: 0.5px 0.5px 0 var(--light-bg), -0.5px 0.5px 0 var(--light-bg),
+    0.5px -0.5px 0 var(--light-bg), -0.5px -0.5px 0 var(--light-bg),
+    1px 1px 2px var(--light-bg);
 }
 #headerLists li a:hover {
   opacity: 0.7;
@@ -188,7 +164,7 @@ h3 {
   position: relative;
 }
 .work-cell {
-  background-color: #ebebebe6;
+  background-color: var(--base-bg);
   padding: 0 300px 10px 10px;
   border-radius: 0 0 0 10px;
   position: absolute;
@@ -220,7 +196,6 @@ h3 {
     top: 0;
     left: 0;
     text-align: right;
-    margin-top: 80px;
     padding: 5%;
     width: 100vw;
     height: 0;
@@ -229,9 +204,10 @@ h3 {
     transition: all 0.3s;
   }
   #headerLists.open {
-    height: calc(100vh - 80px);
+    height: 100vh;
+    padding-top: 80px;
     transform: translateY(0);
-    background-color: var(--header-bg);
+    background-color: var(--light-bg);
   }
   #mobileMenu {
     display: block;
@@ -249,6 +225,8 @@ h3 {
     height: 2px;
     margin-top: 8.5px;
     background-color: var(--dark-txt);
+    box-shadow: 0.5px 0.5px 0 var(--light-bg), -0.5px 0.5px 0 var(--light-bg),
+      0.5px -0.5px 0 var(--light-bg), -0.5px -0.5px 0 var(--light-bg);
     transition: all 0.3s;
   }
   #mobileMenu.open .bar:nth-child(1) {

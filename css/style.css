@@ -1,35 +1,50 @@
 /* ****************************** */
 /* Main image */
 /* ****************************** */
-.main-image {
-  height: 100vh;
-  height: 100svh;
-  background-image: url(../img/main-image-pc.png);
-  background-position: center;
-  background-size: 90%;
-  background-repeat: no-repeat;
-  filter: drop-shadow(2px 2px 1px #fff);
-}
-.main-image .main-image-text {
-  font-family: "Yomogi", cursive;
+.main-bg-color {
   position: absolute;
-  top: calc(50% + 18vw);
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  font-size: var(--txt-xxLarge);
-  color: var(--dark-txt);
-  text-shadow: 3px 3px 2px #ccc;
-  text-shadow: 1px 1px 10px #fff;
-  letter-spacing: 0.3rem;
-  white-space: nowrap;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 100vh;
+  height: 100dvh;
+  background-color: #bbb;
+  background-image: linear-gradient(
+    180deg,
+    rgba(68, 68, 68, 1) 60%,
+    rgba(228, 228, 228, 1)
+  );
+  z-index: -100;
+}
+.main-image {
+  position: relative;
+  margin-bottom: 100px;
+  height: 100vh;
+  height: 100dvh;
+  background-image: url(../img/main-image-pc.png);
+  background-position: bottom;
+  background-size: auto 80%;
+  background-repeat: no-repeat;
+}
+.main-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  background-image: linear-gradient(
+    180deg,
+    transparent 0 95%,
+    var(--base-bg) 100%
+  );
 }
 .main-image .scroll-arrow {
   display: block;
   position: absolute;
   bottom: 40px;
-  left: 60px;
+  left: 50px;
   transform: rotate(-90deg);
   transform-origin: left;
   letter-spacing: 0.4rem;
@@ -73,14 +88,14 @@
   }
 }
 @media screen and (max-width: 750px) {
-  .main-image {
-    background-position: 45% 50%;
-    background-size: 230%;
+  .main-bg-color {
+    left: 50vw;
+    background-color: #777;
   }
-  .main-image .main-image-text {
-    top: 40%;
-    left: 65%;
-    font-size: var(--txt-xLarge);
+  .main-image {
+    background-image: url(../img/main-image-sp.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
   }
 }
 /* ****************************** */
@@ -247,7 +262,7 @@ footer a {
 }
 .footer-logo {
   width: 150px;
-  filter: drop-shadow(2px 2px 0px var(--header-bg));
+  filter: drop-shadow(2px 2px 0px var(--light-bg));
 }
 .footer-social-links ul {
   margin-top: 10px;
@@ -332,7 +347,7 @@ footer a {
     bottom: 20px;
     width: 65vw;
     padding: auto;
-    background-image: url(../img/main-image-pc.png);
+    background-image: url(../img/footer-image.png);
     background-size: 100%;
     background-repeat: no-repeat;
     opacity: 0.4;

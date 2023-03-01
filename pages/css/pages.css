@@ -119,8 +119,8 @@ main {
 }
 .top-video-box video {
   width: 100%;
-  height: calc(100vh - 80px);
   height: 100vh;
+  height: 100svh;
   object-fit: cover;
 }
 .adobe-img-flex {

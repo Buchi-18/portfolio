@@ -164,18 +164,20 @@ h3 {
   position: relative;
 }
 .work-cell {
-  background-color: var(--base-bg);
-  padding: 0 300px 10px 10px;
-  border-radius: 0 0 0 10px;
+  background-color: rgba(228, 228, 228, 0.7);
+  padding: 20px 300px 20px 20px;
+  margin-right: 270px;
+  border-radius: 20px;
   position: absolute;
-  top: 80px;
-  left: -10px;
+  top: 60px;
+  left: -20px;
   line-height: 35px;
   transform: translateX(100vw);
   transition: all 0.3s ease-in-out;
 }
 .work-cell li a {
   font-weight: 500 !important;
+  text-shadow: 2px 2pc 2pc #fff;
 }
 .works-menu:hover .work-cell {
   transform: translateX(0);

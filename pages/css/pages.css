@@ -270,10 +270,13 @@ main {
   font-size: var(--txt-large);
   font-weight: 700;
 }
+.app-lists .app-work-title a {
+  color: var(--dark-txt);
+}
 
 .app-lists .app-link {
   position: absolute;
-  right: 10px;;
+  right: 10px;
   bottom: 10px;
   width: 60%;
   max-width: 225px;
@@ -300,8 +303,6 @@ main {
 }
 
 @media screen and (max-width: 960px) {
-}
-@media screen and (max-width: 750px) {
   .app-lists li {
     flex-direction: column;
     margin-bottom: 80px;
@@ -319,4 +320,6 @@ main {
   .app-lists .app-link {
     position: inherit;
   }
+}
+@media screen and (max-width: 750px) {
 }

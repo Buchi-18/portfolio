@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- 検索インデックスから除外 -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="scrimba アプリ開発 学習" />
+  <title>pass generator</title>
+  <!-- ********** css ********** -->
+  <link rel="stylesheet" href="../../../../css/common.css" />
+  <link rel="stylesheet" href="./pass-generator.css" />
+  <!-- ********** font awesome ********** -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ********** google font ********** -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Yomogi&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="wrapper">
+      <h1>
+        Generate a<br /><span class="color-green">random password</span>
+      </h1>
+      <p style="margin-bottom: 50px">Never use an insecure password again.</p>
+      <button id="generate_btn">Generate passwords</button>
+      <button id="numbers_btn">Numbers ON</button>
+      <div class="pass-length-area">
+        <label for="pass_length">length:</label>
+        <input id="pass_length" class="pass_length-box" type="number" value="15" min="8" max="25" />
+        <p id="explanation" class="explanation">
+          ← Please enter an integer between 8 and 25
+        </p>
+      </div>
+      <hr noshade color="#2F3E53" />
+      <div class="result-area">
+        <span class="pass-box hidden">
+          <p id="pass_01" class="pass-text"></p>
+          <button class="copy">
+            <i id="copy_01" class="fa-regular fa-copy"> </i>
+          </button>
+          <div id="copied_01" class="copied">Copied.</div>
+        </span>
+        <span class="pass-box hidden">
+          <p id="pass_02" class="pass-text"></p>
+          <button class="copy">
+            <i id="copy_02" class="fa-regular fa-copy"></i>
+          </button>
+          <div id="copied_02" class="copied">Copied.</div>
+        </span>
+      </div>
+      <button id="reset_btn" style="background-color: #750a1f">
+        Reset
+      </button>
+    </div>
+  </div>
+
+  <script type="module" src="./passGenerate.js"></script>
+</body>
+
+</html>

@@ -319,6 +319,7 @@ main {
   }
   .app-lists .app-link {
     position: inherit;
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 750px) {

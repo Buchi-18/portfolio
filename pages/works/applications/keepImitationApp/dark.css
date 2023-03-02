@@ -1,0 +1,76 @@
+body {
+  background-color: #202124;
+  color: #fff;
+}
+input {
+  background-color: #202124;
+  color: #fff;
+  caret-color: #eee;
+}
+.header-title {
+  color: #a0a7b0;
+}
+/******************** form ********************/
+#form-container {
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 1px 2px 0 rgba(188, 213, 232, 0.302),
+    0 2px 6px 2px rgba(201, 214, 224, 0.149);
+}
+#submit-button {
+  background-color: orange;
+  color: #fff;
+}
+#submit-button,
+#form-close-button {
+  color: rgba(0, 0, 0, 0.7);
+}
+#placeholder {
+  color: #5f6368;
+}
+/******************** modal ********************/
+.modal {
+  background-color: #95959550;
+}
+.modal-content {
+  background-color: #202124;
+}
+.modal-close-button {
+  color: #eee;
+  background-color: #95959520;
+}
+.modal-close-button:hover {
+  background-color: #95959560;
+}
+/******************** tool ********************/
+.toolbar-color,
+.toolbar-delete {
+  color: #fff;
+}
+#color-tooltip {
+  background-color: #202124;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.2);
+}
+#white {
+  background: #202124;
+}
+#purple {
+  background: #571297;
+}
+#orange {
+  background: #752300;
+}
+#blue {
+  background: #002dc1;
+}
+/******************** toggle btn ********************/
+.toggle_label {
+  background: #202124;
+  border: 3px solid #7be7eb;
+}
+.toggle_label:after {
+  background: #7be7eb;
+}
+.display-mode {
+  color: #7be7eb;
+}

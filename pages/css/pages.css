@@ -136,6 +136,9 @@
 /* ****************************** */
 /* adobe work */
 /* ****************************** */
+main{
+  overflow: hidden;
+}
 .adobe-work-item {
   padding: 2%;
   border-radius: 10px;
@@ -145,6 +148,7 @@
 .comparison-eye {
   margin-bottom: 100px;
 }
+
 .adobe-img-flex {
   position: relative;
   display: flex;
@@ -159,7 +163,7 @@
 .adobe-img-flex::before {
   content: "BEFORE";
   position: absolute;
-  bottom: -36px;
+  bottom: -5px;
   font-size: var(--txt-large);
   font-weight: 700;
   letter-spacing: 0.5rem;
@@ -170,7 +174,7 @@
 .adobe-img-flex::after {
   content: "AFTER";
   position: absolute;
-  top: -12px;
+  top: -15px;
   right: 25px;
   font-size: var(--txt-large);
   font-weight: 700;
@@ -180,29 +184,33 @@
   text-shadow: 2px 2px 3px #888;
 }
 .adobe-img-flex img:nth-child(1) {
-  transform: translate(-0vw, 0px);
+  margin-bottom: 30px;
 }
 .adobe-img-flex img:nth-child(2) {
-  transform: translate(0vw, 30px);
-}
-.comparison-mouth img:nth-child(1),
-.comparison-eye img:nth-child(1) {
-  transform: translate(-3vw, 0px);
-}
-.comparison-mouth img:nth-child(2),
-.comparison-eye img:nth-child(2) {
-  transform: translate(3vw, 0px);
+  margin-top: 30px;
 }
 .comparison-mouth div,
 .comparison-eye div {
   position: relative;
+  width: 98vw;
+  margin: 0 calc(50% - 49vw) 50px;
+  padding: 0 25px;
+}
+.comparison-mouth img:nth-child(1),
+.comparison-eye img:nth-child(1) {
+  margin-bottom: 15px;
+  padding-right: 5vw;
+}
+.comparison-mouth img:nth-child(2),
+.comparison-eye img:nth-child(2) {
+  padding-left: 5vw;
 }
 .comparison-mouth div::before,
 .comparison-eye div::before {
   content: "BEFORE";
   position: absolute;
   top: -10px;
-  left: -5.6vw;
+  left: 3vw;
   font-size: var(--txt-large);
   font-weight: 700;
   letter-spacing: 0.5rem;
@@ -211,13 +219,14 @@
   transform-origin: left;
   color: #efefef;
   text-shadow: 2px 2px 3px #888;
+  z-index: 1;
 }
 .comparison-mouth div::after,
 .comparison-eye div::after {
   content: "AFTER";
   position: absolute;
   bottom: -10px;
-  right: -6.5vw;
+  right: 2.5vw;
   font-size: var(--txt-large);
   font-weight: 700;
   letter-spacing: 0.5rem;
@@ -226,6 +235,7 @@
   transform-origin: right;
   color: #efefef;
   text-shadow: 2px 2px 3px #888;
+  z-index: 1;
 }
 
 .adobe-work-item dl dt {
@@ -236,6 +246,7 @@
 .comparison-mouth {
   margin-bottom: 30px;
 }
+
 .gif-image {
   margin: 3% auto;
   width: 95%;

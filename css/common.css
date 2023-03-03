@@ -109,6 +109,29 @@ h3 {
   }
 }
 /* ****************************** */
+/* fade */
+/* ****************************** */
+.fade {
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+.fade-top {
+  transform: translate(0, -100px);
+}
+.fade-bottom {
+  transform: translate(0, 100px);
+}
+.fade-left {
+  transform: translate(-100px, 0);
+}
+.fade-right {
+  transform: translate(100px, 0);
+}
+.fade-in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+/* ****************************** */
 /* header */
 /* ****************************** */
 .header-bg {
@@ -232,25 +255,25 @@ h3 {
     transition: all 0.3s;
   }
   #mobileMenu.open .bar:nth-child(1) {
-    transform: translateY(10px) rotate(405deg);
+    transform: translateY(10.5px) rotate(405deg);
   }
   #mobileMenu.open .bar:nth-child(2) {
     opacity: 0;
   }
   #mobileMenu.open .bar:nth-child(3) {
-    transform: translateY(-10px) rotate(-405deg);
+    transform: translateY(-10.5px) rotate(-405deg);
   }
   .works-menu {
     line-height: 40px;
-    margin-bottom: 120px;
+    margin-bottom: 150px;
   }
   .work-cell {
     background: transparent;
     padding: 0;
-    position: absolute;
+    margin-right: 0;
+    text-align: right;
     top: 45px;
     right: 0;
-    line-height: 35px;
     transform: translateX(0);
   }
 }

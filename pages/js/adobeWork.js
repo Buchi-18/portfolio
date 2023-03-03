@@ -1,7 +1,9 @@
 "use strict";
+//  ******************************
+//  #combinePhoto fade in slide 
+//  ******************************
 import { adobeWorkData } from "../js/adobeWorkData.js";
-
-// アニメーションスピード
+// animation speed
 const duration = 1000;
 const photoRow = document.querySelector(".photo-row");
 const rows = document.querySelectorAll(".photo-row > li");
@@ -18,13 +20,13 @@ setInterval(function () {
     randNum++;
   }
   showNum = randNum;
-  fadeOut();
+  photoLowFadeOut();
   setTimeout(function () {
     render();
   }, duration);
 }, 3000);
 
-//レンダー関数 *************************
+//render func *************************
 function render() {
   rows.forEach(function (row) {
     const { url, alt, title, href } = adobeWorkData[showNum];
@@ -38,10 +40,10 @@ function render() {
       showNum++;
     }
   });
-  fadeIn();
+  photoLowFadeIn();
 }
-//フェードアニメーション *************************
-function fadeOut() {
+//fade animation *************************
+function photoLowFadeOut() {
   photoRow.animate(
     {
       opacity: ["1", `0`],
@@ -54,7 +56,7 @@ function fadeOut() {
     }
   );
 }
-function fadeIn() {
+function photoLowFadeIn() {
   photoRow.animate(
     {
       opacity: ["0", `1`],

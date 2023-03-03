@@ -136,53 +136,103 @@
 /* ****************************** */
 /* adobe work */
 /* ****************************** */
-main {
-  overflow: hidden;
-}
-.top-video-box {
-  height: 100vh;
-  height: 100svh;
-}
-.top-video-box::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  height: 100svh;
-  background-image: linear-gradient(
-    180deg,
-    transparent 0 93%,
-    var(--base-bg) 100%
-  );
-}
-.top-video-box video {
-  width: 100%;
-  height: 100vh;
-  height: 100svh;
-  object-fit: cover;
-}
-.adobe-img-flex {
-  display: flex;
-  justify-content: center;
-}
-.adobe-img-flex img {
-  width: 49%;
-}
 .adobe-work-item {
-  background: #fff;
   padding: 2%;
   border-radius: 10px;
   text-align: center;
-}
-.adobe-work-item dl dt {
-  font-weight: 700;
 }
 .comparison-all,
 .comparison-eye {
   margin-bottom: 100px;
 }
+.adobe-img-flex {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 98vw;
+  margin: 0 calc(50% - 49vw) 50px;
+  padding: 0 25px;
+}
+.adobe-img-flex img {
+  width: 48%;
+}
+.adobe-img-flex::before {
+  content: "BEFORE";
+  position: absolute;
+  bottom: -36px;
+  font-size: var(--txt-large);
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  font-family: "Yomogi", cursive;
+  color: #efefef;
+  text-shadow: 2px 2px 3px #888;
+}
+.adobe-img-flex::after {
+  content: "AFTER";
+  position: absolute;
+  top: -12px;
+  right: 25px;
+  font-size: var(--txt-large);
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  font-family: "Yomogi", cursive;
+  color: #efefef;
+  text-shadow: 2px 2px 3px #888;
+}
+.adobe-img-flex img:nth-child(1) {
+  transform: translate(-0vw, 0px);
+}
+.adobe-img-flex img:nth-child(2) {
+  transform: translate(0vw, 30px);
+}
+.comparison-mouth img:nth-child(1),
+.comparison-eye img:nth-child(1) {
+  transform: translate(-3vw, 0px);
+}
+.comparison-mouth img:nth-child(2),
+.comparison-eye img:nth-child(2) {
+  transform: translate(3vw, 0px);
+}
+.comparison-mouth div,
+.comparison-eye div {
+  position: relative;
+}
+.comparison-mouth div::before,
+.comparison-eye div::before {
+  content: "BEFORE";
+  position: absolute;
+  top: -10px;
+  left: -5.6vw;
+  font-size: var(--txt-large);
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  font-family: "Yomogi", cursive;
+  transform: rotate(90deg);
+  transform-origin: left;
+  color: #efefef;
+  text-shadow: 2px 2px 3px #888;
+}
+.comparison-mouth div::after,
+.comparison-eye div::after {
+  content: "AFTER";
+  position: absolute;
+  bottom: -10px;
+  right: -6.5vw;
+  font-size: var(--txt-large);
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  font-family: "Yomogi", cursive;
+  transform: rotate(90deg);
+  transform-origin: right;
+  color: #efefef;
+  text-shadow: 2px 2px 3px #888;
+}
+
+.adobe-work-item dl dt {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
 .comparison-mouth {
   margin-bottom: 30px;
 }

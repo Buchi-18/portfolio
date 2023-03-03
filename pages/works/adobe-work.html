@@ -40,6 +40,23 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGKXNV7" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+
+  <!-- loading html -->
+  <div id="loader" class="page-loading">
+    <div class="spinner">
+      <div class="cube1"></div>
+      <div class="cube2"></div>
+    </div>
+    <p class="loading">buchi.works</p>
+  </div>
+
+  <script>
+    window.onload = () => {
+      const loader = document.getElementById('loader');
+      loader.classList.add('loaded');
+    }
+  </script>
+  <!-- /loading html -->
   <header>
     <div class="header-bg"></div>
     <div class="header-wrap">
@@ -67,12 +84,6 @@
       <span class="bar"></span>
     </div>
   </header>
-
-  <!-- <div class="top-video-box">
-    <video poster="../video/adobe-work-top.jpg" autoplay loop muted playsinline>
-      <source src="../video/adobe-work-top.mp4" type="video/mp4">
-    </video>
-  </div> -->
 
   <div class="pages-main-image">
     <div class="page-title">

@@ -42,7 +42,7 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- loading html -->
-  <div id="loader" class="page-loading">
+  <!-- <div id="loader" class="page-loading">
     <div class="spinner">
       <div class="cube1"></div>
       <div class="cube2"></div>
@@ -55,7 +55,7 @@
       const loader = document.getElementById('loader');
       loader.classList.add('loaded');
     }
-  </script>
+  </script> -->
   <!-- /loading html -->
   <header>
     <div class="header-bg"></div>
@@ -119,8 +119,8 @@
         <div class="adobe-work-item">
           <div class="comparison-all">
             <div class="adobe-img-flex img-box">
-              <img class="fade fade-left" src="../img/makeOver/makeBefore-all.jpg" alt="">
-              <img class="fade fade-right" src="../img/makeOver/makeover-all.jpg" alt="">
+              <img loading="lazy" class="fade fade-left" src="../img/makeOver/makeBefore-all.jpg" alt="">
+              <img loading="lazy" class="fade fade-right" src="../img/makeOver/makeover-all.jpg" alt="">
             </div>
             <dl>
               <dt>【&nbsp;顔全体&nbsp;】</dt>
@@ -131,8 +131,8 @@
           </div>
           <div class="comparison-eye">
             <div class="img-box">
-              <img class="fade fade-left" src="../img/makeOver/makeBefore-eye.jpg" alt="makeBefore-目元">
-              <img class="fade fade-right" src="../img/makeOver/makeover-eye.jpg" alt="makeover-目元">
+              <img loading="lazy" class="fade fade-left" src="../img/makeOver/makeBefore-eye.jpg" alt="makeBefore-目元">
+              <img loading="lazy" class="fade fade-right" src="../img/makeOver/makeover-eye.jpg" alt="makeover-目元">
             </div>
             <dl>
               <dt>【&nbsp;目元&nbsp;】</dt>
@@ -143,8 +143,8 @@
           </div>
           <div class="comparison-mouth">
             <div class="img-box">
-              <img class="fade fade-left" src="../img/makeOver/makeBefore-mouth.jpg" alt="makeBefore-口元">
-              <img class="fade fade-right" src="../img/makeOver/makeover-mouth.jpg" alt="makeAfter-口元">
+              <img loading="lazy" class="fade fade-left" src="../img/makeOver/makeBefore-mouth.jpg" alt="makeBefore-口元">
+              <img loading="lazy" class="fade fade-right" src="../img/makeOver/makeover-mouth.jpg" alt="makeAfter-口元">
             </div>
             <dl>
               <dt>【&nbsp;口元&nbsp;】</dt>
@@ -161,15 +161,17 @@
         <div class="summary">フリー素材の女性のTシャツにillustratorで作ったイラストを合成しました。
         </div>
         <div class="adobe-work-item">
-          <div class="gif-image">
-            <img src="../img/combinePhoto/combinePhoto.gif" alt="プリント加工イメージgif">
+          <div class="gif-image loading-box">
+            <img loading="lazy" src="../img/combinePhoto/combinePhoto.gif" alt="プリント加工イメージgif">
           </div>
           <ul class="photo-row" style="opacity: 0;">
-            <li><img src="https://dummyimage.com/200x200/000/fff" alt="design-img"></li>
-            <li><img src="https://dummyimage.com/200x200/000/fff" alt="design-img"></li>
-            <li><img src="https://dummyimage.com/200x200/000/fff" alt="design-img"></li>
-            <li><img src="https://dummyimage.com/200x200/000/fff" alt="design-img"></li>
-            <li><img src="https://dummyimage.com/200x200/000/fff" alt="design-img"></li>
+
+            <li><img loading="lazy" src="../../img/loading-image.svg" alt="design-img"></li>
+            <li><img loading="lazy" src="../../img/loading-image.svg" alt="design-img"></li>
+            <li><img loading="lazy" src="../../img/loading-image.svg" alt="design-img"></li>
+            <li><img loading="lazy" src="../../img/loading-image.svg" alt="design-img"></li>
+            <li><img loading="lazy" src="../../img/loading-image.svg" alt="design-img"></li>
+            <li><img loading="lazy" src="../../img/loading-image.svg" alt="design-img"></li>
           </ul>
           <div class="adobe-work-text">
             <p>
@@ -187,15 +189,26 @@
         <h2 class="page-section-title">Other</h2>
         <div class="adobe-work-item">
           <ul>
-            <li><img src="https://dummyimage.com/200x200/000/fff" alt="other-img" alt=""></li>
-            <li><img src="https://dummyimage.com/200x200/000/fff" alt="other-img" alt=""></li>
-            <li><img src="https://dummyimage.com/200x200/000/fff" alt="other-img" alt=""></li>
-            <li><img src="https://dummyimage.com/200x200/000/fff" alt="other-img" alt=""></li>
-            <li><img src="https://dummyimage.com/200x200/000/fff" alt="other-img" alt=""></li>
-            <li><img src="https://dummyimage.com/200x200/000/fff" alt="other-img" alt=""></li>
+            <li class="loading-box"><img loading="lazy" src="../../100MB.jpg" alt="other-img"></li>
+            <li class="loading-box"><img loading="lazy" src="../../100MB.jpg" alt="other-img"></li>
+            <li class="loading-box"><img loading="lazy" src="../../100MB.jpg" alt="other-img"></li>
+            <li class="loading-box"><img loading="lazy" src="../../100MB.jpg" alt="other-img"></li>
+            <li class="loading-box"><img loading="lazy" src="../../100MB.jpg" alt="other-img"></li>
+            <li class="loading-box"><img loading="lazy" src="../../100MB.jpg" alt="other-img"></li>
           </ul>
         </div>
       </section>
+
+      <script>
+        const loadingImgs = document.querySelectorAll(".loading-box > img");
+        loadingImgs.forEach(function (loadedImg) {
+          let src = loadedImg.getAttribute('src');
+          loadedImg.addEventListener("load", function (e) {
+            loadedImg.style.opacity = 1;
+            loadedImg.parentElement.classList.remove("loading-box")
+          })
+        });
+      </script>
       <!-- ************************* -->
       <!-- banner -->
       <!-- ************************* -->

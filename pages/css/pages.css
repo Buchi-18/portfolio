@@ -251,7 +251,6 @@ main {
   position: relative;
   margin: 3% auto;
   width: 95%;
-  aspect-ratio: 1;
 }
 
 .photo-row {
@@ -300,7 +299,6 @@ main {
 #other ul li {
   width: 47.5%;
   margin-bottom: 30px;
-  aspect-ratio: 1;
 }
 
 #other ul li img {

@@ -136,7 +136,7 @@
 /* ****************************** */
 /* adobe work */
 /* ****************************** */
-main{
+main {
   overflow: hidden;
 }
 .adobe-work-item {
@@ -248,12 +248,12 @@ main{
 }
 
 .gif-image {
+  position: relative;
   margin: 3% auto;
   width: 95%;
+  aspect-ratio: 1;
 }
-.gif-image img {
-  border-radius: 5px;
-}
+
 .photo-row {
   position: absolute;
   left: 0;
@@ -295,10 +295,16 @@ main{
   padding: 60px 20px 30px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 #other ul li {
   width: 47.5%;
   margin-bottom: 30px;
+  aspect-ratio: 1;
+}
+
+#other ul li img {
+  line-height: 20vw;
 }
 #other ul li:nth-child(2n) {
   margin-left: 5%;

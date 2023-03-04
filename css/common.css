@@ -87,8 +87,11 @@ h3 {
 .banner {
   margin: 15% 5%;
 }
+.banner a {
+  display: block;
+  margin: 15px 0;
+}
 .banner img {
-  margin: 10px 0;
   border-radius: 4px;
 }
 .disabled {
@@ -236,13 +239,25 @@ h3 {
 /* loading img  */
 /* ****************************** */
 .loading-box {
+  display: block;
+  width: 100%;
   background-image: url(../img/loading-image.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  aspect-ratio: 1;
 }
 .loading-box img {
   opacity: 0;
+}
+.aspect-3-1 {
+  aspect-ratio: 3/1;
+}
+.aspect-4-1 {
+  aspect-ratio: 4/1;
+}
+.aspect-32-15 {
+  aspect-ratio: 32/15;
 }
 /* ****************************** */
 /* header --prefixed-- */

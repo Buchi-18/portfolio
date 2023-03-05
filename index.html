@@ -223,7 +223,7 @@
       <!-- ************************* -->
       <!-- banner -->
       <!-- ************************* -->
-      <div class="banner">
+      <aside class="banner">
         <a data-gtm="banner_777" href="https://buchi.work/pages/demo-page.html" target="_blank"
           rel="noopener noreferrer nofollow">
           <picture class="loading-box aspect-4-1">
@@ -238,8 +238,7 @@
             <img src="./img/_dummy-image.jpg" alt="banner_999">
           </picture>
         </a>
-
-      </div>
+      </aside>
       <!-- ************************* -->
       <!-- About -->
       <!-- ************************* -->
@@ -272,10 +271,323 @@
       </section>
     </div>
   </main>
+  <!-- ************************* -->
+  <!-- clipping of works -->
+  <!-- ************************* -->
+  <aside id="clippingOfWorks" class="vertical">
+    <div class="clipping-title">
+      <span class="en">clipping of works</span>
+      <span class="ja">作品切抜</span>
+    </div>
+    <ul class="clipping-vertical-box">
+      <li>
+        <figure><a href="#">
+            <div class="width-bg-anim bg-brown"><!-- background animation div --></div>
+            <div class="img-scale-anim"><img loading="lazy" src="./img/clipping/clipping-combine-01.jpg" alt=""></div>
+          </a></figure>
+      </li>
+      <li>
+        <figure>
+          <a href="#">
+            <div class="width-bg-anim bg-blue"><!-- background animation div --></div>
+            <div class="img-scale-anim"><img loading="lazy" src="./img/clipping/clipping-combine-01.jpg" alt=""></div>
+          </a>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <a href="#">
+            <div class="width-bg-anim bg-purple"><!-- background animation div --></div>
+            <div class="img-scale-anim"><img loading="lazy" src="./img/clipping/clipping-combine-01.jpg" alt=""></div>
+
+          </a>
+        </figure>
+      </li>
+    </ul>
+    <div class="view-link">
+      <a href="./pages/works/adobe-work.html#combinePhoto">作品を見に行く</a>
+    </div>
+  </aside>
+
+  <!-- ************************* -->
+  <!-- clipping of works -->
+  <!-- ************************* -->
+  <aside id="clippingOfWorks" class="horizontal">
+    <div class="right">
+      <div class="clipping-title">
+        <span class="en">clipping of works</span>
+        <span class="ja">作品切抜</span>
+      </div>
+    </div>
+    <div class="left">
+      <ul class="clipping-horizontal-box">
+        <li>
+          <div class="clipping-horizontal-img">
+            <figure>
+              <a href="#">
+                <div class="width-bg-anim bg-light-blue"><!-- background animation div --></div>
+                <div class="img-scale-anim">
+                  <img loading="lazy" src="./img/clipping/3-2.jpg" alt="">
+                </div>
+              </a>
+            </figure>
+          </div>
+          <div class="clipping-horizontal-text">
+            <span class="en">Color Lighten/Darken</span>
+            <span class="ja">色明度変換ツール</span>
+            <a href="#">#app works</a>
+          </div>
+        </li>
+        <li>
+          <div class="clipping-horizontal-img">
+            <figure>
+              <a href="#">
+                <div class="width-bg-anim bg-light-blue"><!-- background animation div --></div>
+                <div class="img-scale-anim">
+                  <img loading="lazy" src="./img/clipping/3-2.jpg" alt="">
+                </div>
+              </a>
+            </figure>
+          </div>
+          <div class="clipping-horizontal-text">
+            <span class="en">Color Lighten/Darken</span>
+            <span class="ja">色明度変換ツール</span>
+            <a href="#">#app works</a>
+          </div>
+        </li>
+        <li>
+          <div class="clipping-horizontal-img">
+            <figure>
+              <a href="#">
+                <div class="width-bg-anim bg-light-blue"><!-- background animation div --></div>
+                <div class="img-scale-anim">
+                  <img loading="lazy" src="./img/clipping/3-2.jpg" alt="">
+                </div>
+              </a>
+            </figure>
+          </div>
+          <div class="clipping-horizontal-text">
+            <span class="en">Color Lighten/Darken</span>
+            <span class="ja">色明度変換ツール</span>
+            <a href="#">#app works</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <style>
+    #clippingOfWorks.horizontal {
+      display: flex;
+      justify-content: center;
+      padding: 5% 8% 5%;
+      margin-bottom: 40%;
+
+    }
+
+    .horizontal .clipping-title {
+      text-align: right;
+    }
+
+    .horizontal .right {
+      text-align: right;
+      margin-right: 8%;
+      width: 50%;
+    }
+
+    .horizontal .left {
+      margin: 70px 10px 10px 10px;
+      width: 50%;
+      height: 200px;
+    }
+
+    .clipping-horizontal-box {
+      width: 100%;
+    }
+
+    .clipping-horizontal-box li {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 5px 0 2px;
+      border-bottom: 1px solid #999;
+    }
+
+    .clipping-horizontal-img {
+      position: relative;
+      width: 40%;
+      margin: 10px 0;
+    }
+
+    .clipping-horizontal-img::before {
+      content: "";
+      display: block;
+      margin-bottom: 66.6%;
+    }
+
+    .clipping-horizontal-box li .img-scale-anim {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      opacity: 0;
+    }
+
+
+    .clipping-horizontal-text {
+      width: 60%;
+      padding: 2% 5%;
+    }
+
+    .clipping-horizontal-text span {
+      display: block;
+    }
+
+    .clipping-horizontal-text span.en {
+      font-weight: 700;
+    }
+
+    .clipping-horizontal-text span.ja {
+      font-weight: 300;
+    }
+
+    @media screen and (max-width:960px) {}
+
+    @media screen and (max-width:750px) {
+
+      #clippingOfWorks.horizontal {
+        flex-direction: column;
+        margin-bottom: 60%;
+      }
+
+      .horizontal .clipping-title {
+        text-align: center;
+      }
+
+      .horizontal .right {
+        width: 100%;
+      }
+
+      .horizontal .left {
+        margin: 30px 0 0 0;
+        padding: 10%;
+        width: 100%;
+      }
+    }
+  </style>
+
+  <style>
+    #clippingOfWorks {
+      padding: 10% 0 15%;
+    }
+
+    .clipping-title {
+      text-align: center;
+    }
+
+    .clipping-title span {
+      display: block;
+    }
+
+    .clipping-title .en {
+      font-size: var(--txt-xxLarge);
+      font-weight: 700;
+      color: #cccccc;
+      text-shadow: 4px 4px 4px #fcfcfc;
+    }
+
+    .clipping-title .ja {
+      margin-top: 5px;
+      letter-spacing: 1rem;
+      font-weight: 300;
+      color: #555;
+      text-shadow: 4px 4px 4px #ffffff;
+    }
+
+    .clipping-vertical-box {
+      display: flex;
+      justify-content: space-between;
+      margin: 70px auto 70px auto;
+      padding: 0 10% 0 7%;
+      max-width: 1000px;
+    }
+
+    .clipping-vertical-box li {
+      position: relative;
+      width: 25%;
+      max-width: 200px;
+    }
+
+    .clipping-vertical-box li::before {
+      content: "";
+      display: block;
+      margin-bottom: 300%;
+    }
+
+    .clipping-vertical-box li .img-scale-anim {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      opacity: 0;
+    }
+
+    .clipping-vertical-box li .img-scale-anim img {
+      width: calc(100% + 20px);
+    }
+
+    .width-bg-anim {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+    }
+
+    .bg-brown.bg-width-anim {
+      background-color: rgba(193, 186, 181, 0.5);
+    }
+
+    .bg-light-blue.bg-width-anim {
+      background-color: rgba(185, 209, 215, 0.3);
+    }
+
+    .bg-blue.bg-width-anim {
+      background-color: rgba(175, 185, 197, 0.5);
+    }
+
+    .bg-purple.bg-width-anim {
+      background-color: rgba(179, 165, 187, 0.5);
+    }
+
+    .bg-width-anim {
+      animation: widthAnim 0.8s ease 0.2s both
+    }
+
+    .fade-in-scale {
+      animation: fadeInScale 2s ease 0.9s forwards
+    }
+
+    @keyframes widthAnim {
+      100% {
+        width: 100%;
+      }
+    }
+
+    @keyframes fadeInScale {
+      0% {
+        transform: scale(1.05);
+      }
+
+      100% {
+        opacity: 1;
+        transition: none;
+      }
+    }
+  </style>
 
   <footer>
     <div class="footer-head">
-      <div class="footer-logo"><a href="#"><img src="https://buchi.work/img/site-title.svg" alt="footer-logo"></a></div>
+      <div class="footer-logo"><a href="#"><img src="https://buchi.work/img/site-title.svg" alt="footer-logo"></a>
+      </div>
       <div class="footer-social-links">
         <ul>
           <li><a href="https://github.com/Buchi-18" target="_blank" rel="noreferrer noopener nofollow">

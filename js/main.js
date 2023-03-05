@@ -19,25 +19,49 @@ function toggleOpenClassName() {
   mobileMenu.classList.toggle("open");
 }
 //  ******************************
-//  common fade
+//  animation handler js
 //  ******************************
+// フェードイン共通
 window.addEventListener("load", commonFade);
 window.addEventListener("scroll", commonFade);
-
 function commonFade() {
   const fades = document.querySelectorAll(".fade");
-  fades.forEach(function (fadeElement) {
-    const rect = fadeElement.getBoundingClientRect();
+  fades.forEach(function (element) {
+    if (getInView(element)) {
+      element.classList.add("fade-in");
+    } else {
+      element.classList.remove("fade-in");
+    }
+  });
+}
+// アニメーション width 発火
+window.addEventListener("scroll", setWidthAnim);
+function setWidthAnim() {
+  const widthBgAnim = document.querySelectorAll(".width-bg-anim");
+  widthBgAnim.forEach(function (element) {
+    if (getInView(element)) {
+      element.classList.add("bg-width-anim");
+    }
+  });
+}
+// アニメーション fade in scale 発火
+window.addEventListener("scroll", setScaleInAnim);
+function setScaleInAnim() {
+  const imgScaleAnim = document.querySelectorAll(".img-scale-anim");
+  imgScaleAnim.forEach(function (element) {
+    if (getInView(element)) {
+      element.classList.add("fade-in-scale");
+    }
+  });
+}
+// 要素が画面内の任意の位置にあるか判定
+function getInView(element) {
+  const rect = element.getBoundingClientRect();
     const rectHeight = rect.bottom - rect.top;
     const isInView =
       -(rectHeight / 1.15) < rect.top &&
       rect.bottom < window.innerHeight + rectHeight / 2;
-    if (isInView) {
-      fadeElement.classList.add("fade-in");
-    } else {
-      fadeElement.classList.remove("fade-in");
-    }
-  });
+  return isInView;
 }
 //  ******************************
 //  loading image script

@@ -5,7 +5,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 50vw;
+  width: 50%;
   height: 100vh;
   height: 100svh;
   background-color: #bbb;
@@ -89,7 +89,7 @@
 }
 @media screen and (max-width: 750px) {
   .main-bg-color {
-    left: 50vw;
+    left: 50%;
     background-color: #777;
   }
   .main-image {
@@ -105,18 +105,20 @@
 #about::before,
 #hero::before {
   display: block;
-  height: 5rem;
-  margin-top: -5rem;
+  height: 100px;
+  margin-top: -100px;
   content: "";
 }
 #works {
   margin-top: 10%;
 }
-
+h3#hero {
+  font-size: var(--txt-large);
+}
 .hero-contents {
-  margin: 0 calc(50% - 50vw);
+  margin: 0 calc(50% - 49vw);
   padding: 0 5%;
-  width: 100vw;
+  width: 98vw;
 }
 .hero-contents li {
   width: 100%;
@@ -146,8 +148,8 @@
 .material ul {
   display: flex;
   justify-content: center;
-  width: 100vw;
-  margin: 0 calc(50% - 50vw);
+  width: 98vw;
+  margin: 0 calc(50% - 49vw);
   height: 28vw;
   max-height: 250px;
 }
@@ -156,9 +158,6 @@
   width: 28vw;
   max-width: 250px;
 }
-/* .material li a{
-  
-} */
 .material p {
   text-align: center;
   margin-top: 1%;
@@ -179,9 +178,7 @@
 #about .about-card-text {
   width: 70%;
 }
-h3#hero {
-  font-size: var(--txt-large);
-}
+
 @media screen and (max-width: 960px) {
 }
 @media screen and (max-width: 750px) {

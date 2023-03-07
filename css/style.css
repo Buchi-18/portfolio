@@ -21,10 +21,19 @@
   margin-bottom: 100px;
   height: 100vh;
   height: 100svh;
+  /*   
   background-image: url(../img/main-image-pc.png);
   background-position: bottom;
   background-size: auto 80%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+}
+.main-image img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: 80%;
 }
 .main-image::after {
   content: "";
@@ -92,10 +101,8 @@
     left: 50%;
     background-color: #777;
   }
-  .main-image {
-    background-image: url(../img/main-image-sp.png);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
+  .main-image img {
+    height: 100%;
   }
 }
 /* ****************************** */

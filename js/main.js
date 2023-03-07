@@ -40,7 +40,8 @@ function setWidthAnim() {
   const widthBgAnim = document.querySelectorAll(".width-bg-anim");
   widthBgAnim.forEach(function (element) {
     if (getInView(element)) {
-      element.classList.add("bg-width-anim");
+      element.classList.add("width-animation");
+      console.log("foo");
     }
   });
 }
@@ -57,19 +58,18 @@ function setScaleInAnim() {
 // 要素が画面内の任意の位置にあるか判定
 function getInView(element) {
   const rect = element.getBoundingClientRect();
-    const rectHeight = rect.bottom - rect.top;
-    const isInView =
-      -(rectHeight / 1.15) < rect.top &&
-      rect.bottom < window.innerHeight + rectHeight / 2;
+  const rectHeight = rect.bottom - rect.top;
+  const isInView =
+    0 < rect.top && rect.bottom < window.innerHeight + rectHeight;
   return isInView;
 }
+
 //  ******************************
 //  loading image script
 //  ******************************
 const loadingImgs = document.querySelectorAll(".loading-box > img");
 loadingImgs.forEach(function (loadedImg) {
-  let src = loadedImg.getAttribute("src");
-  loadedImg.addEventListener("load", function (e) {
+  loadedImg.addEventListener("load", function () {
     loadedImg.style.opacity = 1;
     loadedImg.parentElement.classList.remove("loading-box");
   });

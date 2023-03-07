@@ -278,10 +278,12 @@ h3 {
   left: 0;
   width: 0%;
   height: 100%;
+}
+.width-bg-anim.width-animation {
   animation: widthAnim 0.8s ease 0.2s both;
 }
 .fade-in-scale {
-  animation: fadeInScale 2s ease 0.9s forwards;
+  animation: fadeInScale 2s ease 0.7s forwards;
 }
 @keyframes widthAnim {
   100% {
@@ -296,16 +298,16 @@ h3 {
   }
 }
 
-.bg-brown.bg-width-anim {
+.bg-brown {
   background-color: rgba(193, 186, 181, 0.5);
 }
-.bg-light-blue.bg-width-anim {
+.bg-light-blue {
   background-color: rgba(185, 209, 215, 0.3);
 }
-.bg-blue.bg-width-anim {
+.bg-blue {
   background-color: rgba(175, 185, 197, 0.5);
 }
-.bg-purple.bg-width-anim {
+.bg-purple {
   background-color: rgba(179, 165, 187, 0.5);
 }
 /* ****************************** */
@@ -444,9 +446,6 @@ h3 {
     -webkit-transform: translate(100vw);
     -ms-transform: translate(100vw);
     transform: translate(100vw);
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
   }
   #headerLists.open {
     height: 100vh;
@@ -465,6 +464,11 @@ h3 {
     height: 80px;
     padding: 20px;
     z-index: 200;
+  }
+  #mobileMenu .bar {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
   }
   #mobileMenu .bar {
     display: block;

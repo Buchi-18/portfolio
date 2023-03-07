@@ -121,9 +121,18 @@ h3#hero {
   width: 98vw;
 }
 .hero-contents li {
+  position: relative;
   width: 100%;
   margin-bottom: 15%;
 }
+.hero-contents li .img-scale-anim {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
 .hero-contents li:last-child {
   margin-bottom: 0;
 }

@@ -2,22 +2,12 @@
 //  ******************************
 //  mobile menu bar
 //  ******************************
-const headerLists = document.getElementById("headerLists");
-const mobileMenu = document.getElementById("mobileMenu");
-const works = document.getElementById("worksMenu");
+const menuBoard = document.getElementById("menuBoard");
+const pcMenuBar = document.getElementById("pcMenuBar");
 
-mobileMenu.addEventListener("click", function () {
-  toggleOpenClassName();
+pcMenuBar.addEventListener("click", function () {
+  menuBoard.classList.toggle("open");
 });
-
-works.addEventListener("click", function () {
-  toggleOpenClassName();
-});
-
-function toggleOpenClassName() {
-  headerLists.classList.toggle("open");
-  mobileMenu.classList.toggle("open");
-}
 //  ******************************
 //  animation handler js
 //  ******************************
@@ -41,7 +31,6 @@ function setWidthAnim() {
   widthBgAnim.forEach(function (element) {
     if (getInView(element)) {
       element.classList.add("width-animation");
-      console.log("foo");
     }
   });
 }

@@ -21,11 +21,6 @@
   margin-bottom: 100px;
   height: 100vh;
   height: 100svh;
-  /*   
-  background-image: url(../img/main-image-pc.png);
-  background-position: bottom;
-  background-size: auto 80%;
-  background-repeat: no-repeat; */
 }
 .main-image img {
   position: absolute;

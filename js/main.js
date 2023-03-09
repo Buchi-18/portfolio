@@ -1,13 +1,45 @@
 "use strict";
 //  ******************************
-//  mobile menu bar
+//  menu bar
 //  ******************************
 const menuBoard = document.getElementById("menuBoard");
-const pcMenuBar = document.getElementById("pcMenuBar");
-
-pcMenuBar.addEventListener("click", function () {
-  menuBoard.classList.toggle("open");
+const menuBarBox = document.getElementById("menuBarBox");
+const menuBarText = document.getElementById("menuBarText");
+const menuBarClose = document.getElementById("menuBarClose");
+let text = "";
+let windowWidth = window.innerWidth;
+if (windowWidth < 750) {
+  text = "menu";
+} else {
+  text = "more";
+}
+menuBarText.innerHTML = text;
+menuBarBox.addEventListener("click", function () {
+  menuBoardHandler();
 });
+menuBarClose.addEventListener("click", function () {
+  menuBoardHandler();
+});
+menuBoard.addEventListener("click", function (e) {
+  if (!e.target.tagName === "A") return;
+  menuBoardHandler();
+})
+
+function menuBoardHandler() {
+  if (menuBoard.className === "open") {
+    menuBoard.classList.remove("open");
+    menuBarBox.classList.remove("open");
+    menuBoard.classList.add("close");
+    menuBarBox.classList.add("close");
+    menuBarText.innerHTML = text;
+  } else {
+    menuBoard.classList.remove("close");
+    menuBarBox.classList.remove("close");
+    menuBoard.classList.add("open");
+    menuBarBox.classList.add("open");
+    menuBarText.innerHTML = "close";
+  }
+}
 //  ******************************
 //  animation handler js
 //  ******************************

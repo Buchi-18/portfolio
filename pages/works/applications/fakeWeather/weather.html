@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake weather</title>
+  <link rel="stylesheet" href="../../../../css/common.css">
+  <link rel="stylesheet" href="./css/weather.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="app-wrapper">
+    <h1 class="app-title">
+      <span>2100年</span>天気仮想アプリ
+    </h1>
+    <div class="location-select-wrap">
+      <p>地域を選択してください</p>
+      <div id="locationWrap">
+        <div id="currentLocation">
+          <p data-location="japan">日本</p>
+        </div>
+        <div id="selectLocation">
+          <p class="otherLocation" data-location="japan">日本</p>
+          <p class="otherLocation" data-location="northPole">北極</p>
+          <p class="otherLocation" data-location="tropical">常夏の島</p>
+        </div>
+      </div>
+    </div>
+    <div id="calendarWrap">
+      <div id="currentDate">
+        <p>3/18(土)</p>
+      </div>
+      <div id="selectDate">
+        <div class="month">
+          <span class="prev">&lt;</span>
+          <span id="monthNam">3</span>月
+          <span class="next">&gt;</span>
+        </div>
+        <div class="day-of-week">
+          <ul>
+            <li class="san">日</li>
+            <li>月</li>
+            <li>火</li>
+            <li>水</li>
+            <li>木</li>
+            <li>金</li>
+            <li class="sat">土</li>
+          </ul>
+        </div>
+        <div class="dates">
+          <ul>
+            <!-- li script:calendar.js -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <button id="resultBtn">結果を表示</button>
+
+    <div id="weatherResult">
+      <p class="location">東京都</p>
+      <h2>2100年<br>今日の天気</h2>
+      <div class="weather-icon"><img src="./img/weather-icon-10d.jpg" alt="weather-image"></div>
+      <p class="weather-text">
+        <span class="ja">くもり</span>
+      </p>
+      <div class="temp-wrap">
+        <div class="temp-image">
+          <img src="./img/weather-icon-temp-normal.png" alt="temp-image-icon">
+        </div>
+        <div class="temp-text">
+          <div class="main-temp">気温:10℃</div>
+          <div class="min-max-temp">
+            <span class="min-temp">最低気温:10℃</span>
+            <span class="max-temp">最高気温:10℃</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./js/weather.js"></script>
+</body>
+
+</html>

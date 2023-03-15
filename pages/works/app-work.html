@@ -29,6 +29,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Yomogi&display=swap"
     rel="stylesheet">
+  <!-- ********** font awesome ********** -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body style="background: var(--base-bg)">
@@ -36,30 +40,71 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGKXNV7" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  <!-- ************************* -->
+  <!-- header -->
+  <!-- ************************* -->
   <header>
-    <div class="header-bg"></div>
     <div class="header-wrap">
       <h1 class="site-title">
         <a href="https://buchi.work/index.html"><img src="https://buchi.work/img/site-title.svg" alt="site-title"></a>
       </h1>
       <nav>
-        <ul id="headerLists">
-          <li id="worksMenu" class="works-menu"><a href="https://buchi.work/index.html#works">WORKS</a>
-          </li>
+        <ul id="pcMenuList">
+          <li><a href="https://buchi.work/index.html#works">WORKS</a></li>
           <li><a href="https://buchi.work/index.html#about">ABOUT</a></li>
           <li><a href="#">README</a></li>
         </ul>
       </nav>
     </div>
-    <div id="mobileMenu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+    <div id="menuBarBox">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <p id="menuBarText">more</p>
+    </div>
+    <!-- ***** menu board ***** -->
+    <div id="menuBoard">
+      <div class="menuBoard-wrap">
+        <div class="board-bg"></div>
+        <nav>
+          <ul>
+            <!-- WORKS -->
+            <li class="primary-menu"><a href="https://buchi.work/index.html#works">#WORKS</a>
+              <ul class="secondary-menu">
+                <li><a href="https://buchi.work/pages/works/js-work.html">javascript Works</a></li>
+                <li><a href="https://buchi.work/pages/works/adobe-work.html">Adobe Works</a></li>
+                <li><a href="https://buchi.work/pages/works/app-work.html">App Works</a></li>
+              </ul>
+            </li>
+
+            <!-- ABOUT -->
+            <li class="primary-menu"><a href="https://buchi.work/index.html#about">#ABOUT</a>
+              <ul class="secondary-menu">
+                <li><a href="https://buchi.work/index.html#personal">略歴</a></li>
+                <li><a href="https://buchi.work/index.html#experience">業務経験</a></li>
+                <li><a href="https://buchi.work/index.html#skill">開発スキル</a></li>
+              </ul>
+            </li>
+            <!-- README -->
+            <li class="primary-menu"><a href="#">#README</a>
+              <ul class="secondary-menu">
+                <li><a href="#">★★★★★</a></li>
+                <li><a href="#">★★★★★</a></li>
+                <li><a href="#">★★★★★</a></li>
+              </ul>
+            </li>
+            <li id="menuBarClose">
+              <span class="ja">閉じる</span>
+              <span class="en">close</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
   <div class="pages-main-image">
-    <div class="page-title">
+    <div class="page-main-title">
       <h2>APP WORKS</h2>
     </div>
   </div>
@@ -67,17 +112,56 @@
   <main>
     <div class="wrapper">
       <p class="summary">
+        独自に開発したアプリや<br>
         フロントエンドエンジニアの学習サービスを参考に作成したアプリを載せています。
       </p>
+      <div class="index-wrap">
+        <p class="index-title">INDEX</p>
+        <ol>
+          <li><a href="#fakeWeather">Fake&nbsp;weather</a></li>
+          <li><a href="#keepImitationApp">Keep&nbsp;...Imitation&nbsp;app</a></li>
+          <li><a href="#passGenerator">Pass&nbsp;generator</a></li>
+
+        </ol>
+      </div>
       <!-- ************************* -->
       <!-- app works -->
       <!-- ************************* -->
       <section id="appWorkLists" class="work-wrap">
-
         <div class="app-lists">
           <ul>
+            <!-- fake weather app -->
+            <li id="fakeWeather">
+              <a href="./applications/fakeWeather/weather.html" target="_blank" rel="noopener noreferrer nofollow">
+                <img src="../img/appThumbnail/app-weather.jpg" alt="keep imitation app サムネイル">
+              </a>
+              <div class="text-box">
+                <span class="date">Update&nbsp;:&nbsp;2023.03.16</span>
+                <span class="languages">Coding&nbsp;:&nbsp;HTML/CSS/JS/JSON</span>
+                <span class="languages"><a href="https://github.com/Buchi-18/weather-app" target="_blank"
+                    rel="noopener noreferrer nofollow"> Learning&nbsp;:&nbsp;独自開発</a>
+                </span>
+                <p class="app-work-title"><a href="./applications/fakeWeather/weather.html" target="_blank"
+                    rel="noopener noreferrer nofollow">Fake&nbsp;weather</a></p>
+                <p class="app-work-text">
+                  2100年の仮想お天気アプリです<br>
+                  <span class="bold">API利用の開発を想定して、JSONファイルをAsync/await構文で表示データを読み込んでいます。</span>
+                  <br>
+                  JSONファイルは<a href="https://json-generator.com/" target="_blank" rel="noopener noreferrer nofollow">JSON
+                    GENERATOR</a>で作成しました。
+                  <br>
+                  アプリ内のアイコンは<a href="https://www.ac-illust.com/main/detail.php?id=23460744&word=%E5%A4%A9%E6%B0%97%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%81%A8%E3%82%A4%E3%83%B3%E3%83%95%E3%82%A9%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E9%9B%86
+                  ">イラストACのフリー素材</a>を利用しました。
+
+                </p>
+                <div class="view-link">
+                  <a href="./applications/fakeWeather/weather.html" target="_blank"
+                    rel="noopener noreferrer nofollow">アプリを見に行く</a>
+                </div>
+              </div>
+            </li>
             <!-- keep imitation app -->
-            <li>
+            <li id="keepImitationApp">
               <a href="./applications/keepImitationApp/keep-imitation.html" target="_blank"
                 rel="noopener noreferrer nofollow">
                 <img src="../img/appThumbnail/app-keep-imitation.jpg" alt="keep imitation app サムネイル">
@@ -89,7 +173,7 @@
                     rel="noopener noreferrer nofollow"> Learning&nbsp;:&nbsp;Scrimba</a>
                 </span>
                 <p class="app-work-title"><a href="./applications/keepImitationApp/keep-imitation.html" target="_blank"
-                    rel="noopener noreferrer nofollow">Keep ...Imitation app</a></p>
+                    rel="noopener noreferrer nofollow">Keep&nbsp;...Imitation app</a></p>
                 <p class="app-work-text">
                   google Keep の模倣アプリです。<br>
                   <span class="bold">ストレッチゴールとしてダークモードの切り替えを実装しました。</span>
@@ -103,7 +187,7 @@
               </div>
             </li>
             <!-- pass generator -->
-            <li>
+            <li id="passGenerator">
               <a href="./applications/passGenerator/pass-generator.html" target="_blank"
                 rel="noopener noreferrer nofollow">
                 <img src="../img/appThumbnail/app-pass-generator.jpg" alt="pass generator サムネイル">
@@ -115,7 +199,7 @@
                     rel="noopener noreferrer nofollow"> Learning&nbsp;:&nbsp;Scrimba</a>
                 </span>
                 <p class="app-work-title"><a href="./applications/passGenerator/pass-generator.html" target="_blank"
-                    rel="noopener noreferrer nofollow">Pass generator</a></p>
+                    rel="noopener noreferrer nofollow">Pass&nbsp;generator</a></p>
                 <p class="app-work-text">
                   パスワード自動生成アプリです<br>
                   数字を含む/含まないの選択ができます<br>
@@ -132,11 +216,165 @@
           </ul>
         </div>
       </section>
-
     </div>
   </main>
-  <footer></footer>
+  <!-- ************************* -->
+  <!-- banner -->
+  <!-- ************************* -->
+  <aside class="banner">
+    <a data-gtm="banner_777" href="https://buchi.work/pages/demo-page.html" target="_blank"
+      rel="noopener noreferrer nofollow">
+      <picture class="loading-box aspect-4-1">
+        <source media="(max-width:750px )" srcset="../../img/banner/dummy-banner.webp">
+        <source media="(max-width:750px )" srcset="../../img/banner/dummy-banner.jpeg">
+        <source srcset="../../img/banner/dummy-banner-pc.webp">
+        <img loading="lazy" src="../../img/banner/dummy-banner-pc.jpeg" alt="banner_777">
+      </picture>
+    </a>
+    <a data-gtm="banner_999" href="https://buchi.work/pages/demo-page.html" target="_blank"
+      rel="noopener noreferrer nofollow">
+      <picture class="loading-box aspect-4-1">
+        <source media="(max-width:750px )" srcset="../../img/banner/dummy-banner.webp">
+        <source media="(max-width:750px )" srcset="../../img/banner/dummy-banner.jpeg">
+        <source srcset="../../img/banner/dummy-banner-pc.webp">
+        <img loading="lazy" src="../../img/banner/dummy-banner-pc.jpeg" alt="banner_999">
+      </picture>
+    </a>
+  </aside>
+  <!-- ************************* -->
+  <!-- clipping of works -vertical- -->
+  <!-- ************************* -->
+  <aside id="clippingOfWorks" class="vertical">
+    <div class="clipping-title">
+      <span class="en">clipping of works</span>
+      <span class="ja">作品切抜</span>
+    </div>
+    <ul class="clipping-vertical-box">
+      <li>
+        <figure><a href="https://buchi.work/pages/works/adobe-work.html#digitalMakeover">
+            <div class="width-bg-anim bg-brown">
+              <!-- background animation div -->
+            </div>
+            <div class="img-scale-anim">
+              <img loading="lazy" src="../../img/clipping/clipping-makeover-01.jpg" alt="make over image 01">
+            </div>
+          </a></figure>
+      </li>
+      <li>
+        <figure>
+          <a href="https://buchi.work/pages/works/adobe-work.html#digitalMakeover">
+            <div class="width-bg-anim bg-blue">
+              <!-- background animation div -->
+            </div>
+            <div class="img-scale-anim">
+              <img loading="lazy" src="../../img/clipping/clipping-makeover-02.jpg" alt="make over image 02">
+            </div>
+          </a>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <a href="https://buchi.work/pages/works/adobe-work.html#digitalMakeover">
+            <div class="width-bg-anim bg-purple">
+              <!-- background animation div -->
+            </div>
+            <div class="img-scale-anim">
+              <img loading="lazy" src="../../img/clipping/clipping-makeover-03.jpg" alt="make over image 03">
+            </div>
+          </a>
+        </figure>
+      </li>
+    </ul>
+    <div class="view-link">
+      <a href="https://buchi.work/pages/works/adobe-work.html#digitalMakeover">作品を見に行く</a>
+    </div>
+  </aside>
+
+  <!-- ************************* -->
+  <!-- footer -->
+  <!-- ************************* -->
+  <footer>
+    <div class="footer-head">
+      <div class="footer-logo"><a href="#"><img src="https://buchi.work/img/site-title.svg" alt="footer-logo"></a>
+      </div>
+      <div class="footer-social-links">
+        <ul>
+          <li><a href="https://github.com/Buchi-18" target="_blank" rel="noreferrer noopener nofollow">
+              <i class="fa-brands fa-github" style=" font-size: 22px"></i><span>github</span></a></li>
+
+          <li class="disabled" draggable="false"><a href="#">
+              <i class="fa-brands fa-twitter"></i></i><span>disabled</span></a></li>
+
+          <li class="disabled" draggable="false"><a href="#">
+              <i class="fa-brands fa-tiktok"></i><span>disabled</span></a>
+          </li>
+
+          <li class="disabled" draggable="false"><a href="#">
+              <i class="fa-brands fa-instagram" style=" font-size: 20px"></i></i><span>disabled</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-wrap">
+      <div class="footer-site-map">
+        <div class="footer-bg-img"></div>
+        <!-- JavaScript Work -->
+        <ul>
+          <li class="page-title"><a href="https://buchi.work/pages/works/js-work.html">JavaScript&nbsp;Work</a></li>
+          <li><a href="https://buchi.work/pages/works/js-work.html#slider">Slick&nbsp;&rarr;&nbsp;Vanilla.js</a></li>
+          <li><a href="https://buchi.work/pages/works/js-work.html#modal">Lity&nbsp;&rarr;&nbsp;Vanilla.js</a></li>
+          <li><a
+              href="https://buchi.work/pages/works/js-work.html#cookie">Using&nbsp;cookie&nbsp;to&nbsp;...&nbsp;Vanilla.js</a>
+          </li>
+        </ul>
+        <!-- Adobe Work -->
+        <ul>
+          <li class="page-title"><a href="https://buchi.work/pages/works/adobe-work.html">Adobe&nbsp;Work</a></li>
+          <li><a href="https://buchi.work/pages/works/adobe-work.html#digitalMakeover">Digital&nbsp;makeover</a></li>
+          <li><a href="https://buchi.work/pages/works/adobe-work.html#combinePhoto">プリント加工</a></li>
+          <!-- <li><a href="">★★★★★★★★★</a></li> -->
+        </ul>
+        <!-- App Work -->
+        <ul>
+          <li class="page-title"><a href="https://buchi.work/pages/works/app-work.html">App&nbsp;Work</a></li>
+          <li><a href="https://buchi.work/pages/works/app-work.html#fakeWeather">Fake&nbsp;weather</a></li>
+          <li><a
+              href="https://buchi.work/pages/works/app-work.html#keepImitationApp">Keep&nbsp;...Imitation&nbsp;app</a>
+          </li>
+          <li><a href="https://buchi.work/pages/works/app-work.html#passGenerator">Pass&nbsp;generator</a></li>
+        </ul>
+      </div>
+
+      <div class="sibling-links">
+        <ul class="sibling-item">
+          <li><a href="#">
+              <img src="https://dummyimage.com/150x150/000/fff&text=sibling" alt="sibling site">sibling site</a>
+          </li>
+
+          <li><a href="#">
+              <img src="https://dummyimage.com/150x150/000/fff&text=sibling" alt="sibling site">sibling site</a>
+          </li>
+
+          <li><a href="#">
+              <img src="https://dummyimage.com/150x150/000/fff&text=sibling" alt="sibling site">sibling site</a>
+          </li>
+
+          <li><a href="#">
+              <img src="https://dummyimage.com/150x150/000/fff&text=sibling" alt="sibling site">sibling site</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-low">
+      <p class="porisy"><a href="">PRIVACY POLICY</a></p>
+      <span class="copy">copyright &copy; buchi.work All Rights Reserved.</span>
+    </div>
+  </footer>
+
   <script src="../../js/main.js"></script>
+
 </body>
 
 </html>

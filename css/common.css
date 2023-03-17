@@ -65,7 +65,7 @@ img {
 /* common --prefixed-- */
 /* ****************************** */
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Meiryo", sans-serif;
   color: var(--dark-txt);
 }
 
@@ -1141,30 +1141,21 @@ footer a {
 
 @font-face {
   font-family: "Yomogi";
-  src: url("https://www.buchi.work/fonts/Yomogi/Yomogi-Regular.ttf") format("ttf");
+  src:
+    url("../fonts/Yomogi/Yomogi-Regular.woff") format("woff"),
+    url("../fonts/Yomogi/Yomogi-Regular.ttf") format("truetype"),
+    url("../fonts/Yomogi/Yomogi-Regular.svg") format("svg");
   font-display: swap;
 }
 
+
+/* 
 @font-face {
-  font-family: "Noto Sans";
-  src:
-    url("https://www.buchi.work/fonts/NotoSans/NotoSans-Black.ttf") format("ttf"),
-    url("https://www.buchi.work/fonts/NotoSans/NotoSans-BlackItalic.ttf") format("ttf"),
-    url("https://www.buchi.work/fonts/NotoSans/NotoSans-Bold.ttf") format("ttf"),
-    url("https://www.buchi.work/fonts/NotoSans/NotoSans-BoldItalic.ttf") format("ttf"),
-    url("https://www.buchi.work/fonts/NotoSans/NotoSans-ExtraBold.ttf") format("ttf"),
-    url("https://www.buchi.work/fonts/NotoSans/NotoSans-ExtraBoldItalic.ttf") format("ttf"),
-    url("https://www.buchi.work/fonts/NotoSans/NotoSans-ExtraLight.ttf") format("ttf"),
-    url("https://www.buchi.work/fonts/NotoSans/NotoSans-ExtraLightItalic.ttf") format("ttf"),
-    url("https://www.buchi.work/fonts/NotoSans/NotoSans-Italic.ttf") format("ttf"),
-    url("https://www.buchi.work/fonts/NotoSans/NotoSans-Light.ttf") format("ttf"),
-    url("https://www.buchi.work/fonts/NotoSans/NotoSans-LightItalic.ttf") format("ttf"),
-    url("https://www.buchi.work/fonts/NotoSans/NotoSans-Medium.ttf") format("ttf"),
-    url("https://www.buchi.work/fonts/NotoSans/NotoSans-MediumItalic.ttf") format("ttf"),
-    url("https://www.buchi.work/fonts/NotoSans/NotoSans-Regular.ttf") format("ttf"),
-    url("https://www.buchi.work/fonts/NotoSans/NotoSans-SemiBold.ttf") format("ttf"),
-    url("https://www.buchi.work/fonts/NotoSans/NotoSans-SemiBoldItalic.ttf") format("ttf"),
-    url("https://www.buchi.work/fonts/NotoSans/NotoSans-Thin.ttf") format("ttf"),
-    url("https://www.buchi.work/fonts/NotoSans/NotoSans-ThinItalic.ttf") format("ttf");
-  font-display: swap;
-}
+	font-family: 'MyWebFont';
+	src: url('webfont.eot'); IE9 互換モード
+	src: url('webfont.eot?#iefix') format('embedded-opentype'), IE6-IE8
+        url('webfont.woff') format('woff'), 最新のブラウザ
+        url('webfont.ttf') format('truetype'), Safari、Android、iOS
+        url('webfont.svg#svgFontName') format('svg'); レガシー iOS
+	} 
+  */

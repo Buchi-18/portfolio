@@ -2,6 +2,16 @@
 <html lang="ja" prefix=”og: http://ogp.me/ns#”>
 
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TGKXNV7');</script>
+  <!-- End Google Tag Manager -->
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,17 +36,14 @@
   <!-- ********** css ********** -->
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/style.css">
-  <!-- ********** google font ********** -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
-  <!-- ********** font awesome ********** -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body style="background: var(--base-bg)">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGKXNV7" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <!-- ************************* -->
   <!-- header -->
   <!-- ************************* -->
@@ -123,7 +130,7 @@
         <!-- ********** hero work ********** -->
         <div class="contents-wrap">
           <div class="contents-text">
-            <h3 id="hero">hero design Work</h3>
+            <h3 id="hero" class="contents-title">hero design Work</h3>
             <p>架空サイトの<span class="bold">Hero header design</span>を載せています</p>
           </div>
           <ul class="hero-contents">
@@ -253,7 +260,7 @@
         <!-- ********** js work ********** -->
         <div class="contents-wrap">
           <div class="contents-text">
-            <h3>JavaScript Work</h3>
+            <h3 class="contents-title">JavaScript Work</h3>
             <p>jQueryのslick・lity・cookie.jsのプラグインを使った機能を素のJavaScriptで再現しました</p>
           </div>
           <a href="./pages/works/js-work.html">
@@ -271,7 +278,7 @@
         <!-- ********** adobe work ********** -->
         <div class="contents-wrap">
           <div class="contents-text">
-            <h3>Adobe Work</h3>
+            <h3 class="contents-title">Adobe Work</h3>
             <p>illustratorやPhotoshopを使用し写真のレタッチ、作成したロゴやデザインをTシャツに合成加工した作品を載せてます</p>
           </div>
           <a href="./pages/works/adobe-work.html">
@@ -289,7 +296,7 @@
         <!-- ********** app work ********** -->
         <div class="contents-wrap">
           <div class="contents-text">
-            <h3>App Work</h3>
+            <h3 class="contents-title">App Work</h3>
             <p>学習時に作成したアプリの成果物のページです
             </p>
           </div>
@@ -421,19 +428,43 @@
       </div>
       <div class="footer-social-links">
         <ul>
-          <li><a href="https://github.com/Buchi-18" target="_blank" rel="noreferrer noopener nofollow">
-              <i class="fa-brands fa-github" style=" font-size: 22px"></i><span>github</span></a></li>
-
-          <li class="disabled" draggable="false"><a href="#">
-              <i class="fa-brands fa-twitter"></i></i><span>disabled</span></a></li>
-
-          <li class="disabled" draggable="false"><a href="#">
-              <i class="fa-brands fa-tiktok"></i><span>disabled</span></a>
+          <li>
+            <a href="https://github.com/Buchi-18" target="_blank" rel="noreferrer noopener nofollow">
+              <div class="icon-image">
+                <img style="width: 75%;" src="./img/fontAwesome/github.svg" alt="github icon">
+              </div>
+              <span>github</span>
+            </a>
           </li>
 
-          <li class="disabled" draggable="false"><a href="#">
-              <i class="fa-brands fa-instagram" style=" font-size: 20px"></i></i><span>disabled</span></a>
+          <li class="disabled" draggable="false">
+            <a href="#">
+              <div class="icon-image">
+                <img style="width: 60%;" src="./img/fontAwesome/twitter.svg" alt="twitter icon">
+              </div>
+              <span>disabled</span>
+            </a>
           </li>
+
+          <li class="disabled" draggable="false">
+            <a href="#">
+              <div class="icon-image">
+                <img style="width: 55%;" src="./img/fontAwesome/tiktok.svg" alt="tiktok icon">
+              </div>
+              <span>disabled</span>
+            </a>
+          </li>
+
+          <li class="disabled" draggable="false">
+            <a href="#">
+              <div class="icon-image">
+                <img style="width: 60%;" src="./img/fontAwesome/instagram.svg" alt="instagram icon">
+              </div>
+              <span>disabled</span>
+            </a>
+          </li>
+
+
         </ul>
       </div>
     </div>

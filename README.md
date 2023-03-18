@@ -27,11 +27,32 @@ aspect-ratio: 1;
 ※親要素がインライン要素の場合、display:block;が必要。
 
 デフォルトではアスペクト比を 1:1 としているので、シーンに合わせてアスペクト比を上書きするクラスを追加する。
-【例 16:9 の画像の場合】
-.aspect-16-9{
-aspect-ratio: 16/9;
-}
 
-<div class="loading-box aspect-16-9" >
-  <img src="image" alt="alt">
-</div>
+<!--
+【例 16:9 の画像の場合】
+HTML
+  <div class="loading-box aspect-16-9" >
+    <img src="image" alt="alt">
+  </div>
+
+css
+  .aspect-16-9{
+    aspect-ratio: 16/9;
+  }
+ -->
+
+
+ PageSpeed Insightsスコアの改善
+
+ google タグマネージャーによるGoogle アナリティクス: GA4 設定の読み込みを
+ 【ページビュー】時では無く【ウィンドウの読み込み】時に変更
+ これにより、読み込み中の離脱者のカウントは不可となりますが
+ 離脱者をカウントする為に、読み込み時間を増やし更なる離脱者を増やすという悪循環
+ を回避し、より早い読み込みをして、読み込み後のユーザーの行動により注視するといった
+ 意図があります。
+
+ 上記の設定変更によって、PageSpeed Insightsのパフォーマンススコアが5~7・
+Largest Contentful Paintを１秒以上評価が改善しました。
+
+
+

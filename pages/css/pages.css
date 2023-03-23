@@ -96,6 +96,10 @@
   padding-bottom: 15%;
 }
 
+.work-wrap:last-child {
+  padding-bottom: 0;
+}
+
 @media screen and (max-width: 960px) {
   .summary {
     margin: 150px 0 100px;
@@ -114,6 +118,10 @@
 
   .page-section-title {
     margin: 40px 0 10px;
+  }
+
+  .work-wrap:last-child {
+    padding-bottom: 15%;
   }
 }
 

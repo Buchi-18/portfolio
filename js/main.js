@@ -5,7 +5,6 @@
 const menuBoard = document.getElementById("menuBoard");
 const menuBarBox = document.getElementById("menuBarBox");
 const menuBarText = document.getElementById("menuBarText");
-const menuBarClose = document.getElementById("menuBarClose");
 let text = "";
 let windowWidth = window.innerWidth;
 if (windowWidth < 750) {
@@ -17,13 +16,10 @@ menuBarText.innerHTML = text;
 menuBarBox.addEventListener("click", function () {
   menuBoardHandler();
 });
-menuBarClose.addEventListener("click", function () {
-  menuBoardHandler();
-});
 menuBoard.addEventListener("click", function (e) {
   if (!e.target.tagName === "A") return;
   menuBoardHandler();
-})
+});
 
 function menuBoardHandler() {
   if (menuBoard.className === "open") {

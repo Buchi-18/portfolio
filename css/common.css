@@ -331,7 +331,7 @@ h3.contents-title {
 }
 
 .fade-in-scale {
-  animation: slide-inInScale 2s ease 0.7s forwards;
+  animation: slide-inInScale 1.6s ease 0.7s forwards;
 }
 
 @keyframes widthAnim {
@@ -1148,7 +1148,6 @@ footer a {
 /* ****************************** */
 /* @font-face */
 /* ****************************** */
-
 @font-face {
   font-family: "Yomogi";
   src:
@@ -1157,7 +1156,6 @@ footer a {
     url("../fonts/Yomogi/Yomogi-Regular.svg") format("svg");
   font-display: swap;
 }
-
 
 /* 
 @font-face {

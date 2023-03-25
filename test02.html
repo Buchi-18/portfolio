@@ -114,7 +114,6 @@
   <!-- ************************* -->
   <!-- Main image -->
   <!-- ************************* -->
-  <div class="main-bg-color"></div>
   <div class="main-image">
     <picture>
       <source media="(max-width:750px )" srcset="./img/mainImage/main-image-sp.webp">
@@ -125,7 +124,34 @@
   </div>
 
   <style>
-/* .main-bg-color {
+    .main-image {
+      overflow: hidden;
+      position: relative;
+      /* line-height: 0; */
+    }
+
+    .main-image::before{
+        content: "1111";
+        display: block;
+        position: absolute;
+        top: 0;left: 0;;
+        width: 100%;
+        height: 100vh;
+        background-color: aquamarine;
+        z-index: -1;
+      }
+
+    .main-image img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      object-position: bottom;
+    }
+
+
+
+
+    /* .main-bg-color {
   position: absolute;
   top: 0;
   left: 0;
@@ -139,15 +165,9 @@
   z-index: -100;
 } */
 
-.main-image {
-  position: relative;
-  height: 100vh;
-  height: 100svh;
-  overflow: hidden;
-  background-color: aquamarine;
-}
 
-/* .main-image img {
+
+    /* .main-image img {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -156,7 +176,7 @@
   height: 80%;
 } */
 
-/* .main-image::after {
+    /* .main-image::after {
   content: "";
   position: absolute;
   top: 0;
@@ -169,7 +189,7 @@
       var(--base-bg) 100%);
 } */
 
-/* @media screen and (max-width: 750px) {
+    /* @media screen and (max-width: 750px) {
   .main-bg-color {
     left: 50%;
     background-color: #777;

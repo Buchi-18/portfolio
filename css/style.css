@@ -1,7 +1,7 @@
 /* ****************************** */
 /* Main image */
 /* ****************************** */
-.main-bg-color {
+/* .main-bg-color {
   position: absolute;
   top: 0;
   left: 0;
@@ -44,58 +44,6 @@
       var(--base-bg) 100%);
 }
 
-.main-image .scroll-arrow {
-  display: block;
-  position: absolute;
-  bottom: 40px;
-  left: 50px;
-  transform: rotate(-90deg);
-  transform-origin: left;
-  letter-spacing: 0.4rem;
-  animation: scrollArrow 1.3s infinite ease 0s;
-  animation-iteration-count: 5;
-}
-
-.scroll-arrow::before {
-  position: absolute;
-  bottom: 30px;
-  left: -10px;
-  content: "";
-  width: 120px;
-  height: 1.35px;
-  background-color: var(--dark-txt);
-  transform-origin: left;
-  animation: arrowColor 1.3s infinite ease 0s;
-  animation-iteration-count: 5;
-}
-
-.scroll-arrow::after {
-  position: absolute;
-  bottom: 30px;
-  left: -10px;
-  content: "";
-  width: 20px;
-  height: 1.35px;
-  background-color: var(--dark-txt);
-  transform: rotate(-30deg);
-  transform-origin: left;
-  animation: arrowColor 1.3s infinite ease 0s;
-  animation-iteration-count: 5;
-}
-
-@keyframes scrollArrow {
-  100% {
-    bottom: -5px;
-    color: rgba(68, 68, 68, 0);
-  }
-}
-
-@keyframes arrowColor {
-  100% {
-    background-color: rgba(68, 68, 68, 0);
-  }
-}
-
 @media screen and (max-width: 750px) {
   .main-bg-color {
     left: 50%;
@@ -105,7 +53,7 @@
   .main-image img {
     height: 100%;
   }
-}
+} */
 
 /* ****************************** */
 /* Main contents */

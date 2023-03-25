@@ -114,16 +114,22 @@
   <!-- ************************* -->
   <!-- Main image -->
   <!-- ************************* -->
-  <div class="main-bg-color"></div>
-  <div class="main-image">
+  <div id="mainImage" class="main-image">
     <picture>
       <source media="(max-width:750px )" srcset="./img/mainImage/main-image-sp.webp">
       <source media="(max-width:750px )" srcset="./img/mainImage/main-image-sp.png">
       <source srcset="./img/mainImage/main-image-pc.webp">
       <img src="./img/mainImage/main-image-pc.png" alt="main image">
     </picture>
-    <!-- <div class="scroll-arrow">scroll</div> -->
   </div>
+  <script>
+    let innerHeight = window.innerHeight;
+    const mainImage = document.getElementById("mainImage");
+    mainImage.style.height = innerHeight + "px";
+  </script>
+  <!-- ************************* -->
+  <!-- Main contents -->
+  <!-- ************************* -->
   <main>
     <div class="wrapper">
       <!-- ************************* -->
@@ -462,12 +468,12 @@
           <li class="disabled" draggable="false">
             <a href="#">
               <div class="icon-image">
-                <img style="width: 60%;" src="https://www.buchi.work/img/fontAwesome/instagram.svg" alt="instagram icon">
+                <img style="width: 60%;" src="https://www.buchi.work/img/fontAwesome/instagram.svg"
+                  alt="instagram icon">
               </div>
               <span>disabled</span>
             </a>
           </li>
-
 
         </ul>
       </div>

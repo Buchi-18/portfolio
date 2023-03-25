@@ -182,40 +182,40 @@ h3.contents-title {
 }
 
 /* ****************************** */
-/* fade --prefixed-- */
+/* slide-in --prefixed-- */
 /* ****************************** */
-.fade {
+.slide-in-item {
   opacity: 0;
   -webkit-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
-.fade-top {
+.slide-in-top {
   -webkit-transform: translate(0, -100px);
   -ms-transform: translate(0, -100px);
   transform: translate(0, -100px);
 }
 
-.fade-bottom {
+.slide-in-bottom {
   -webkit-transform: translate(0, 100px);
   -ms-transform: translate(0, 100px);
   transform: translate(0, 100px);
 }
 
-.fade-left {
+.slide-in-left {
   -webkit-transform: translate(-100px, 0);
   -ms-transform: translate(-100px, 0);
   transform: translate(-100px, 0);
 }
 
-.fade-right {
+.slide-in-right {
   -webkit-transform: translate(100px, 0);
   -ms-transform: translate(100px, 0);
   transform: translate(100px, 0);
 }
 
-.fade-in {
+.slide-in {
   opacity: 1;
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
@@ -331,7 +331,7 @@ h3.contents-title {
 }
 
 .fade-in-scale {
-  animation: fadeInScale 2s ease 0.7s forwards;
+  animation: slide-inInScale 2s ease 0.7s forwards;
 }
 
 @keyframes widthAnim {
@@ -340,7 +340,7 @@ h3.contents-title {
   }
 }
 
-@keyframes fadeInScale {
+@keyframes slide-inInScale {
   100% {
     width: 100%;
     opacity: 1;
@@ -807,7 +807,7 @@ footer a {
   width: 75px;
 }
 
-.footer-social-links .icon-image{
+.footer-social-links .icon-image {
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -847,7 +847,7 @@ footer a {
   color: #ccc;
 }
 
-.footer-site-map li a{
+.footer-site-map li a {
   padding: 7px 0;
 }
 

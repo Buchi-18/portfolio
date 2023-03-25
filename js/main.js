@@ -1,4 +1,9 @@
 "use strict";
+
+let innerHeight = window.innerHeight;
+const mainImage = document.getElementById("mainImage")
+
+mainImage.style.height = innerHeight + "px";
 //  ******************************
 //  menu bar
 //  ******************************

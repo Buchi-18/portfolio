@@ -1,9 +1,19 @@
 /* ****************************** */
 /* pages common */
 /* ****************************** */
+
+
 #slider::before,
 #modal::before,
 #cookie::before,
+#pageSpeedInsights::before,
+#scoreGA4::before,
+#scoreFonts::before,
+#lazyLoadingImage::before,
+#resultPuppeteer::before,
+#loadingAnimation::before,
+#loadingScript::before,
+#loadingDemo::before,
 #digitalMakeover::before,
 #combinePhoto::before {
   display: block;
@@ -331,33 +341,11 @@ main {
 }
 
 @media screen and (max-width: 750px) {
-
   .comparison-all,
   .comparison-eye {
     margin-bottom: 50px;
   }
 }
-
-#other ul {
-  padding: 60px 20px 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#other ul li {
-  width: 47.5%;
-  margin-bottom: 30px;
-}
-
-#other ul li img {
-  line-height: 20vw;
-}
-
-#other ul li:nth-child(2n) {
-  margin-left: 5%;
-}
-
 /* ****************************** */
 /* app work */
 /* ****************************** */

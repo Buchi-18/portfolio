@@ -632,11 +632,13 @@ h3.contents-title {
 }
 
 #menuBoard .secondary-menu {
-  margin: 25px 25px 75px;
+  margin: 25px 10px 75px;
   font-size: var(--txt-xSmall);
   font-weight: 300;
 }
-
+#menuBoard .secondary-menu li{
+  margin-top: 30px;
+}
 #menuBoard .secondary-menu li a {
   display: block;
   padding: 2% 5% 1%;

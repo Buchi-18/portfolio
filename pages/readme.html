@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" prefix=”og: http://ogp.me/ns#”>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
 
 <head>
   <!-- Google Tag Manager -->
@@ -36,6 +36,7 @@
   <!-- ********** css ********** -->
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/pages.css">
 </head>
 
 <body style="background: var(--base-bg)">
@@ -93,9 +94,14 @@
             <!-- README -->
             <li class="primary-menu"><a href="#">#README</a>
               <ul class="secondary-menu">
-                <li><a href="#">＊＊＊＊＊</a></li>
-                <li><a href="#">＊＊＊＊＊</a></li>
-                <li><a href="#">＊＊＊＊＊</a></li>
+                <li><a href="#pageSpeedInsights">PageSpeed Insights 分析結果</a></li>
+                <li><a href="#scoreGA4">スコアの改善 ( GA4 )</a></li>
+                <li><a href="#scoreFonts">スコアの改善 ( webフォント )</a></li>
+                <li><a href="#lazyLoadingImage">Lazy Loading の実装</a></li>
+                <li><a href="#resultPuppeteer">Lazy Loading 実装テスト結果</a></li>
+                <li><a href="#loadingAnimation">ローディング アニメーションの設置</a></li>
+                <li><a href="#loadingScript">ローディング イメージ スクリプト</a></li>
+                <li><a href="#loadingDemo">ローディング アニメーション DEMO</a></li>
               </ul>
             </li>
             <li id="menuBarClose">
@@ -112,18 +118,32 @@
     <div id="readme" class="wrapper">
       <h2>#README</h2>
 
+      <div class="index-wrap">
+        <p class="index-title">INDEX</p>
+        <ul>
+          <li><a href="#pageSpeedInsights">PageSpeed Insights 分析結果</a></li>
+          <li><a href="#scoreGA4">スコアの改善 ( GA4 )</a></li>
+          <li><a href="#scoreFonts">スコアの改善 ( webフォント )</a></li>
+          <li><a href="#lazyLoadingImage">Lazy Loading の実装</a></li>
+          <li><a href="#resultPuppeteer">Lazy Loading 実装テスト結果</a></li>
+          <li><a href="#loadingAnimation">ローディング アニメーションの設置</a></li>
+          <li><a href="#loadingScript">ローディング イメージ スクリプト</a></li>
+          <li><a href="#loadingDemo">ローディング アニメーション DEMO</a></li>
+        </ul>
+      </div>
+
       <section id="pageSpeedInsights">
         <h3>PageSpeed Insights 分析結果</h3>
-        <p>このサイトでは、<a href="https://pagespeed.web.dev/" target="
+        <p>当サイトでは、<a href="https://pagespeed.web.dev/" target="
         _blank" rel="noopener noreferrer nofollow">Google PageSpeed Insights</a>使って読み込み速度を分析評価しました。</p>
-        <div class="result-img">
-          <img src="" alt="">
-          <img src="" alt="">
+        <div class="result-image ref-image">
+          <img src="./img/readme/PSI-mobile.jpg" alt="PSI result for mobile">
+          <img src="./img/readme/PSI-desktop.jpg" alt="PSI result for desktop">
         </div>
       </section>
 
       <section id="scoreImprovement">
-        <h3>スコアの改善 ( GA4 )</h3>
+        <h3 id="scoreGA4">スコアの改善 ( GA4 )</h3>
         <p> Google アナリティクス: GA4 の読み込みタイミングをgoogle タグマネージャー経由で
           【ページビュー】時では無く【ウィンドウの読み込み】時に変更。 <br><br>
           これにより、読み込み中の離脱者のカウントは不可となりますが
@@ -135,24 +155,168 @@
           上記の設定変更によって、<strong>PageSpeed Insightsのパフォーマンススコアが5~7・
             Largest Contentful Paintを１秒以上評価が改善</strong>しました。
         </p>
-        <img src="" alt="">
-
-        <h3>スコアの改善 ( webフォント )</h3>
+        <div class="ref-image">
+          <img src="./img/readme/GTM-image.png" alt="GTM-image">
+        </div>
+        <h3 id="scoreFonts">スコアの改善 ( webフォント )</h3>
         <p>webフォントのついては、【Speed Index】に大きな影響があった為、使用数を厳選し重要度の少ない
           webフォントの使用を中止しWebブラウザのデフォルトのフォントのゴシック体系の使用を想定しました。
 
-          また、【First Contentful Paint】のスコア改善のため<span class="bold">@font-face</span>に<span class="bold">font-display: swap;</span>を指定しフォントファイルを読み込み時間に大替テキストを表示することで、ページの読み込み速度を優先させました。
+          また、【First Contentful Paint】のスコア改善のため<span class="bold">@font-face</span>に<span class="bold">font-display:
+            swap;</span>を指定しフォントファイルを読み込み時間に大替テキストを表示することで、ページの読み込み速度を優先させました。
         </p>
-        <img src="" alt="">
-
+        <div class="code-area">
+          <p class="bold">【@font-faceコード】</p>
+          <script src="https://gist.github.com/Buchi-18/06368d5763a64818e4ff7247601024d3.js"></script>
+        </div>
       </section>
+
+      <section id="lazy">
+        <h3 id="lazyLoadingImage">Lazy Loading の実装</h3>
+        <p>
+          当サイトの画像の遅延読み込みについては、<a
+            href="https://developers.google.com/search/docs/crawling-indexing/javascript/lazy-loading?hl=ja">Google
+            Developersのドキュメント</a>を参照し【ネイティブ遅延読み込み】を使用しました。(loading 属性 loading="") <br>
+        </p>
+
+        <h3 id="resultPuppeteer">Lazy Loading 実装テスト結果</h3>
+        <p>実装のテストには <a href="https://github.com/puppeteer/puppeteer">Puppeteer</a>スクリプトを使用し、実装をローカルでテストしました。
+        </p>
+        <br>
+        <p>フェードアニメーションを指定している画像については
+          発火条件をスクロールイベントでは無く、googleの推奨する Intersection observer での監視に切り替えましたが、
+          スクロールされていないページとスクロール後のページに齟齬が出ました。(下記写真赤色の部分参照)
+        </p>
+        <br>
+        <p>この件については</p>
+        <ul style="margin: 30px 0;">
+          <li style="margin: 10px 0">■<a href="https://www.youtube.com/watch?v=nEyxmIENX2A&t=2159s">Google
+              Webmasters（動画の35分55秒〜）の見解</a>でgoogle search consoleのURL検査でHTMLが読み込まれていれば問題はないという発言がある</li>
+          <li style="margin: 10px 0">■検索上位の他社のサイトをテストしても、アニメーションを指定している箇所でFAILED(失敗)という結果が出る
+          </li>
+        </ul>
+        <p>以上の結果を踏まえ、テスト結果の内容は<span class="bold">アニメーションを<u>指定していない</u>遅延読み込み動画部分を参考にする</span>ことと、<span
+            class="bold">装飾的なコンテンツ以外には過度なアニメーションは避ける</span>という２点に配慮して実装しました。</p>
+
+        <div class="ref-image">
+          <a href="./img/readme/test-result-all.png">
+            <img src="./img/readme/test-result.jpg" alt="Puppeteer result image">
+            <span>クリックして写真全体を見る</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="loading">
+        <h3 id="loadingAnimation">ローディング アニメーションの設置</h3>
+        <p>
+          画像の遅延読み込みの結果、読み込みが間に合わなかった画像に対しての対策として
+          該当の画像エリアのバックグランドにローディング アニメーションを設置しました。
+        </p>
+        <br>
+        <p>【設置概要】<br>
+          設置対象の直上の親要素(画像エリア)に class="loading-box" のクラスを指定し background-image でローディング アニメーションを読み込みます。
+        </p>
+        <p>
+
+        <div class="code-area">
+          <p class="bold">【CSSコード】</p>
+          <script src="https://gist.github.com/Buchi-18/80039364e6c5a9b5063914ec54a42a8f.js"></script>
+          <p>
+            直上の親要素(画像エリア)に width と height(aspect-ratio:◯◯◯;)を指定して、ローリングイメージの表示スペースを確保し、Cumulative Layout Shift (累積レイアウト
+            シフト数、CLS)に配慮するに配慮しています。<br>
+            ※親要素がインライン要素の場合、display:block;が必要になります。<br>
+            デフォルトではアスペクト比を 1:1 としているので、シーンに合わせてアスペクト比を上書きするクラスを追加します。
+          </p>
+        </div>
+
+        <div class="code-area">
+          <p class="bold">【クラスを追加する例 16:9 の画像の場合】</p>
+          <script src="https://gist.github.com/Buchi-18/33e9557582357b0e6fb16a89aa4376f9.js"></script>
+        </div>
+        </p>
+
+        <h3 id="loadingScript">ローディング イメージ スクリプト</h3>
+        <p>
+          当サイトでは、ローディング アニメーションが設置されている箇所に関して、本番画像の読み込み完了をJavaScriptで監視し、読み込み完了時点でCSSの .loading-box クラスを外し、ローディング
+          アニメーションを停止させています。
+        </p>
+
+
+        <div class="code-area">
+          <p class="bold">【JavaScriptコード】</p>
+          <script src="https://gist.github.com/Buchi-18/850d36065c6570cbfc7356e36676aaca.js"></script>
+        </div>
+        <!-- ************************* -->
+        <!-- demo-image -->
+        <!-- ************************* -->
+
+        <h3 id="loadingDemo">ローディング アニメーション DEMO</h3>
+        <p>下の例では、100MBの画像でローディングアニメーションの挙動をデモ実装しています。</p>
+        <ul style="margin: 30px 0;">
+          <li style="margin: 10px 0">
+            ■上段、読み込み完了後に画像のopacityを0.5に指定
+          </li>
+          <li style="margin: 10px 0">
+            ■下段、読み込み完了後に画像のopacityを1.0に指定
+          </li>
+          <li style="margin: 10px 0">
+            ■左列、読み込み完了後にローディング アニメーションを停止
+          </li>
+          <li style="margin: 10px 0">
+            ■右列、読み込み完了後にローディング アニメーションを続行
+          </li>
+        </ul>
+        <div class="demo-image">
+          <ul>
+            <li>
+              <p style="font-size:12px; line-height: 1.15;">opacity = 0.5<br>
+                アニメーション停止
+              </p>
+              <div class="loading-box-demo-05 remove">
+                <img loading="lazy" src="./img/readme/100MB.jpg" alt="demo-img">
+              </div>
+            </li>
+            <li>
+              <p style="font-size:12px; line-height: 1.15;">opacity = 0.5<br>
+                アニメーション続行
+              </p>
+              <div class="loading-box-demo-05">
+                <img loading="lazy" src="./img/readme/100MB.jpg" alt="demo-img">
+              </div>
+            </li>
+            <li>
+              <p style="font-size:12px; line-height: 1.15;">opacity = 1.0<br>
+                アニメーション停止
+              </p>
+              <div class="loading-box-demo-10 remove">
+                <img loading="lazy" src="./img/readme/100MB.jpg" alt="demo-img">
+              </div>
+            </li>
+            <li>
+              <p style="font-size:12px; line-height: 1.15;">opacity = 1.0<br>
+                アニメーション続行
+              </p>
+              <div class="loading-box-demo-10">
+                <img loading="lazy" src="./img/readme/100MB.jpg" alt="demo-img">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="message">
+        <p>
+          以上、当ポートフォリオサイト作成時に配慮した点や<br>
+          採用した機能を記載させていただきました。
+          ここまで読んでくださり、ありがとうございました。
+        </p>
+      </div>
     </div>
 
   </main>
 
   <style>
     #readme {
-      margin: 200px auto;
+      margin: 200px auto 50px;
     }
 
     #readme h2 {
@@ -161,18 +325,94 @@
     }
 
     #readme h3 {
-      font-weight: 500;
+      font-weight: 600;
       margin-top: 80px;
       margin-bottom: 20px;
     }
 
-    .result-img img {
+    .result-image img {
+      margin-top: 20px;
+    }
+
+    .ref-image {
+      margin: 30px 10px;
+      text-align: center;
+    }
+
+    .ref-image span {
+      display: block;
+      padding: 10px;
+    }
+
+    .code-area {
+      margin: 50px 0;
+    }
+
+    .demo-image ul {
+      padding: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .demo-image ul li {
+      width: 47.5%;
+      margin-bottom: 30px;
+    }
+
+    .demo-image ul li img {
+      line-height: 20vw;
+    }
+
+    .demo-image ul li:nth-child(2n) {
+      margin-left: 5%;
+    }
+
+    .loading-box-demo-05 img,
+    .loading-box-demo-10 img {
+      opacity: 0;
+    }
+
+    .loading-box-demo-05,
+    .loading-box-demo-10 {
+      display: block;
       width: 100%;
-      aspect-ratio: 4/3;
-      background-color: antiquewhite;
-      margin: 10px;
+      background-image: url(../img/loading-image.svg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      aspect-ratio: 1;
+    }
+
+    .message {
+      margin-top: 50px;
+      text-align: center;
     }
   </style>
+
+  <script>
+
+    const loadingDemo05 = document.querySelectorAll(".loading-box-demo-05 > img");
+    loadingDemo05.forEach(function (demo05) {
+      demo05.addEventListener("load", function () {
+        demo05.style.opacity = 0.5;
+        if (demo05.parentElement.className === "loading-box-demo-05 remove") {
+          demo05.parentElement.classList.remove("loading-box-demo-05");
+        }
+      });
+    });
+
+
+    const loadingDemo10 = document.querySelectorAll(".loading-box-demo-10 > img");
+    loadingDemo10.forEach(function (demo10) {
+      demo10.addEventListener("load", function () {
+        demo10.style.opacity = 10;
+        if (demo10.parentElement.className === "loading-box-demo-10 remove") {
+          demo10.parentElement.classList.remove("loading-box-demo-10");
+        }
+      });
+    });
+  </script>
 
   <!-- ************************* -->
   <!-- clipping of works -vertical- -->

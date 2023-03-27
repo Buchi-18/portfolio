@@ -114,10 +114,14 @@
     </div>
   </header>
 
+  <div class="pages-main-image">
+    <div class="page-main-title">
+      <h2>README</h2>
+    </div>
+  </div>
+
   <main>
     <div id="readme" class="wrapper">
-      <h2>#README</h2>
-
       <div class="index-wrap">
         <p class="index-title">INDEX</p>
         <ul>
@@ -314,84 +318,7 @@
 
   </main>
 
-  <style>
-    #readme {
-      margin: 200px auto 50px;
-    }
-
-    #readme h2 {
-      text-align: center;
-      font-family: "Meiryo", sans-serif;
-    }
-
-    #readme h3 {
-      font-weight: 600;
-      margin-top: 80px;
-      margin-bottom: 20px;
-    }
-
-    .result-image img {
-      margin-top: 20px;
-    }
-
-    .ref-image {
-      margin: 30px 10px;
-      text-align: center;
-    }
-
-    .ref-image span {
-      display: block;
-      padding: 10px;
-    }
-
-    .code-area {
-      margin: 50px 0;
-    }
-
-    .demo-image ul {
-      padding: 30px 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .demo-image ul li {
-      width: 47.5%;
-      margin-bottom: 30px;
-    }
-
-    .demo-image ul li img {
-      line-height: 20vw;
-    }
-
-    .demo-image ul li:nth-child(2n) {
-      margin-left: 5%;
-    }
-
-    .loading-box-demo-05 img,
-    .loading-box-demo-10 img {
-      opacity: 0;
-    }
-
-    .loading-box-demo-05,
-    .loading-box-demo-10 {
-      display: block;
-      width: 100%;
-      background-image: url(../img/loading-image.svg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      aspect-ratio: 1;
-    }
-
-    .message {
-      margin-top: 50px;
-      text-align: center;
-    }
-  </style>
-
   <script>
-
     const loadingDemo05 = document.querySelectorAll(".loading-box-demo-05 > img");
     loadingDemo05.forEach(function (demo05) {
       demo05.addEventListener("load", function () {
@@ -401,7 +328,6 @@
         }
       });
     });
-
 
     const loadingDemo10 = document.querySelectorAll(".loading-box-demo-10 > img");
     loadingDemo10.forEach(function (demo10) {

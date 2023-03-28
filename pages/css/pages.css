@@ -448,7 +448,7 @@ main {
 }
 
 .demo-image ul {
-  padding: 30px 0;
+  padding: 30px 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -476,7 +476,7 @@ main {
 .loading-box-demo-10 {
   display: block;
   width: 100%;
-  background-image: url(../img/loading-image.svg);
+  background-image: url(https://www.buchi.work/img/loading-image.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -484,6 +484,15 @@ main {
 }
 
 .message {
-  margin-top: 50px;
+  margin-top: 100px;
   text-align: center;
+}
+button#reload{
+  color: #fff;
+  display: block;
+  margin: 10px auto 50px;
+  padding: 15px 50px;
+  border-radius: 4px;
+  background-color: #FF6700;
+  cursor: pointer;
 }

@@ -17,17 +17,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="個人でWeb開発をしているBuchiのポートフォリオサイトです。/ HTML CSS JavaScriptを使用した成果物やAbodeソフトを使用して制作した作品の一部を掲載しています。">
-  <link rel="canonical" href="https://www.buchi.work/" />
-  <title>BUCHI</title>
+    content="個人でWeb開発をしているBuchiのポートフォリオサイトです。このページでは当ポートフォリオサイト作成時に配慮した点や、機能を採用した際に考慮した点などを記載しています。">
+  <link rel="canonical" href="https://www.buchi.work/pages/readme.html">
+  <title>readme_BUCHI</title>
   <!-- ********** meta OGP ********** -->
-  <meta property="og:site_name" content="Buchiのポートフォリオサイト" />
-  <meta property="og:title" content="Buchiのポートフォリオサイト" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.buchi.work/" />
-  <meta property="og:image" content="https://www.buchi.work/img/meta/ogp-image.png" />
+  <meta property="og:site_name" content="Buchiのポートフォリオサイト">
+  <meta property="og:title" content="Buchiのポートフォリオサイト">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.buchi.work/pages/readme.html">
+  <meta property="og:image" content="https://www.buchi.work/img/meta/ogp-readme.jpg">
   <meta property="og:description"
-    content="個人でWeb開発をしているBuchiのポートフォリオサイトです。/ HTML CSS JavaScriptを使用した成果物やAbodeソフトを使用して制作した作品の一部を掲載しています。" />
+    content="個人でWeb開発をしているBuchiのポートフォリオサイトです。このページでは当ポートフォリオサイト作成時に配慮した点や、機能を採用した際に考慮した点などを記載しています">
   <meta name="twitter:card" content="summary_large_image">
   <!-- ********** favicon ********** -->
   <link rel="icon" href="https://www.buchi.work/favicon/favicon.ico">
@@ -45,6 +45,23 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+  <!-- loading html -->
+  <div id="loader" class="page-loading">
+    <div class="spinner">
+      <div class="cube1"></div>
+      <div class="cube2"></div>
+    </div>
+    <p class="loading">buchi.works</p>
+  </div>
+
+  <script>
+    window.onload = () => {
+      const loader = document.getElementById('loader');
+      loader.classList.add('loaded');
+    }
+  </script>
+  <!-- /loading html -->
+
   <!-- ************************* -->
   <!-- header -->
   <!-- ************************* -->
@@ -58,7 +75,7 @@
         <ul id="pcMenuList">
           <li><a href="https://www.buchi.work/index.html#works">WORKS</a></li>
           <li><a href="https://www.buchi.work/index.html#about">ABOUT</a></li>
-          <li><a href="#">README</a></li>
+          <li><a href="https://www.buchi.work/pages/readme.html">README</a></li>
         </ul>
       </nav>
     </div>
@@ -94,14 +111,15 @@
             <!-- README -->
             <li class="primary-menu"><a href="#">#README</a>
               <ul class="secondary-menu">
-                <li><a href="#pageSpeedInsights">PageSpeed Insights 分析結果</a></li>
-                <li><a href="#scoreGA4">スコアの改善 ( GA4 )</a></li>
-                <li><a href="#scoreFonts">スコアの改善 ( webフォント )</a></li>
-                <li><a href="#lazyLoadingImage">Lazy Loading の実装</a></li>
-                <li><a href="#resultPuppeteer">Lazy Loading 実装テスト結果</a></li>
-                <li><a href="#loadingAnimation">ローディング アニメーションの設置</a></li>
-                <li><a href="#loadingScript">ローディング イメージ スクリプト</a></li>
-                <li><a href="#loadingDemo">ローディング アニメーション DEMO</a></li>
+                <li><a href="https://www.buchi.work/pages/readme.html#pageSpeedInsights">PageSpeed Insights 分析結果</a>
+                </li>
+                <li><a href="https://www.buchi.work/pages/readme.html#scoreGA4">スコアの改善 ( GA4 )</a></li>
+                <li><a href="https://www.buchi.work/pages/readme.html#scoreFonts">スコアの改善 ( webフォント )</a></li>
+                <li><a href="https://www.buchi.work/pages/readme.html#lazyLoadingImage">Lazy Loading の実装</a></li>
+                <li><a href="https://www.buchi.work/pages/readme.html#resultPuppeteer">Lazy Loading 実装テスト結果</a></li>
+                <li><a href="https://www.buchi.work/pages/readme.html#loadingAnimation">ローディング アニメーションの設置</a></li>
+                <li><a href="https://www.buchi.work/pages/readme.html#loadingScript">ローディング イメージ スクリプト</a></li>
+                <li><a href="https://www.buchi.work/pages/readme.html#loadingDemo">ローディング アニメーション DEMO</a></li>
               </ul>
             </li>
             <li id="menuBarClose">
@@ -122,6 +140,9 @@
 
   <main>
     <div id="readme" class="wrapper">
+      <p class="summary">
+        このページでは<br>当ポートフォリオサイト作成時に配慮した点や、機能を採用した際に考慮した点などを記載しています。
+      </p>
       <div class="index-wrap">
         <p class="index-title">INDEX</p>
         <ul>
@@ -141,8 +162,14 @@
         <p>当サイトでは、<a href="https://pagespeed.web.dev/" target="
         _blank" rel="noopener noreferrer nofollow">Google PageSpeed Insights</a>使って読み込み速度を分析評価しました。</p>
         <div class="result-image ref-image">
-          <img src="./img/readme/PSI-mobile.jpg" alt="PSI result for mobile">
-          <img src="./img/readme/PSI-desktop.jpg" alt="PSI result for desktop">
+          <picture>
+            <source srcset="./img/readme/PSI-mobile.webp">
+            <img src="./img/readme/PSI-mobile.jpg" alt="PSI result for mobile">
+          </picture>
+          <picture>
+            <source srcset="./img/readme/PSI-desktop.webp">
+            <img src="./img/readme/PSI-desktop.jpg" alt="PSI result for desktop">
+          </picture>
         </div>
       </section>
 
@@ -152,12 +179,12 @@
           【ページビュー】時では無く【ウィンドウの読み込み】時に変更。 <br><br>
           これにより、読み込み中の離脱者のカウントは不可となりますが
           離脱者をカウントする為に、読み込み時間を増やし更なる離脱者を増やすという悪循環
-          を回避ます <br>
-          これには、<strong>【より早い読み込みをして、読み込み後のユーザーの行動により注視する】</strong>といった
+          を回避します <br>
+          これには、<strong>【より早い読み込みをして、読み込み後のユーザーの行動に注視することを優先する】</strong>といった
           意図があります。
           <br>
-          上記の設定変更によって、<strong>PageSpeed Insightsのパフォーマンススコアが5~7・
-            Largest Contentful Paintを１秒以上評価が改善</strong>しました。
+          上記の設定変更によって、<strong>PageSpeed Insightsのパフォーマンススコアが5~7点・
+            Largest Contentful Paintが１秒以上、評価改善</strong>しました。
         </p>
         <div class="ref-image">
           <img src="./img/readme/GTM-image.png" alt="GTM-image">
@@ -167,7 +194,7 @@
           webフォントの使用を中止しWebブラウザのデフォルトのフォントのゴシック体系の使用を想定しました。
 
           また、【First Contentful Paint】のスコア改善のため<span class="bold">@font-face</span>に<span class="bold">font-display:
-            swap;</span>を指定しフォントファイルを読み込み時間に大替テキストを表示することで、ページの読み込み速度を優先させました。
+            swap;</span>を指定しフォントファイルを読み込み時間に代替テキストを表示することで、ページの読み込み速度を優先させました。
         </p>
         <div class="code-area">
           <p class="bold">【@font-faceコード】</p>
@@ -199,12 +226,15 @@
           <li style="margin: 10px 0">■検索上位の他社のサイトをテストしても、アニメーションを指定している箇所でFAILED(失敗)という結果が出る
           </li>
         </ul>
-        <p>以上の結果を踏まえ、テスト結果の内容は<span class="bold">アニメーションを<u>指定していない</u>遅延読み込み動画部分を参考にする</span>ことと、<span
-            class="bold">装飾的なコンテンツ以外には過度なアニメーションは避ける</span>という２点に配慮して実装しました。</p>
+        <p>以上の結果を踏まえ、テスト結果の内容は<span class="bold">アニメーションを<u>指定していない</u>遅延読み込み画像部分のみを参考にする</span>ことと、<span
+            class="bold">装飾的なコンテンツ以外、アニメーションの過度な指定は避ける</span>という２点に配慮して実装しました。</p>
 
         <div class="ref-image">
           <a href="./img/readme/test-result-all.png">
-            <img src="./img/readme/test-result.jpg" alt="Puppeteer result image">
+            <picture>
+              <source srcset="./img/readme/test-result.webp">
+              <img src="./img/readme/test-result.jpg" alt="Puppeteer result image">
+            </picture>
             <span>クリックして写真全体を見る</span>
           </a>
         </div>
@@ -227,14 +257,14 @@
           <script src="https://gist.github.com/Buchi-18/80039364e6c5a9b5063914ec54a42a8f.js"></script>
           <p>
             直上の親要素(画像エリア)に width と height(aspect-ratio:◯◯◯;)を指定して、ローリングイメージの表示スペースを確保し、Cumulative Layout Shift (累積レイアウト
-            シフト数、CLS)に配慮するに配慮しています。<br>
+            シフト数、CLS)に配慮しています。<br>
             ※親要素がインライン要素の場合、display:block;が必要になります。<br>
-            デフォルトではアスペクト比を 1:1 としているので、シーンに合わせてアスペクト比を上書きするクラスを追加します。
+            ※デフォルトではアスペクト比を 1:1 としているので、シーンに合わせてアスペクト比を上書きするクラスを追加します。
           </p>
         </div>
 
         <div class="code-area">
-          <p class="bold">【クラスを追加する例 16:9 の画像の場合】</p>
+          <p class="bold">【クラスを上書きする例 16:9 の画像の場合】</p>
           <script src="https://gist.github.com/Buchi-18/33e9557582357b0e6fb16a89aa4376f9.js"></script>
         </div>
         </p>
@@ -305,7 +335,9 @@
               </div>
             </li>
           </ul>
+          <button id="reload">RELOAD</button>
         </div>
+
       </section>
       <div class="message">
         <p>
@@ -338,6 +370,10 @@
         }
       });
     });
+
+    document.getElementById("reload").addEventListener("click", function () {
+      window.location.reload();
+    })
   </script>
 
   <!-- ************************* -->

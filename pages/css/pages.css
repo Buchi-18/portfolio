@@ -412,18 +412,13 @@ main {
 @media screen and (max-width: 750px) {}
 
 /* ****************************** */
-/* README */
+/* README  privacy-policy */
 /* ****************************** */
-#readme {
-  margin: 200px auto 50px;
+#privacyWrap{
+padding: 50px 40px 200px;
 }
 
-#readme h2 {
-  text-align: center;
-  font-family: "Meiryo", sans-serif;
-}
-
-#readme h3 {
+#readme h3, #privacyWrap h3 {
   font-weight: 600;
   margin-top: 80px;
   margin-bottom: 20px;

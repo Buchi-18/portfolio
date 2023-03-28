@@ -370,7 +370,7 @@ h3.contents-title {
 .loading-box {
   display: block;
   width: 100%;
-  background-image: url(../img/loading-image.svg);
+  background-image: url(https://www.buchi.work/img/loading-image.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

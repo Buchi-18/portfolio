@@ -236,7 +236,7 @@
             <h3 class="contents-title">JavaScript Work</h3>
             <p>jQueryのslick・lity・cookie.jsのプラグインを使った機能を素のJavaScriptで再現しました</p>
           </div>
-          <a href="./pages/works/js-work.html">
+          <a href="./pages/works/js-work.php">
             <div class="contents-box">
               <div class="contents-image">
                 <picture class="loading-box aspect-32-15">
@@ -254,7 +254,7 @@
             <h3 class="contents-title">Adobe Work</h3>
             <p>illustratorやPhotoshopを使用し写真のレタッチ、作成したロゴやデザインをTシャツに合成加工した作品を載せてます</p>
           </div>
-          <a href="./pages/works/adobe-work.html">
+          <a href="./pages/works/adobe-work.php">
             <div class="contents-box">
               <div class="contents-image">
                 <picture class="loading-box aspect-32-15">
@@ -273,7 +273,7 @@
             <p>学習時に作成したアプリの成果物のページです
             </p>
           </div>
-          <a href="./pages/works/app-work.html">
+          <a href="./pages/works/app-work.php">
             <div class="contents-box">
               <div class="contents-image">
                 <picture class="loading-box aspect-32-15">
@@ -349,7 +349,7 @@
     </div>
     <ul class="clipping-vertical-box">
       <li>
-        <figure><a href="https://buchi.work/pages/works/adobe-work.html#combinePhoto">
+        <figure><a href="https://buchi.work/pages/works/adobe-work.php#combinePhoto">
             <div class="width-bg-anim bg-brown">
               <!-- background animation div -->
             </div>
@@ -360,7 +360,7 @@
       </li>
       <li>
         <figure>
-          <a href="https://buchi.work/pages/works/adobe-work.html#combinePhoto">
+          <a href="https://buchi.work/pages/works/adobe-work.php#combinePhoto">
             <div class="width-bg-anim bg-blue">
               <!-- background animation div -->
             </div>
@@ -372,7 +372,7 @@
       </li>
       <li>
         <figure>
-          <a href="https://buchi.work/pages/works/adobe-work.html#combinePhoto">
+          <a href="https://buchi.work/pages/works/adobe-work.php#combinePhoto">
             <div class="width-bg-anim bg-purple">
               <!-- background animation div -->
             </div>
@@ -384,7 +384,7 @@
       </li>
     </ul>
     <div class="view-link">
-      <a href="https://buchi.work/pages/works/adobe-work.html#combinePhoto">作品を見に行く</a>
+      <a href="https://buchi.work/pages/works/adobe-work.php#combinePhoto">作品を見に行く</a>
     </div>
   </aside>
 

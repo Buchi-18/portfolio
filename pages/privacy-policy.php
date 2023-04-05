@@ -25,13 +25,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="個人でWeb開発をしているBuchiのポートフォリオサイトです。このページでは当ポートフォリオサイトのPRIVACY POLICYを記載しています。">
-  <link rel="canonical" href="https://www.buchi.work/pages/privacy-policy.html">
+  <link rel="canonical" href="https://www.buchi.work/pages/privacy-policy.php">
   <title>privacy-policy_BUCHI</title>
   <!-- ********** meta OGP ********** -->
   <meta property="og:site_name" content="Buchiのポートフォリオサイト">
   <meta property="og:title" content="Buchiのポートフォリオサイト">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://www.buchi.work/pages/privacy-policy.html">
+  <meta property="og:url" content="https://www.buchi.work/pages/privacy-policy.php">
   <meta property="og:image" content="https://www.buchi.work/img/meta/ogp-privacy-policy.jpg">
   <meta property="og:description" content="個人でWeb開発をしているBuchiのポートフォリオサイトです。このページでは当ポートフォリオサイトのPRIVACY POLICYを記載しています。">
   <meta name="twitter:card" content="summary_large_image">
@@ -56,7 +56,7 @@
         "@type": "ListItem",
         "position": 2,
         "name": "PRIVACY POLICY",
-        "item": "https://www.buchi.work/pages/privacy-policy.html"
+        "item": "https://www.buchi.work/pages/privacy-policy.php"
       }]
     }
   </script>
@@ -104,7 +104,7 @@
     <div class="breadcrumb_wrap">
       <div>
         <a href="https://www.buchi.work/">TOP</a> &gt;
-        <a href="https://www.buchi.work/pages/privacy-policy.html">PRIVACY POLICY</a>
+        <a href="https://www.buchi.work/pages/privacy-policy.php">PRIVACY POLICY</a>
       </div>
     </div>
   </div>

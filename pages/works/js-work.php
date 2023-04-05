@@ -3,14 +3,22 @@
 
 <head>
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-TGKXNV7');</script>
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TGKXNV7');
+  </script>
   <!-- End Google Tag Manager -->
 
   <meta charset="UTF-8">
@@ -18,13 +26,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="個人でWeb開発をしているBuchiのポートフォリオサイトです。
     このページでは、SlickやjQuery-cookie.jsなど、jQueryのプラグインを使った機能を、素のJavaScriptのみを使って出来るだけ忠実に再現したものを掲載しています。">
-  <link rel="canonical" href="https://www.buchi.work/pages/works/js-work.html">
+  <link rel="canonical" href="https://www.buchi.work/pages/works/js-work.php">
   <title>js_works_BUCHI</title>
   <!-- ********** meta OGP ********** -->
   <meta property="og:site_name" content="Buchiのポートフォリオサイト">
   <meta property="og:title" content="Buchiのポートフォリオサイト">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://www.buchi.work/pages/works/js-work.html">
+  <meta property="og:url" content="https://www.buchi.work/pages/works/js-work.php">
   <meta property="og:image" content="https://www.buchi.work/img/meta/ogp-js-works.jpg">
   <meta property="og:description" content="個人でWeb開発をしているBuchiのポートフォリオサイトです。
     このページでは、SlickやjQuery-cookie.jsなど、jQueryのプラグインを使った機能を、素のJavaScriptのみを使って出来るだけ忠実に再現したものを掲載しています。">
@@ -40,21 +48,21 @@
   <!-- ********** パンクズ 構造化データ ********** -->
   <script type="application/ld+json">
     {
-      "@context": "https://schema.org/", 
-      "@type": "BreadcrumbList", 
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
       "itemListElement": [{
-        "@type": "ListItem", 
-        "position": 1, 
+        "@type": "ListItem",
+        "position": 1,
         "name": "TOP",
-        "item": "https://www.buchi.work/"  
-      },{
-        "@type": "ListItem", 
-        "position": 2, 
+        "item": "https://www.buchi.work/"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
         "name": "JAVASCRIPT WORKS",
-        "item": "https://www.buchi.work/pages/works/js-work.html"  
+        "item": "https://www.buchi.work/pages/works/js-work.php"
       }]
     }
-    </script>
+  </script>
 </head>
 
 <body style="background: var(--base-bg)">
@@ -100,7 +108,7 @@
     <div class="breadcrumb_wrap">
       <div>
         <a href="https://www.buchi.work/">TOP</a> &gt;
-        <a href="https://www.buchi.work/pages/works/js-work.html">JAVASCRIPT WORKS</a>
+        <a href="https://www.buchi.work/pages/works/js-work.php">JAVASCRIPT WORKS</a>
       </div>
     </div>
   </div>
@@ -306,7 +314,7 @@
         <li>
           <div class="clipping-horizontal-img">
             <figure>
-              <a href="https://www.buchi.work/pages/works/app-work.html#fakeWeather">
+              <a href="https://www.buchi.work/pages/works/app-work.php#fakeWeather">
                 <div class="width-bg-anim bg-light-blue"><!-- background animation div --></div>
                 <div class="img-scale-anim">
                   <img loading="lazy" src="../../img/clipping/clipping-app-01.jpg" alt="clipping-app-01 image">
@@ -317,13 +325,13 @@
           <div class="clipping-horizontal-text">
             <span class="en">Fake&nbsp;weather</span>
             <span class="ja">仮想お天気アプリ</span>
-            <a href="https://www.buchi.work/pages/works/app-work.html#fakeWeather">#app works</a>
+            <a href="https://www.buchi.work/pages/works/app-work.php#fakeWeather">#app works</a>
           </div>
         </li>
         <li>
           <div class="clipping-horizontal-img">
             <figure>
-              <a href="https://www.buchi.work/pages/works/app-work.html#keepImitationApp">
+              <a href="https://www.buchi.work/pages/works/app-work.php#keepImitationApp">
                 <div class="width-bg-anim bg-light-blue"><!-- background animation div --></div>
                 <div class="img-scale-anim">
                   <img loading="lazy" src="../../img/clipping/clipping-app-02.jpg" alt="clipping-app-02 image">
@@ -334,13 +342,13 @@
           <div class="clipping-horizontal-text">
             <span class="en">Keep&nbsp;...Imitation</span>
             <span class="ja">Keep 模倣アプリ</span>
-            <a href="https://www.buchi.work/pages/works/app-work.html#keepImitationApp">#app works</a>
+            <a href="https://www.buchi.work/pages/works/app-work.php#keepImitationApp">#app works</a>
           </div>
         </li>
         <li>
           <div class="clipping-horizontal-img">
             <figure>
-              <a href="https://www.buchi.work/pages/works/app-work.html#passGenerator">
+              <a href="https://www.buchi.work/pages/works/app-work.php#passGenerator">
                 <div class="width-bg-anim bg-light-blue"><!-- background animation div --></div>
                 <div class="img-scale-anim">
                   <img loading="lazy" src="../../img/clipping/clipping-app-03.jpg" alt="clipping-app-03 image">
@@ -351,7 +359,7 @@
           <div class="clipping-horizontal-text">
             <span class="en">Pass generator</span>
             <span class="ja">パスワード自動生成</span>
-            <a href="https://www.buchi.work/pages/works/app-work.html#passGenerator">#app works</a>
+            <a href="https://www.buchi.work/pages/works/app-work.php#passGenerator">#app works</a>
           </div>
         </li>
       </ul>

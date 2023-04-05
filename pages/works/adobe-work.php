@@ -26,13 +26,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="個人でWeb開発をしているBuchiのポートフォリオサイトです。
     このページでは、AdobeのPhotoshopやIllustratorを使用した写真の切抜・加工・合成などを行った作品を掲載しております。">
-  <link rel="canonical" href="https://www.buchi.work/pages/works/adobe-work.html">
+  <link rel="canonical" href="https://www.buchi.work/pages/works/adobe-work.php">
   <title>adobe_works_BUCHI</title>
   <!-- ********** meta OGP ********** -->
   <meta property="og:site_name" content="Buchiのポートフォリオサイト">
   <meta property="og:title" content="Buchiのポートフォリオサイト">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://www.buchi.work/pages/works/adobe-work.html">
+  <meta property="og:url" content="https://www.buchi.work/pages/works/adobe-work.php">
   <meta property="og:image" content="https://www.buchi.work/img/meta/ogp-adobe-works.jpg">
   <meta property="og:description" content="個人でWeb開発をしているBuchiのポートフォリオサイトです。
     このページでは、AdobeのPhotoshopやIllustratorを使用した写真の切抜・加工・合成などを行った作品を掲載しております。">
@@ -58,7 +58,7 @@
         "@type": "ListItem",
         "position": 2,
         "name": "ADOBE WORKS",
-        "item": "https://www.buchi.work/pages/works/adobe-work.html"
+        "item": "https://www.buchi.work/pages/works/adobe-work.php"
       }]
     }
   </script>
@@ -107,7 +107,7 @@
     <div class="breadcrumb_wrap">
       <div>
         <a href="https://www.buchi.work/">TOP</a> &gt;
-        <a href="https://www.buchi.work/pages/works/adobe-work.html">ADOBE WORKS</a>
+        <a href="https://www.buchi.work/pages/works/adobe-work.php">ADOBE WORKS</a>
       </div>
     </div>
   </div>
@@ -241,7 +241,7 @@
         <li>
           <div class="clipping-horizontal-img">
             <figure>
-              <a href="https://www.buchi.work/pages/works/app-work.html#fakeWeather">
+              <a href="https://www.buchi.work/pages/works/app-work.php#fakeWeather">
                 <div class="width-bg-anim bg-light-blue"><!-- background animation div --></div>
                 <div class="img-scale-anim">
                   <img loading="lazy" src="../../img/clipping/clipping-app-01.jpg" alt="clipping-app-01 image">
@@ -252,13 +252,13 @@
           <div class="clipping-horizontal-text">
             <span class="en">Fake&nbsp;weather</span>
             <span class="ja">仮想お天気アプリ</span>
-            <a href="https://www.buchi.work/pages/works/app-work.html#fakeWeather">#app works</a>
+            <a href="https://www.buchi.work/pages/works/app-work.php#fakeWeather">#app works</a>
           </div>
         </li>
         <li>
           <div class="clipping-horizontal-img">
             <figure>
-              <a href="https://www.buchi.work/pages/works/app-work.html#keepImitationApp">
+              <a href="https://www.buchi.work/pages/works/app-work.php#keepImitationApp">
                 <div class="width-bg-anim bg-light-blue"><!-- background animation div --></div>
                 <div class="img-scale-anim">
                   <img loading="lazy" src="../../img/clipping/clipping-app-02.jpg" alt="clipping-app-02 image">
@@ -269,13 +269,13 @@
           <div class="clipping-horizontal-text">
             <span class="en">Keep&nbsp;...Imitation</span>
             <span class="ja">Keep 模倣アプリ</span>
-            <a href="https://www.buchi.work/pages/works/app-work.html#keepImitationApp">#app works</a>
+            <a href="https://www.buchi.work/pages/works/app-work.php#keepImitationApp">#app works</a>
           </div>
         </li>
         <li>
           <div class="clipping-horizontal-img">
             <figure>
-              <a href="https://www.buchi.work/pages/works/app-work.html#passGenerator">
+              <a href="https://www.buchi.work/pages/works/app-work.php#passGenerator">
                 <div class="width-bg-anim bg-light-blue"><!-- background animation div --></div>
                 <div class="img-scale-anim">
                   <img loading="lazy" src="../../img/clipping/clipping-app-03.jpg" alt="clipping-app-03 image">
@@ -286,7 +286,7 @@
           <div class="clipping-horizontal-text">
             <span class="en">Pass generator</span>
             <span class="ja">パスワード自動生成</span>
-            <a href="https://www.buchi.work/pages/works/app-work.html#passGenerator">#app works</a>
+            <a href="https://www.buchi.work/pages/works/app-work.php#passGenerator">#app works</a>
           </div>
         </li>
       </ul>

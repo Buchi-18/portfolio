@@ -3,14 +3,22 @@
 
 <head>
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-TGKXNV7');</script>
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TGKXNV7');
+  </script>
   <!-- End Google Tag Manager -->
 
   <meta charset="UTF-8">
@@ -18,13 +26,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="個人でWeb開発をしているBuchiのポートフォリオサイトです。
   このページでは、独自に開発したアプリやフロントエンドエンジニアの学習サービスを参考に作成したアプリを掲載しています。">
-  <link rel="canonical" href="https://www.buchi.work/pages/works/app-work.html">
+  <link rel="canonical" href="https://www.buchi.work/pages/works/app-work.php">
   <title>app_works_BUCHI</title>
   <!-- ********** meta OGP ********** -->
   <meta property="og:site_name" content="Buchiのポートフォリオサイト">
   <meta property="og:title" content="Buchiのポートフォリオサイト">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://www.buchi.work/pages/works/app-work.html">
+  <meta property="og:url" content="https://www.buchi.work/pages/works/app-work.php">
   <meta property="og:image" content="https://www.buchi.work/img/meta/ogp-app-works.jpg">
   <meta property="og:description" content="個人でWeb開発をしているBuchiのポートフォリオサイトです。
   このページでは、独自に開発したアプリやフロントエンドエンジニアの学習サービスを参考に作成したアプリを掲載しています。">
@@ -38,22 +46,22 @@
   <link rel="stylesheet" href="../css/pages.css">
   <!-- ********** パンクズ 構造化データ ********** -->
   <script type="application/ld+json">
-      {
-        "@context": "https://schema.org/", 
-        "@type": "BreadcrumbList", 
-        "itemListElement": [{
-          "@type": "ListItem", 
-          "position": 1, 
-          "name": "TOP",
-          "item": "https://www.buchi.work/"  
-        },{
-          "@type": "ListItem", 
-          "position": 2, 
-          "name": "APP WORKS",
-          "item": "https://www.buchi.work/pages/works/app-work.html"  
-        }]
-      }
-      </script>
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "TOP",
+        "item": "https://www.buchi.work/"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "APP WORKS",
+        "item": "https://www.buchi.work/pages/works/app-work.php"
+      }]
+    }
+  </script>
 </head>
 
 <body style="background: var(--base-bg)">
@@ -99,7 +107,7 @@
     <div class="breadcrumb_wrap">
       <div>
         <a href="https://www.buchi.work/">TOP</a> &gt;
-        <a href="https://www.buchi.work/pages/works/app-work.html">APP WORKS</a>
+        <a href="https://www.buchi.work/pages/works/app-work.php">APP WORKS</a>
       </div>
     </div>
   </div>
@@ -246,7 +254,7 @@
     </div>
     <ul class="clipping-vertical-box">
       <li>
-        <figure><a href="https://buchi.work/pages/works/adobe-work.html#digitalMakeover">
+        <figure><a href="https://buchi.work/pages/works/adobe-work.php#digitalMakeover">
             <div class="width-bg-anim bg-brown">
               <!-- background animation div -->
             </div>
@@ -257,7 +265,7 @@
       </li>
       <li>
         <figure>
-          <a href="https://buchi.work/pages/works/adobe-work.html#digitalMakeover">
+          <a href="https://buchi.work/pages/works/adobe-work.php#digitalMakeover">
             <div class="width-bg-anim bg-blue">
               <!-- background animation div -->
             </div>
@@ -269,7 +277,7 @@
       </li>
       <li>
         <figure>
-          <a href="https://buchi.work/pages/works/adobe-work.html#digitalMakeover">
+          <a href="https://buchi.work/pages/works/adobe-work.php#digitalMakeover">
             <div class="width-bg-anim bg-purple">
               <!-- background animation div -->
             </div>
@@ -281,7 +289,7 @@
       </li>
     </ul>
     <div class="view-link">
-      <a href="https://buchi.work/pages/works/adobe-work.html#digitalMakeover">作品を見に行く</a>
+      <a href="https://buchi.work/pages/works/adobe-work.php#digitalMakeover">作品を見に行く</a>
     </div>
   </aside>
 

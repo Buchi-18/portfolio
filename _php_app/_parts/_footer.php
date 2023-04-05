@@ -49,27 +49,27 @@
       <div class="footer-bg-img"></div>
       <!-- JavaScript Work -->
       <ul>
-        <li class="page-title"><a href="https://buchi.work/pages/works/js-work.html">JavaScript&nbsp;Work</a></li>
-        <li><a href="https://buchi.work/pages/works/js-work.html#slider">Slick&nbsp;&rarr;&nbsp;Vanilla.js</a></li>
-        <li><a href="https://buchi.work/pages/works/js-work.html#modal">Lity&nbsp;&rarr;&nbsp;Vanilla.js</a></li>
+        <li class="page-title"><a href="https://buchi.work/pages/works/js-work.php">JavaScript&nbsp;Work</a></li>
+        <li><a href="https://buchi.work/pages/works/js-work.php#slider">Slick&nbsp;&rarr;&nbsp;Vanilla.js</a></li>
+        <li><a href="https://buchi.work/pages/works/js-work.php#modal">Lity&nbsp;&rarr;&nbsp;Vanilla.js</a></li>
         <li><a
-            href="https://buchi.work/pages/works/js-work.html#cookie">Using&nbsp;cookie&nbsp;to&nbsp;...&nbsp;Vanilla.js</a>
+            href="https://buchi.work/pages/works/js-work.php#cookie">Using&nbsp;cookie&nbsp;to&nbsp;...&nbsp;Vanilla.js</a>
         </li>
       </ul>
       <!-- Adobe Work -->
       <ul>
-        <li class="page-title"><a href="https://buchi.work/pages/works/adobe-work.html">Adobe&nbsp;Work</a></li>
-        <li><a href="https://buchi.work/pages/works/adobe-work.html#digitalMakeover">Digital&nbsp;makeover</a></li>
-        <li><a href="https://buchi.work/pages/works/adobe-work.html#combinePhoto">プリント加工</a></li>
+        <li class="page-title"><a href="https://buchi.work/pages/works/adobe-work.php">Adobe&nbsp;Work</a></li>
+        <li><a href="https://buchi.work/pages/works/adobe-work.php#digitalMakeover">Digital&nbsp;makeover</a></li>
+        <li><a href="https://buchi.work/pages/works/adobe-work.php#combinePhoto">プリント加工</a></li>
         <!-- <li><a href="">★★★★★★★★★</a></li> -->
       </ul>
       <!-- App Work -->
       <ul>
-        <li class="page-title"><a href="https://buchi.work/pages/works/app-work.html">App&nbsp;Work</a></li>
-        <li><a href="https://buchi.work/pages/works/app-work.html#fakeWeather">Fake&nbsp;weather</a></li>
-        <li><a href="https://buchi.work/pages/works/app-work.html#keepImitationApp">Keep&nbsp;...Imitation&nbsp;app</a>
+        <li class="page-title"><a href="https://buchi.work/pages/works/app-work.php">App&nbsp;Work</a></li>
+        <li><a href="https://buchi.work/pages/works/app-work.php#fakeWeather">Fake&nbsp;weather</a></li>
+        <li><a href="https://buchi.work/pages/works/app-work.php#keepImitationApp">Keep&nbsp;...Imitation&nbsp;app</a>
         </li>
-        <li><a href="https://buchi.work/pages/works/app-work.html#passGenerator">Pass&nbsp;generator</a></li>
+        <li><a href="https://buchi.work/pages/works/app-work.php#passGenerator">Pass&nbsp;generator</a></li>
       </ul>
     </div>
 
@@ -95,8 +95,7 @@
   </div>
 
   <div class="footer-low">
-    <p class="policy"><a href="https://www.buchi.work/pages/privacy-policy.html">PRIVACY POLICY</a></p>
+    <p class="policy"><a href="https://www.buchi.work/pages/privacy-policy.php">PRIVACY POLICY</a></p>
     <span class="copy">copyright &copy; buchi.work All Rights Reserved.</span>
   </div>
 </footer>
-

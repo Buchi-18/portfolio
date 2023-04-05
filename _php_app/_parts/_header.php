@@ -1,13 +1,13 @@
 <header>
   <div class="header-wrap">
     <h1 class="site-title">
-      <a href="https://www.buchi.work/index.html"><img src="https://buchi.work/img/site-title.svg" alt="site-title"></a>
+      <a href="https://www.buchi.work/"><img src="https://buchi.work/img/site-title.svg" alt="site-title"></a>
     </h1>
     <nav>
       <ul id="pcMenuList">
-        <li><a href="https://www.buchi.work/index.html#works">WORKS</a></li>
-        <li><a href="https://www.buchi.work/index.html#about">ABOUT</a></li>
-        <li><a href="https://www.buchi.work/pages/readme.html">README</a></li>
+        <li><a href="https://www.buchi.work/#works">WORKS</a></li>
+        <li><a href="https://www.buchi.work/#about">ABOUT</a></li>
+        <li><a href="https://www.buchi.work/pages/readme">README</a></li>
       </ul>
     </nav>
   </div>
@@ -24,34 +24,34 @@
       <nav>
         <ul>
           <!-- WORKS -->
-          <li class="primary-menu"><a href="https://www.buchi.work/index.html#works">#WORKS</a>
+          <li class="primary-menu"><a href="https://www.buchi.work/#works">#WORKS</a>
             <ul class="secondary-menu">
-              <li><a href="https://www.buchi.work/pages/works/js-work.html">javascript Works</a></li>
-              <li><a href="https://www.buchi.work/pages/works/adobe-work.html">Adobe Works</a></li>
-              <li><a href="https://www.buchi.work/pages/works/app-work.html">App Works</a></li>
+              <li><a href="https://www.buchi.work/pages/works/js-work.php">javascript Works</a></li>
+              <li><a href="https://www.buchi.work/pages/works/adobe-work.php">Adobe Works</a></li>
+              <li><a href="https://www.buchi.work/pages/works/app-work.php">App Works</a></li>
             </ul>
           </li>
 
           <!-- ABOUT -->
-          <li class="primary-menu"><a href="https://www.buchi.work/index.html#about">#ABOUT</a>
+          <li class="primary-menu"><a href="https://www.buchi.work/#about">#ABOUT</a>
             <ul class="secondary-menu">
-              <li><a href="https://www.buchi.work/index.html#personal">略歴</a></li>
-              <li><a href="https://www.buchi.work/index.html#experience">業務経験</a></li>
-              <li><a href="https://www.buchi.work/index.html#skill">開発スキル</a></li>
+              <li><a href="https://www.buchi.work/#personal">略歴</a></li>
+              <li><a href="https://www.buchi.work/#experience">業務経験</a></li>
+              <li><a href="https://www.buchi.work/#skill">開発スキル</a></li>
             </ul>
           </li>
           <!-- README -->
-          <li class="primary-menu"><a href="https://www.buchi.work/pages/readme.html">#README</a>
+          <li class="primary-menu"><a href="https://www.buchi.work/pages/readme.php">#README</a>
             <ul class="secondary-menu">
-              <li><a href="https://www.buchi.work/pages/readme.html#pageSpeedInsights">PageSpeed Insights 分析結果</a>
+              <li><a href="https://www.buchi.work/pages/readme.php#pageSpeedInsights">PageSpeed Insights 分析結果</a>
               </li>
-              <li><a href="https://www.buchi.work/pages/readme.html#scoreGA4">スコアの改善 ( GA4 )</a></li>
-              <li><a href="https://www.buchi.work/pages/readme.html#scoreFonts">スコアの改善 ( webフォント )</a></li>
-              <li><a href="https://www.buchi.work/pages/readme.html#lazyLoadingImage">Lazy Loading の実装</a></li>
-              <li><a href="https://www.buchi.work/pages/readme.html#resultPuppeteer">Lazy Loading 実装テスト結果</a></li>
-              <li><a href="https://www.buchi.work/pages/readme.html#loadingAnimation">ローディング アニメーションの設置</a></li>
-              <li><a href="https://www.buchi.work/pages/readme.html#loadingScript">ローディング イメージ スクリプト</a></li>
-              <li><a href="https://www.buchi.work/pages/readme.html#loadingDemo">ローディング アニメーション DEMO</a></li>
+              <li><a href="https://www.buchi.work/pages/readme.php#scoreGA4">スコアの改善 ( GA4 )</a></li>
+              <li><a href="https://www.buchi.work/pages/readme.php#scoreFonts">スコアの改善 ( webフォント )</a></li>
+              <li><a href="https://www.buchi.work/pages/readme.php#lazyLoadingImage">Lazy Loading の実装</a></li>
+              <li><a href="https://www.buchi.work/pages/readme.php#resultPuppeteer">Lazy Loading 実装テスト結果</a></li>
+              <li><a href="https://www.buchi.work/pages/readme.php#loadingAnimation">ローディング アニメーションの設置</a></li>
+              <li><a href="https://www.buchi.work/pages/readme.php#loadingScript">ローディング イメージ スクリプト</a></li>
+              <li><a href="https://www.buchi.work/pages/readme.php#loadingDemo">ローディング アニメーション DEMO</a></li>
             </ul>
           </li>
           <li id="menuBarClose">

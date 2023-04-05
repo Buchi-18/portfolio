@@ -36,6 +36,24 @@
   <!-- ********** css ********** -->
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="./css/pages.css">
+  <!-- ********** パンクズ 構造化データ ********** -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/", 
+      "@type": "BreadcrumbList", 
+      "itemListElement": [{
+        "@type": "ListItem", 
+        "position": 1, 
+        "name": "TOP",
+        "item": "https://www.buchi.work/"  
+      },{
+        "@type": "ListItem", 
+        "position": 2, 
+        "name": "#README",
+        "item": "https://www.buchi.work/pages/readme.html"  
+      }]
+    }
+    </script>
 </head>
 
 <body style="background: var(--base-bg)">
@@ -50,8 +68,7 @@
   <header>
     <div class="header-wrap">
       <h1 class="site-title">
-        <a href="https://www.buchi.work/index.html"><img src="https://buchi.work/img/site-title.svg"
-            alt="site-title"></a>
+        <a href="https://www.buchi.work/"><img src="https://buchi.work/img/site-title.svg" alt="site-title"></a>
       </h1>
       <nav>
         <ul id="pcMenuList">
@@ -114,9 +131,21 @@
     </div>
   </header>
 
+  <!-- ************************* -->
+  <!-- main image -->
+  <!-- ************************* -->
+
   <div class="pages-main-image">
     <div class="page-main-title">
       <h2>#README</h2>
+    </div>
+  </div>
+  <div id="breadcrumb">
+    <div class="breadcrumb_wrap">
+      <div>
+        <a href="https://www.buchi.work/">TOP</a> &gt;
+        <a href="https://www.buchi.work/pages/readme.html">#README</a>
+      </div>
     </div>
   </div>
 
@@ -412,7 +441,8 @@
   <!-- ************************* -->
   <footer>
     <div class="footer-head">
-      <div class="footer-logo"><a href="#"><img src="https://buchi.work/img/site-title.svg" alt="footer-logo"></a>
+      <div class="footer-logo"><a href="https://www.buchi.work/"><img src="https://buchi.work/img/site-title.svg"
+            alt="footer-logo"></a>
       </div>
       <div class="footer-social-links">
         <ul>

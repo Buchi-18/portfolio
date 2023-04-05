@@ -7,7 +7,7 @@
       <ul id="pcMenuList">
         <li><a href="https://www.buchi.work/#works">WORKS</a></li>
         <li><a href="https://www.buchi.work/#about">ABOUT</a></li>
-        <li><a href="https://www.buchi.work/pages/readme">README</a></li>
+        <li><a href="https://www.buchi.work/pages/readme.php">README</a></li>
       </ul>
     </nav>
   </div>

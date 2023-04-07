@@ -200,6 +200,39 @@
           </div>
         </div>
       </section>
+
+      <!-- ************************* -->
+      <!-- text Animation -->
+      <!-- ************************* -->
+      <section id="textAnimation" class="work-wrap">
+        <h2 class="page-section-title">テキスト アニメーション</h2>
+        <div class="summary">AfterEffectsを使用して作成した<br>
+          テキストアニメーションを掲載しています。
+        </div>
+        <div class="text-anim-area">
+          <ul>
+            <li>
+              <a href="../img/textAnimation/sweet_valentine.mp4" target="_blank" rel="noreferrer noopener nofollow">
+                <video autoplay muted loop playsinline poster="">
+                  <source src="../img/textAnimation/sweet_valentine.mp4" type="video/mp4">
+                </video>
+              </a>
+              <h3>Sweet Valentine</h3>
+              <p> Photoshop/illustrator/AfterEffects </p>
+            </li>
+            <li>
+              <a href="../img/textAnimation/sakura.mp4" target="_blank" rel="noreferrer noopener nofollow">
+                <video autoplay muted loop playsinline poster="">
+                  <source src="../img/textAnimation/sakura.mp4" type="video/mp4">
+                </video>
+              </a>
+              <h3>さくらまつり</h3>
+              <p> Photoshop/illustrator/AfterEffects </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
     </div>
   </main>
   <!-- ************************* -->
@@ -293,9 +326,6 @@
     </div>
   </aside>
 
-  <!-- ************************* -->
-  <!-- footer -->
-  <!-- ************************* -->
   <?php
   include("../../_php_app/_parts/_footer.php");
   ?>

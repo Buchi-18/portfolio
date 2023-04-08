@@ -45,6 +45,7 @@ const slideItemObserver = new IntersectionObserver(setSlide);
 slideInItems.forEach(function (slideItem) {
   slideItemObserver.observe(slideItem);
 });
+
 function setSlide(entries) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {

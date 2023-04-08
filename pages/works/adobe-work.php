@@ -133,8 +133,16 @@
         <div class="adobe-work-item">
           <div class="comparison-all">
             <div class="adobe-img-flex img-box">
-              <img loading="lazy" class="slide-in-item slide-in-left" src="../img/makeOver/makeBefore-all.jpg" alt="">
-              <img loading="lazy" class="slide-in-item slide-in-right" src="../img/makeOver/makeover-all.jpg" alt="">
+              <picture>
+                <source srcset="../img/makeOver/makeBefore-all.webp">
+                <img loading="lazy" class="slide-in-item slide-in-left" src="../img/makeOver/makeBefore-all.jpg"
+                  alt="makeBefore-全体">
+              </picture>
+              <picture>
+                <source srcset="../img/makeOver/makeover-all.webp">
+                <img loading="lazy" class="slide-in-item slide-in-right" src="../img/makeOver/makeover-all.jpg"
+                  alt="makeover-全体">
+              </picture>
             </div>
             <dl>
               <dt>【&nbsp;顔全体&nbsp;】</dt>
@@ -145,10 +153,16 @@
           </div>
           <div class="comparison-eye">
             <div class="img-box">
-              <img loading="lazy" class="slide-in-item slide-in-left" src="../img/makeOver/makeBefore-eye.jpg"
-                alt="makeBefore-目元">
-              <img loading="lazy" class="slide-in-item slide-in-right" src="../img/makeOver/makeover-eye.jpg"
-                alt="makeover-目元">
+              <picture>
+                <source srcset="../img/makeOver/makeBefore-eye.webp">
+                <img loading="lazy" class="slide-in-item slide-in-left" src="../img/makeOver/makeBefore-eye.jpg"
+                  alt="makeBefore-目元">
+              </picture>
+              <picture>
+                <source srcset="../img/makeOver/makeover-eye.webp">
+                <img loading="lazy" class="slide-in-item slide-in-right" src="../img/makeOver/makeover-eye.jpg"
+                  alt="makeover-目元">
+              </picture>
             </div>
             <dl>
               <dt>【&nbsp;目元&nbsp;】</dt>
@@ -159,10 +173,16 @@
           </div>
           <div class="comparison-mouth">
             <div class="img-box">
-              <img loading="lazy" class="slide-in-item slide-in-left" src="../img/makeOver/makeBefore-mouth.jpg"
-                alt="makeBefore-口元">
-              <img loading="lazy" class="slide-in-item slide-in-right" src="../img/makeOver/makeover-mouth.jpg"
-                alt="makeAfter-口元">
+              <picture>
+                <source srcset="../img/makeOver/makeBefore-mouth.webp">
+                <img loading="lazy" class="slide-in-item slide-in-left" src="../img/makeOver/makeBefore-mouth.jpg"
+                  alt="makeBefore-口元">
+              </picture>
+              <picture>
+                <source srcset="../img/makeOver/makeover-mouth.webp">
+                <img loading="lazy" class="slide-in-item slide-in-right" src="../img/makeOver/makeover-mouth.jpg"
+                  alt="makeover-口元">
+              </picture>
             </div>
             <dl>
               <dt>【&nbsp;口元&nbsp;】</dt>

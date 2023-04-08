@@ -207,7 +207,7 @@ main {
   padding: 0 25px;
 }
 
-.adobe-img-flex img {
+.adobe-img-flex picture {
   width: 48%;
 }
 
@@ -236,11 +236,11 @@ main {
   text-shadow: 2px 2px 3px #888;
 }
 
-.adobe-img-flex img:nth-child(1) {
+.adobe-img-flex picture:nth-child(1) {
   margin-bottom: 30px;
 }
 
-.adobe-img-flex img:nth-child(2) {
+.adobe-img-flex picture:nth-child(2) {
   margin-top: 30px;
 }
 
@@ -252,14 +252,14 @@ main {
   padding: 0 25px;
 }
 
-.comparison-mouth img:nth-child(1),
-.comparison-eye img:nth-child(1) {
+.comparison-mouth picture:nth-child(1) img,
+.comparison-eye picture:nth-child(1) img {
   margin-bottom: 15px;
   padding-right: 5vw;
 }
 
-.comparison-mouth img:nth-child(2),
-.comparison-eye img:nth-child(2) {
+.comparison-mouth picture:nth-child(2) img,
+.comparison-eye picture:nth-child(2) img{
   padding-left: 5vw;
 }
 

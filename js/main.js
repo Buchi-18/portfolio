@@ -40,10 +40,7 @@ function menuBoardHandler() {
 //  animation handler js
 //  ******************************
 // スライドイン
-
-//監視対象
 const slideInItems = document.querySelectorAll(".slide-in-item");
-// console.log(slideInItems);
 const slideItemObserver = new IntersectionObserver(setSlide);
 slideInItems.forEach(function (slideItem) {
   slideItemObserver.observe(slideItem);
@@ -53,7 +50,6 @@ function setSlide(entries) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
       entry.target.classList.add("slide-in");
-      console.log(entry.target);
     } else {
       entry.target.classList.remove("slide-in");
     }

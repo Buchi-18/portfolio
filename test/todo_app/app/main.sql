@@ -1,5 +1,4 @@
 
-
 CREATE TABLE todos (
   id INT NOT NULL AUTO_INCREMENT,
   is_done BOOL DEFAULT false,
@@ -13,6 +12,12 @@ INSERT INTO todos (title) VALUES ('ccc');
 
 SELECT * FROM todos;
 
+
+
+-- ターミナルからMAMPのDBへ接続する
+-- cd /Applications/MAMP/Library/bin/
+-- ./mysql -u root -p
+-- password:root (default)
 
 -- データベースを追加
 -- create database データベース名 default charset utf8;

@@ -15,7 +15,9 @@ define('DB_NAME', $_ENV['DB_NAME_TODOS']);
 define('DSN', 'mysql:host='.HOST.';dbname='.DB_NAME.';charset=utf8mb4');
 define('DB_USER', $_ENV['DB_USER_TODOS']);
 define('DB_PASS', $_ENV['DB_PASS_TODOS']);
-define('SITE_URL', $_ENV['SITE_URL_TODOS']);
+
+// 変数の定義
+$page_url = (((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ) ? "https://" : "http://").$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
 try {
     $pdo = new PDO(
@@ -59,7 +61,7 @@ function getTodos($pdo)
 
 if($_SERVER['REQUEST_METHOD'] === "POST") {
     addTodo($pdo);
-    header('Location: '.SITE_URL);
+    header('Location: '.$page_url);
     exit;
 }
 

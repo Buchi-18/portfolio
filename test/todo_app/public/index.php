@@ -1,11 +1,14 @@
 <!-- ************************* -->
 <!-- My Todos test app -->
 <!-- ************************* -->
-
 <?php
-define('DSN', 'mysql:host=localhost;dbname=todos_db;charset=utf8mb4');
-define('DB_USER', 'root');
-define('DB_PASS', 'root');
+require dirname(__FILE__).'/../../../_php_app/vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__. '/../../../_php_app');
+$dotenv->load();
+
+define('DSN', "mysql:host={$_ENV['HOST_NAME_TODOS']};dbname={$_ENV['DB_NAME_TODOS']};charset=utf8mb4");
+define('DB_USER', $_ENV['DB_USER_TODOS']);
+define('DB_PASS', $_ENV['DB_PASS_TODOS']);
 
 try {
     $pdo = new PDO(
@@ -37,7 +40,7 @@ function addTodo($pdo)
 
     $stmt = $pdo->prepare("INSERT INTO todos (title) VALUE(:title)");
     $stmt->bindValue('title', $title, PDO::PARAM_STR);
-    $stmt->execute(); 
+    $stmt->execute();
 }
 
 function getTodos($pdo)

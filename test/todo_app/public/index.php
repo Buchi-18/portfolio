@@ -2,13 +2,20 @@
 <!-- My Todos test app -->
 <!-- ************************* -->
 <?php
+
+
+
 require dirname(__FILE__).'/../../../_php_app/vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__. '/../../../_php_app');
 $dotenv->load();
 
-define('DSN', "mysql:host={$_ENV['HOST_NAME_TODOS']};dbname={$_ENV['DB_NAME_TODOS']};charset=utf8mb4");
+// 定数の定義
+define('HOST', $_ENV['HOST_NAME_TODOS']);
+define('DB_NAME', $_ENV['DB_NAME_TODOS']);
+define('DSN', 'mysql:host='.HOST.';dbname='.DB_NAME.';charset=utf8mb4');
 define('DB_USER', $_ENV['DB_USER_TODOS']);
 define('DB_PASS', $_ENV['DB_PASS_TODOS']);
+define('SITE_URL', $_ENV['SITE_URL_TODOS']);
 
 try {
     $pdo = new PDO(
@@ -52,6 +59,8 @@ function getTodos($pdo)
 
 if($_SERVER['REQUEST_METHOD'] === "POST") {
     addTodo($pdo);
+    header('Location: '.SITE_URL);
+    exit;
 }
 
 $todos = getTodos($pdo);

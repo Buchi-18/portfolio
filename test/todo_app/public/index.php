@@ -1,10 +1,5 @@
-<!-- ************************* -->
-<!-- My Todos test app -->
-<!-- ************************* -->
 <?php
-
-
-
+// My Todos test app
 require dirname(__FILE__).'/../../../_php_app/vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__. '/../../../_php_app');
 $dotenv->load();
@@ -17,7 +12,7 @@ define('DB_USER', $_ENV['DB_USER_TODOS']);
 define('DB_PASS', $_ENV['DB_PASS_TODOS']);
 
 // 変数の定義
-$page_url = (((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ) ? "https://" : "http://").$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+$page_url = (((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')) ? "https://" : "http://").$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
 try {
     $pdo = new PDO(
@@ -64,9 +59,7 @@ if($_SERVER['REQUEST_METHOD'] === "POST") {
     header('Location: '.$page_url);
     exit;
 }
-
 $todos = getTodos($pdo);
-
 ?>
 
 <!DOCTYPE html>

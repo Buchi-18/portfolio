@@ -16,4 +16,11 @@
       deleteBtn.parentNode.submit();
     });
   });
+
+  // PURGEボタンクリック時の処理
+  const purge = document.querySelector(".purge");
+  purge.addEventListener("click", function () {
+    if (!confirm("Delete all checked tasks, Are you sure?")) return;
+    purge.parentNode.submit();
+  });
 }

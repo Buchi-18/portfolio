@@ -4,31 +4,15 @@
 // ******************************
 require_once(__DIR__.'/../app/config.php');
 
-createToken();
-$pdo = getPdoInstance();
+use MyApp\Database;
+use MyApp\Todo;
+use MyApp\Utils;
 
-if($_SERVER['REQUEST_METHOD'] === "POST") {
-    validateToken();
-    $action = filter_input(INPUT_GET, 'action');
+$pdo = Database::getInstance();
 
-    switch ($action) {
-        case 'add':
-            addTodo($pdo);
-            break;
-        case 'toggle':
-            toggleTodo($pdo);
-            break;
-        case 'delete':
-            deleteTodo($pdo);
-            break;
-        default:
-            exit;
-    }
-
-    header('Location: '.PAGE_URL);
-    exit;
-}
-$todos = getTodos($pdo);
+$todo = new Todo($pdo);
+$todo->processPost();
+$todos = $todo->getAll();
 ?>
 
 <!DOCTYPE html>
@@ -43,17 +27,20 @@ $todos = getTodos($pdo);
 
 <body>
   <main>
+    <header>
     <h1>Todos</h1>
-
-    <p> <?= h($_SERVER['HTTPS']); ?></p>
-    <p>
-      <?= h($_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']); ?>
-    </p>
+      <!-- CHECKED ALL DELETE -->
+      <form action="?action=purge" method="post">
+        <span class="purge">Purge</span>
+        <input type="hidden" name="token"
+          value="<?= Utils::h($_SESSION['token']); ?>">
+      </form> 
+    </header>
 
     <form action="?action=add" method="post">
       <input type="text" name="title" placeholder="Type new todo.">
       <input type="hidden" name="token"
-        value="<?= h($_SESSION['token']); ?>">
+        value="<?= Utils::h($_SESSION['token']); ?>">
     </form>
 
     <ul>
@@ -63,23 +50,23 @@ $todos = getTodos($pdo);
         <form action="?action=toggle" method="post">
           <input type="checkbox"
             <?= $todo->is_done ? 'checked' : ''; ?>>
-          <input type="hidden" name="id" value="<?= h($todo->id) ?>">
+          <input type="hidden" name="id" value="<?= Utils::h($todo->id); ?>">
           <input type="hidden" name="token"
-            value="<?= h($_SESSION['token']); ?>">
+            value="<?= Utils::h($_SESSION['token']); ?>">
         </form>
 
         <!-- TODO タイトル -->
         <span
           class="<?= $todo->is_done ? 'done' : ''; ?>">
-          <?= h($todo->title); ?>
+          <?= Utils::h($todo->title); ?>
         </span>
 
         <!-- DELETE ボタン -->
         <form action="?action=delete" method="post" class="delete-form">
           <span class="delete">×</span>
-          <input type="hidden" name="id" value="<?= h($todo->id) ?>">
+          <input type="hidden" name="id" value="<?= Utils::h($todo->id); ?>">
           <input type="hidden" name="token"
-            value="<?= h($_SESSION['token']); ?>">
+            value="<?= Utils::h($_SESSION['token']); ?>">
         </form>
 
       </li>

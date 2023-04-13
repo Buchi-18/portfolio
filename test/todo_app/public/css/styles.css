@@ -2,10 +2,17 @@ body {
   font-family: Arial, sans-serif;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 main {
   width: 320px;
   margin: 32px auto;
 }
+
 
 h1 {
   font-size: 24px;
@@ -44,9 +51,15 @@ input[type="checkbox"] {
   margin-right: 8px;
 }
 
-.delete {
-  color: #ccc;
+.delete,
+.purge {
+  color: #aaa;
   cursor: pointer;
+  font-size: 18px;
+}
+
+.purge{
+  font-size: 14px;
 }
 
 .delete-form {

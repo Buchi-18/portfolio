@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 
 require_once dirname(__FILE__).'/../../../_php_app/vendor/autoload.php';
@@ -13,6 +14,18 @@ define('DB_USER', $_ENV['DB_USER_TODOS']);
 define('DB_PASS', $_ENV['DB_PASS_TODOS']);
 define('PAGE_URL', (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? "https://" : "http://").$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
 
-// 関数読込
-require_once(__DIR__.'/functions.php');
+// クラス自動読込
+spl_autoload_register(function ($class) {
+    $prefix = 'MyApp\\';
 
+    if (strpos($class, $prefix) === 0) {
+        $fileName = sprintf(__DIR__.'/%s.php', substr($class, strlen($prefix)));
+
+        if (file_exists($fileName)) {
+            require($fileName);
+        } else {
+            echo 'File not found: '.$fileName;
+            exit;
+        }
+    }
+});

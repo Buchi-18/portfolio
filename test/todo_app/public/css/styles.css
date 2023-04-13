@@ -9,7 +9,9 @@ header {
 }
 
 main {
-  width: 320px;
+  width: 80%;
+  min-width: 320px;
+  max-width: 640px;
   margin: 32px auto;
 }
 

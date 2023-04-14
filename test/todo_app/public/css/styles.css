@@ -4,7 +4,6 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -43,10 +42,9 @@ li {
   border-bottom: 1px solid #ccc;
 }
 
-.done {
+input[type="checkbox"]:checked+span {
   text-decoration: line-through;
   color: #ccc;
-
 }
 
 input[type="checkbox"] {
@@ -57,14 +55,14 @@ input[type="checkbox"] {
 .purge {
   color: #aaa;
   cursor: pointer;
-  font-size: 18px;
+  margin-left: auto;
 }
 
 .purge{
   font-size: 14px;
 }
 
-.delete-form {
-  margin-left: auto;
+.delete{
   padding-left: 8px;
+  font-size: 18px;
 }

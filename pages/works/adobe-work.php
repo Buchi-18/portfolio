@@ -232,22 +232,40 @@
         <div class="text-anim-area">
           <ul>
             <li>
-              <a href="../img/textAnimation/sweet_valentine.mp4" target="_blank" rel="noreferrer noopener nofollow">
-                <video autoplay muted loop playsinline poster="">
-                  <source src="../img/textAnimation/sweet_valentine.mp4" type="video/mp4">
+              <a href="../img/textAnimation/sweet-valentine.mp4" target="_blank" rel="noreferrer noopener nofollow">
+                <video autoplay muted loop playsinline poster="../img/textAnimation/sweet-valentine.jpg">
+                  <source src="../img/textAnimation/sweet-valentine.mp4" type="video/mp4">
                 </video>
               </a>
               <h3>Sweet Valentine</h3>
-              <p> Photoshop/illustrator/AfterEffects </p>
+              <p>&lt; Photoshop/illustrator/AfterEffect &gt;</p>
             </li>
             <li>
               <a href="../img/textAnimation/sakura.mp4" target="_blank" rel="noreferrer noopener nofollow">
-                <video autoplay muted loop playsinline poster="">
+                <video autoplay muted loop playsinline poster="../img/textAnimation/sakura.jpg">
                   <source src="../img/textAnimation/sakura.mp4" type="video/mp4">
                 </video>
               </a>
               <h3>さくらまつり</h3>
-              <p> Photoshop/illustrator/AfterEffects </p>
+              <p>&lt; Photoshop/illustrator/AfterEffects &gt;</p>
+            </li>
+            <li>
+              <a href="../img/textAnimation/island-trip.mp4" target="_blank" rel="noreferrer noopener nofollow">
+                <video autoplay muted loop playsinline poster="../img/textAnimation/island-trip.jpg">
+                  <source src="../img/textAnimation/island-trip.mp4" type="video/mp4">
+                </video>
+              </a>
+              <h3>Island Trip</h3>
+              <p>&lt; Photoshop/illustrator/AfterEffects &gt;</p>
+            </li>
+            <li>
+              <a href="../img/textAnimation/merry-christmas.mp4" target="_blank" rel="noreferrer noopener nofollow">
+                <video autoplay muted loop playsinline poster="../img/textAnimation/merry-christmas.jpg">
+                  <source src="../img/textAnimation/merry-christmas.mp4" type="video/mp4">
+                </video>
+              </a>
+              <h3>Merry Christmas</h3>
+              <p>&lt; Photoshop/illustrator/AfterEffects &gt;</p>
             </li>
           </ul>
         </div>

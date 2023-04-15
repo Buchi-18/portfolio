@@ -259,6 +259,15 @@
               <p>&lt; Photoshop/illustrator/AfterEffects &gt;</p>
             </li>
             <li>
+              <a href="../img/textAnimation/halloween.mp4" target="_blank" rel="noreferrer noopener nofollow">
+                <video autoplay muted loop playsinline poster="../img/textAnimation/halloween.jpg">
+                  <source src="../img/textAnimation/halloween.mp4" type="video/mp4">
+                </video>
+              </a>
+              <h3>Halloween</h3>
+              <p>&lt; Photoshop/illustrator/AfterEffects &gt;</p>
+            </li>
+            <li>
               <a href="../img/textAnimation/merry-christmas.mp4" target="_blank" rel="noreferrer noopener nofollow">
                 <video autoplay muted loop playsinline poster="../img/textAnimation/merry-christmas.jpg">
                   <source src="../img/textAnimation/merry-christmas.mp4" type="video/mp4">

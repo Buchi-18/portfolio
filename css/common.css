@@ -22,6 +22,7 @@
 /* ****************************** */
 /* Reset --prefixed-- */
 /* ****************************** */
+
 *,
 *::before,
 *::after {
@@ -326,12 +327,14 @@ h3.contents-title {
   height: 100%;
 }
 
+
+
 .width-bg-anim.width-animation {
   animation: widthAnim 0.8s ease 0.2s both;
 }
 
 .fade-in-scale {
-  animation: slide-inInScale 1.6s ease 0.7s forwards;
+  animation: slide-inFade 1.4s ease-in 1.0s forwards;
 }
 
 @keyframes widthAnim {
@@ -340,7 +343,7 @@ h3.contents-title {
   }
 }
 
-@keyframes slide-inInScale {
+@keyframes slide-inFade {
   100% {
     width: 100%;
     opacity: 1;
@@ -503,9 +506,9 @@ h3.contents-title {
 }
 
 #menuBarBox.open .menu-bar {
-  -webkit-transition: 0.7s ease;
-  -o-transition: 0.7s ease;
-  transition: 0.7s ease;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
   -webkit-transition-property: opacity, -webkit-transform;
   transition-property: opacity, -webkit-transform;
   -o-transition-property: transform, opacity;
@@ -533,9 +536,9 @@ h3.contents-title {
 }
 
 #menuBarBox.close .menu-bar {
-  -webkit-transition: 1s ease;
-  -o-transition: 1s ease;
-  transition: 1s ease;
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
   -webkit-transition-property: opacity, -webkit-transform;
   transition-property: opacity, -webkit-transform;
   -o-transition-property: transform, opacity;
@@ -636,9 +639,11 @@ h3.contents-title {
   font-size: var(--txt-xSmall);
   font-weight: 300;
 }
-#menuBoard .secondary-menu li{
+
+#menuBoard .secondary-menu li {
   margin-top: 30px;
 }
+
 #menuBoard .secondary-menu li a {
   display: block;
   padding: 2% 5% 1%;
@@ -650,9 +655,9 @@ h3.contents-title {
 #menuBoard.open .menuBoard-wrap {
   opacity: 1;
   visibility: visible;
-  -webkit-transition: 0.8s ease;
-  -o-transition: 0.8s ease;
-  transition: 0.8s ease;
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
   -webkit-transition-property: opacity, visibility;
   -o-transition-property: opacity, visibility;
   transition-property: opacity, visibility;
@@ -661,9 +666,9 @@ h3.contents-title {
 #menuBoard.close .menuBoard-wrap {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: 1.2s ease;
-  -o-transition: 1.2s ease;
-  transition: 1.2s ease;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
   -webkit-transition-property: opacity, visibility;
   -o-transition-property: opacity, visibility;
   transition-property: opacity, visibility;
@@ -1044,7 +1049,7 @@ footer a {
   top: calc(50% + 20px);
   left: calc(50% + 20px);
   transform: translate(-50%, -50%);
-  width: 105%;
+  width: 100%;
   opacity: 0;
 }
 
@@ -1103,7 +1108,7 @@ footer a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 110%;
+  width: 100%;
   opacity: 0;
 }
 
@@ -1158,6 +1163,7 @@ footer a {
     url("../fonts/Yomogi/Yomogi-Regular.svg") format("svg");
   font-display: swap;
 }
+
 
 /* 
 @font-face {

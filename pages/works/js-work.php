@@ -317,7 +317,10 @@
               <a href="https://www.buchi.work/pages/works/app-work.php#fakeWeather">
                 <div class="width-bg-anim bg-light-blue"><!-- background animation div --></div>
                 <div class="img-scale-anim">
-                  <img loading="lazy" src="../../img/clipping/clipping-app-01.jpg" alt="clipping-app-01 image">
+                <picture>
+                      <source srcset="../../img/clipping/clipping-app-01.webp">
+                      <img loading="lazy" src="../../img/clipping/clipping-app-01.jpg" alt="clipping-app-01 image">
+                  </picture>
                 </div>
               </a>
             </figure>
@@ -334,7 +337,10 @@
               <a href="https://www.buchi.work/pages/works/app-work.php#keepImitationApp">
                 <div class="width-bg-anim bg-light-blue"><!-- background animation div --></div>
                 <div class="img-scale-anim">
-                  <img loading="lazy" src="../../img/clipping/clipping-app-02.jpg" alt="clipping-app-02 image">
+                <picture>
+                      <source srcset="../../img/clipping/clipping-app-02.webp">
+                      <img loading="lazy" src="../../img/clipping/clipping-app-02.jpg" alt="clipping-app-02 image">
+                  </picture>
                 </div>
               </a>
             </figure>
@@ -351,7 +357,10 @@
               <a href="https://www.buchi.work/pages/works/app-work.php#passGenerator">
                 <div class="width-bg-anim bg-light-blue"><!-- background animation div --></div>
                 <div class="img-scale-anim">
-                  <img loading="lazy" src="../../img/clipping/clipping-app-03.jpg" alt="clipping-app-03 image">
+                  <picture>
+                      <source srcset="../../img/clipping/clipping-app-03.webp">
+                      <img loading="lazy" src="../../img/clipping/clipping-app-03.jpg" alt="clipping-app-03 image">
+                  </picture>
                 </div>
               </a>
             </figure>

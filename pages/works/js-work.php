@@ -137,7 +137,7 @@
         <h2 class="page-section-title">Slider（slick）</h2>
         <div class="js-work-item">
           <div class="iframe-header">
-            <a href="https://github.com/Buchi-18/slider-slick" target="_blank" rel="noreferrer noopener nofollow">
+            <a href="https://github.com/Buchi-18" target="_blank" rel="noreferrer noopener nofollow">
               githubでsrcを見る
               <span class="icon-image">
                 <img src="../../img/fontAwesome/github-white.svg" alt="github icon">
@@ -159,7 +159,7 @@
         <div class="js-work-item">
           <h2 class="page-section-title">Slider（Vanilla.js）</h2>
           <div class="iframe-header">
-            <a href="https://github.com/Buchi-18/slier_vanilla" target="_blank" rel="noreferrer noopener nofollow">
+            <a href="https://github.com/Buchi-18" target="_blank" rel="noreferrer noopener nofollow">
               githubでsrcを見る
               <span class="icon-image">
                 <img src="../../img/fontAwesome/github-white.svg" alt="github icon">
@@ -192,7 +192,7 @@
         <div class="js-work-item">
           <h2 class="page-section-title">Modal（Lity）</h2>
           <div class="iframe-header">
-            <a href="https://github.com/Buchi-18/modal-lity" target="_blank" rel="noreferrer noopener nofollow">
+            <a href="https://github.com/Buchi-18" target="_blank" rel="noreferrer noopener nofollow">
               githubでsrcを見る
               <span class="icon-image">
                 <img src="../../img/fontAwesome/github-white.svg" alt="github icon">
@@ -214,7 +214,7 @@
         <div class="js-work-item">
           <h2 class="page-section-title">Modal（Vanilla.js）</h2>
           <div class="iframe-header">
-            <a href="https://github.com/Buchi-18/modal-vanilla" target="_blank" rel="noreferrer noopener nofollow">
+            <a href="https://github.com/Buchi-18" target="_blank" rel="noreferrer noopener nofollow">
               githubでsrcを見る
               <span class="icon-image">
                 <img src="../../img/fontAwesome/github-white.svg" alt="github icon">
@@ -249,7 +249,7 @@
         <div class="js-work-item">
           <h2 style="letter-spacing: -1.5px;" class="page-section-title">using&nbsp;cookie&nbsp;to&nbsp;...</h2>
           <div class="iframe-header">
-            <a href="https://github.com/Buchi-18/using-cookies-to" target="_blank" rel="noreferrer noopener nofollow">
+            <a href="https://github.com/Buchi-18" target="_blank" rel="noreferrer noopener nofollow">
               githubでsrcを見る
               <span class="icon-image">
                 <img src="../../img/fontAwesome/github-white.svg" alt="github icon">

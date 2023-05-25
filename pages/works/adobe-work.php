@@ -120,15 +120,16 @@
       <div class="index-wrap">
         <p class="index-title">INDEX</p>
         <ul>
-          <li><a href="#digitalMakeover">Digital&nbsp;makeover</a></li>
+          <li><a href="#digitalMakeover">デジタル&nbsp;メイク</a></li>
           <li><a href="#combinePhoto">プリント加工</a></li>
+          <li><a href="#textAnimation">テキスト&nbsp;アニメーション</a></li>
         </ul>
       </div>
       <!-- ************************* -->
       <!-- digitalMakeover -->
       <!-- ************************* -->
       <section id="digitalMakeover" class="work-wrap">
-        <h2 class="page-section-title">Digital&nbsp;makeover</h2>
+        <h2 class="page-section-title">デジタル&nbsp;メイク</h2>
         <div class="summary">フリー素材の女性の写真をPhotoshopでメイク直ししました。</div>
         <div class="adobe-work-item">
           <div class="comparison-all">

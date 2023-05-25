@@ -117,7 +117,7 @@
                       <source srcset="./img/heroWork/hero-thumbnail-01.webp">
                       <img loading="eager" src="./img/heroWork/hero-thumbnail-01.png" alt="hero-thumbnail-01">
                     </picture>
-                    <span>GitHub Pages</span>
+                    <span>もっと見る</span>
                   </a>
                 </div>
                 <dl>
@@ -174,7 +174,7 @@
                       <source srcset="./img/heroWork/hero-thumbnail-02.webp">
                       <img loading="lazy" src="./img/heroWork/hero-thumbnail-02.png" alt="hero-thumbnail-02">
                     </picture>
-                    <span>GitHub Pages</span>
+                    <span>もっと見る</span>
                   </a>
                 </div>
                 <dl>
@@ -332,8 +332,9 @@
           </div>
           <div class="about-card-text">
             <h3 id="skill">開発スキル</h3>
-            主にHTML5/CSS3/JavaScriptを独学で学んでおります。<br>
-            チームでの開発経験はありませんが、普段からgitコマンドやgithubを使用し、スムーズにチーム開発に携われるように心がけております。
+            主にフロントエンド（HTML5/CSS3/JavaScript）を独学で学んでおります。<br>
+            チームでの開発経験はありませんが、普段からバージョン管理にgitやgithubを使用することで、スムーズにチーム開発に携われるように心がけております。
+            
           </div>
         </div>
       </section>

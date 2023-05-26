@@ -64,8 +64,11 @@
 
   // タスクの追加
   document.querySelector("form").addEventListener("submit", function (e) {
+    // console.log("foo");
     e.preventDefault();
     const title = input.value;
+
+    console.log(title);
 
     fetch("?action=add", {
       method: "POST",

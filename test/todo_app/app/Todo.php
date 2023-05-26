@@ -17,6 +17,7 @@ class Todo
             Token::validate();
             $action = filter_input(INPUT_GET, 'action');
 
+            
             switch ($action) {
                 case 'add':
                     $id = $this->add();

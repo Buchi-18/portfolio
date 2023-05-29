@@ -2,7 +2,7 @@
 // ******************************
 // My Todos test app
 // ******************************
-require_once(__DIR__.'/../app/config.php');
+require_once(__DIR__ . '/../app/config.php');
 
 use MyApp\Database;
 use MyApp\Todo;
@@ -28,10 +28,9 @@ $todos = $todo->getAll();
 <body>
   <main data-token="<?= Utils::h($_SESSION['token']); ?>">
     <header>
-    <h1>Todos</h1>
+      <h1>Todos</h1>
       <!-- CHECKED ALL DELETE -->
-      <span 
-        class="purge">
+      <span class="purge">
         Purge
       </span>
     </header>
@@ -41,7 +40,7 @@ $todos = $todo->getAll();
     </form>
 
     <ul>
-      <?php foreach ($todos as $todo): ?>
+      <?php foreach ($todos as $todo) : ?>
         <li data-id="<?= Utils::h($todo->id); ?>">
           <!-- チェックボックス -->
           <input type="checkbox" <?= $todo->is_done ? 'checked' : ''; ?>>
@@ -50,7 +49,7 @@ $todos = $todo->getAll();
           <!--  DELETE ボタン -->
           <span class="delete">×</span>
         </li>
-      <?php endforeach;?>
+      <?php endforeach; ?>
     </ul>
   </main>
 

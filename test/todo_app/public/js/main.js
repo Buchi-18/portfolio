@@ -37,11 +37,10 @@
         })
         .then(function (result) {
           if (result.is_done !== e.target.checked) {
-            alert("This Todo has been updated! UI is begin updated.")
+            alert("This Todo has been updated! UI is begin updated.");
             e.target.checked = result.is_done;
             location.reload();
           }
-  
         })
         .catch(function (err) {
           alert(err.message);

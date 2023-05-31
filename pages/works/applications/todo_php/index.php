@@ -1,30 +1,54 @@
 <?php
 require_once(__DIR__ . '/app/config.php');
-
-try {
-  $dbh = new PDO(
-    DSN,
-    DB_USER,
-    DB_PASS,
-    [
-      // PDOException をスローする
-      PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-      //結果セットに返された際のカラム名と同名のプロパティを有する 匿名のオブジェクトを返す
-      PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
-      //プリペアドステートメントのエミュレーションを有効または無効のする
-      PDO::ATTR_EMULATE_PREPARES => false,
-    ]
-  );
-} catch (PDOException $e) {
-  echo 'DB接続エラー！: ' . $e->getMessage();
-  exit;
-}
-
+require_once(__DIR__ . '/app/classes/Database.php');
+require_once(__DIR__ . '/app/classes/Utils.php');
 
 // データベースの取得
-$pdo = $dbh;
+$pdo = Database::getInstance();
+
+
+if ($_SERVER['REQUEST_METHOD'] === "POST") {
+  $action = filter_input(INPUT_GET, 'action');
+
+  switch ($action) {
+    case 'add':
+      // todo.jsで送信したbodyの中身を取得
+      $title = trim(filter_input(INPUT_POST, 'fetchBodyTitle'));
+
+      $stmt = $pdo->prepare("INSERT INTO todos (title) VALUE (:title)");
+      $stmt->bindValue(':title', $title, PDO::PARAM_STR);
+      $stmt->execute();
+
+      // PHPスクリプトからのレスポンスがJSON形式であることを明示
+      header('Content-Type: application/json');
+      //キャスト演算子 (int) で整数型へ変換
+      echo json_encode([
+        'id' => (int) $pdo->lastInsertId()
+      ]);
+      exit;
+      break;
+    case 'toggle':
+      break;
+    case 'delete':
+      $id = filter_input(INPUT_POST, 'fetchBodyId');
+      if (empty($id)) return;
+
+      $stmt = $pdo->prepare("DELETE FROM todos WHERE id = :id");
+      $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+      $stmt->execute();
+
+      break;
+
+    default:
+      exit;
+  }
+}
+
 $stmt = $pdo->query("SELECT * FROM todos ORDER BY id DESC");
 $todos = $stmt->fetchAll();
+
+
+
 
 ?>
 
@@ -56,15 +80,15 @@ $todos = $stmt->fetchAll();
 
   <ul>
     <?php foreach ($todos as $todo) : ?>
-      <li>
-        <input type="checkbox">
-        <span><?= $todo->title ?></span>
+      <li data-id="<?= Utils::h($todo->id); ?>">
+        <input type="checkbox" <?= $todo->is_done ? 'checked' : ''; ?>>
+        <span><?= Utils::h($todo->title); ?></span>
         <span class="delete">×</span>
       </li>
     <?php endforeach ?>
   </ul>
 
-  <script src="todo.js"></script>
+  <script src="js/todo.js"></script>
 
 </body>
 

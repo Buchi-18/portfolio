@@ -21,6 +21,7 @@ class Todo
             switch ($action) {
                 case 'add':
                     $id = $this->add();
+                    // PHPスクリプトからのレスポンスがJSON形式であることを明示
                     header('Content-Type: application/json');
                     echo json_encode(['id' => $id]);
                     break;

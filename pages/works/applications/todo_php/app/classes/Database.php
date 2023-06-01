@@ -24,7 +24,7 @@ class Database
       }
       return self::$instance;
     } catch (PDOException $e) {
-      echo 'DB_ERROR: ' . $e->getMessage();
+      echo 'DB_ERROR_接続に失敗しました: ' . $e->getMessage();
       exit;
     }
   }

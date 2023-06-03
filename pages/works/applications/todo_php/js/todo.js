@@ -31,7 +31,7 @@
     let addHtml = `      
   <li data-id="${id}">
       <input type="checkbox" name="checkbox">
-      <span>${title}</span>
+      <span>${htmlSpecialChars(title)}</span>
       <span class="delete">×</span>
   </li>`;
     ul.insertAdjacentHTML("afterbegin", addHtml);
@@ -134,4 +134,15 @@
 function getToken() {
   const token = document.querySelector("main").dataset.token;
   return token;
+}
+
+//
+// エスケープ処理 JS
+function htmlSpecialChars(str) {
+  return (str + "")
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
 }

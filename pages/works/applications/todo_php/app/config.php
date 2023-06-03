@@ -11,3 +11,20 @@ define('DB_NAME', $_ENV['DB_NAME_TODOS']);
 define('DSN', 'mysql:host=' . HOST . ';dbname=' . DB_NAME . ';charset=utf8mb4');
 define('DB_USER', $_ENV['DB_USER_TODOS']);
 define('DB_PASS', $_ENV['DB_PASS_TODOS']);
+
+// オートロードクラス
+spl_autoload_register(function ($class_name) {
+  $prefix = "MyApp\\";
+
+  if (strpos($class_name, $prefix) === 0) {
+
+    $file_name = sprintf(__DIR__ . '/classes' . '/%s.php', substr($class_name, strlen($prefix)));
+
+    if (file_exists($file_name)) {
+      require($file_name);
+    } else {
+      echo 'File not found: ' . $file_name;
+      exit;
+    }
+  }
+});

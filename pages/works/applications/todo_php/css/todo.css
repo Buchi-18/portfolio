@@ -5,6 +5,7 @@ body {
 header {
   display: flex;
   align-items: center;
+  margin: 0 0 0 25px;
 }
 
 main {
@@ -14,18 +15,17 @@ main {
   margin: 32px auto;
 }
 
-
 h1 {
-  font-size: 24px;
+  font-size: 36px;
   text-align: center;
   margin: 0 0 16px;
 }
 
 input[type="text"] {
   width: 100%;
-  padding: 4px;
+  padding: 12px;
   box-sizing: border-box;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
 
 ul {
@@ -37,8 +37,8 @@ ul {
 li {
   display: flex;
   width: 90%;
-  margin: 0 auto 8px;
-  padding-bottom: 2px;
+  margin: 0 auto 16px;
+  padding-bottom: 8px;
   border-bottom: 1px solid #ccc;
 }
 
@@ -47,22 +47,30 @@ input[type="checkbox"]:checked+span {
   color: #ccc;
 }
 
+
 input[type="checkbox"] {
-  margin-right: 8px;
+  opacity: 0.8;
+  transform: scale(1.8);
+  margin-right: 20px;
 }
 
 .delete,
 .purge {
-  color: #aaa;
+  color: #888;
   cursor: pointer;
   margin-left: auto;
 }
 
-.purge{
+.purge {
   font-size: 14px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: 1px solid #a8a8a8;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px #666;
 }
 
-.delete{
+.delete {
   padding-left: 8px;
-  font-size: 18px;
+  font-size: 26px;
 }

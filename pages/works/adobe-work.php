@@ -169,7 +169,7 @@
               <dt>【&nbsp;目元&nbsp;】</dt>
               <dd>まつ毛のダマを修正</dd>
               <dd>瞼にラメを付け立体感をプラス</dd>
-              <dd>アイシャドウを暖色にして明るい雰囲気に</dd>
+              <dd>アイシャドウを暖色にして暖かい雰囲気に</dd>
             </dl>
           </div>
           <div class="comparison-mouth">
@@ -368,6 +368,23 @@
             <span class="en">Pass generator</span>
             <span class="ja">パスワード自動生成</span>
             <a href="https://www.buchi.work/pages/works/app-work.php#passGenerator">#app works</a>
+          </div>
+        </li>
+        <li>
+          <div class="clipping-horizontal-img">
+            <figure>
+              <a href="https://www.buchi.work/pages/works/app-work.php#todos">
+                <div class="width-bg-anim bg-light-blue"><!-- background animation div --></div>
+                <div class="img-scale-anim">
+                  <img loading="lazy" src="../../img/clipping/clipping-app-04.jpg" alt="clipping-app-04 image">
+                </div>
+              </a>
+            </figure>
+          </div>
+          <div class="clipping-horizontal-text">
+            <span class="en">Todo App</span>
+            <span class="ja">Todo アプリ (PHP)</span>
+            <a href="https://www.buchi.work/pages/works/app-work.php#todos">#app works</a>
           </div>
         </li>
       </ul>

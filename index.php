@@ -315,7 +315,7 @@
       <section id="about">
         <h2 class="section-title">ABOUT</h2>
         <h3 id="personal">略歴</h3>
-        <p>青山製図専門学校卒 ｜ キャバクラ従業員 ｜ 一級建築士事務所 設計・デザイン CADオペレーター ｜ 個人Webサイト制作 HTML5/CSS3/JavaScript</p>
+        <p>青山製図専門学校卒 ｜ キャバクラ従業員 ｜ 一級建築士事務所 設計・デザイン CADオペレーター ｜ 個人Webサイト制作 HTML5/CSS3/JavaScript/PHP/git</p>
         <!-- ********** 業務経験 ********** -->
         <div class="about-card">
           <div class="about-card-img loading-box"><img loading="lazy" src="./img/about-image-01.jpg" alt="業務経験のイメージ画像">
@@ -333,7 +333,9 @@
           <div class="about-card-text">
             <h3 id="skill">開発スキル</h3>
             主にフロントエンド（HTML5/CSS3/JavaScript）を独学で学んでおります。<br>
-            チームでの開発経験はありませんが、普段からバージョン管理にgitやgithubを使用することで、スムーズにチーム開発に携われるように心がけております。
+            チームでの開発経験はありませんが、普段からバージョン管理にgitやgithubを使用することで、スムーズにチーム開発に携われるように心がけております。<br>
+            サーバーサイドに関しては、PHPを学び、<br>
+            DB接続やセキリティ関連の知識を取り入れています。
             
           </div>
         </div>

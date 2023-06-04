@@ -66,8 +66,7 @@
 
 <body style="background: var(--base-bg)">
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGKXNV7" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGKXNV7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- loading html -->
@@ -116,7 +115,7 @@
     <div class="wrapper">
       <p class="summary">
         独自に開発したアプリや<br>
-        フロントエンドエンジニアの学習サービスを参考に作成したアプリを載せています。
+        学習サービスを参考に作成したアプリを載せています。
       </p>
       <div class="index-wrap">
         <p class="index-title">INDEX</p>
@@ -124,6 +123,7 @@
           <li><a href="#fakeWeather">Fake&nbsp;weather</a></li>
           <li><a href="#keepImitationApp">Keep&nbsp;...Imitation&nbsp;app</a></li>
           <li><a href="#passGenerator">Pass&nbsp;generator</a></li>
+          <li><a href="#todos">Todo&nbsp;App</a></li>
 
         </ul>
       </div>
@@ -141,11 +141,9 @@
               <div class="text-box">
                 <span class="date">Update&nbsp;:&nbsp;2023.03.16</span>
                 <span class="languages">Coding&nbsp;:&nbsp;HTML/CSS/JS/JSON</span>
-                <span class="languages"><a href="https://github.com/Buchi-18/weather-app" target="_blank"
-                    rel="noopener noreferrer nofollow"> Learning&nbsp;:&nbsp;独自開発</a>
+                <span class="languages"><a href="https://github.com/Buchi-18/weather-app" target="_blank" rel="noopener noreferrer nofollow"> Learning&nbsp;:&nbsp;独自開発</a>
                 </span>
-                <p class="app-work-title"><a href="./applications/fakeWeather/weather.html" target="_blank"
-                    rel="noopener noreferrer nofollow">Fake&nbsp;weather</a></p>
+                <p class="app-work-title"><a href="./applications/fakeWeather/weather.html" target="_blank" rel="noopener noreferrer nofollow">Fake&nbsp;weather</a></p>
                 <p class="app-work-text">
                   2100年の仮想お天気アプリです<br>
                   <span class="bold">API利用の開発を想定して、JSONファイルをAsync/await構文で表示データを読み込んでいます。</span>
@@ -158,25 +156,21 @@
 
                 </p>
                 <div class="view-link">
-                  <a href="./applications/fakeWeather/weather.html" target="_blank"
-                    rel="noopener noreferrer nofollow">アプリを見に行く</a>
+                  <a href="./applications/fakeWeather/weather.html" target="_blank" rel="noopener noreferrer nofollow">アプリを見に行く</a>
                 </div>
               </div>
             </li>
             <!-- keep imitation app -->
             <li id="keepImitationApp">
-              <a href="./applications/keepImitationApp/keep-imitation.html" target="_blank"
-                rel="noopener noreferrer nofollow">
+              <a href="./applications/keepImitationApp/keep-imitation.html" target="_blank" rel="noopener noreferrer nofollow">
                 <img src="../img/appThumbnail/app-keep-imitation.jpg" alt="keep imitation app サムネイル">
               </a>
               <div class="text-box">
                 <span class="date">Update&nbsp;:&nbsp;2023.03.02</span>
                 <span class="languages">Coding&nbsp;:&nbsp;HTML/CSS/JS</span>
-                <span class="languages"><a href="https://scrimba.com/" target="_blank"
-                    rel="noopener noreferrer nofollow"> Learning&nbsp;:&nbsp;Scrimba</a>
+                <span class="languages"><a href="https://scrimba.com/" target="_blank" rel="noopener noreferrer nofollow"> Learning&nbsp;:&nbsp;Scrimba</a>
                 </span>
-                <p class="app-work-title"><a href="./applications/keepImitationApp/keep-imitation.html" target="_blank"
-                    rel="noopener noreferrer nofollow">Keep&nbsp;...Imitation app</a></p>
+                <p class="app-work-title"><a href="./applications/keepImitationApp/keep-imitation.html" target="_blank" rel="noopener noreferrer nofollow">Keep&nbsp;...Imitation app</a></p>
                 <p class="app-work-text">
                   google Keep の模倣アプリです。<br>
                   <span class="bold">ストレッチゴールとしてダークモードの切り替えを実装しました。</span>
@@ -184,25 +178,21 @@
                   ※メモの保存にはローカルストレージを使用しているため、重要なユーザー情報の保存はしないでください。
                 </p>
                 <div class="view-link">
-                  <a href="./applications/keepImitationApp/keep-imitation.html" target="_blank"
-                    rel="noopener noreferrer nofollow">アプリを見に行く</a>
+                  <a href="./applications/keepImitationApp/keep-imitation.html" target="_blank" rel="noopener noreferrer nofollow">アプリを見に行く</a>
                 </div>
               </div>
             </li>
             <!-- pass generator -->
             <li id="passGenerator">
-              <a href="./applications/passGenerator/pass-generator.html" target="_blank"
-                rel="noopener noreferrer nofollow">
+              <a href="./applications/passGenerator/pass-generator.html" target="_blank" rel="noopener noreferrer nofollow">
                 <img src="../img/appThumbnail/app-pass-generator.jpg" alt="pass generator サムネイル">
               </a>
               <div class="text-box">
                 <span class="date">Update&nbsp;:&nbsp;2023.03.02</span>
                 <span class="languages">Coding&nbsp;:&nbsp;HTML/CSS/JS</span>
-                <span class="languages"><a href="https://scrimba.com/" target="_blank"
-                    rel="noopener noreferrer nofollow"> Learning&nbsp;:&nbsp;Scrimba</a>
+                <span class="languages"><a href="https://scrimba.com/" target="_blank" rel="noopener noreferrer nofollow"> Learning&nbsp;:&nbsp;Scrimba</a>
                 </span>
-                <p class="app-work-title"><a href="./applications/passGenerator/pass-generator.html" target="_blank"
-                    rel="noopener noreferrer nofollow">Pass&nbsp;generator</a></p>
+                <p class="app-work-title"><a href="./applications/passGenerator/pass-generator.html" target="_blank" rel="noopener noreferrer nofollow">Pass&nbsp;generator</a></p>
                 <p class="app-work-text">
                   パスワード自動生成アプリです<br>
                   数字を含む/含まないの選択ができます<br>
@@ -210,8 +200,27 @@
 
                 </p>
                 <div class="view-link">
-                  <a href="./applications/passGenerator/pass-generator.html" target="_blank"
-                    rel="noopener noreferrer nofollow">アプリを見に行く</a>
+                  <a href="./applications/passGenerator/pass-generator.html" target="_blank" rel="noopener noreferrer nofollow">アプリを見に行く</a>
+                </div>
+              </div>
+            </li>
+            <!-- todos -->
+            <li id="todos">
+              <a href="./applications/todo_php" target="_blank" rel="noopener noreferrer nofollow">
+                <img src="../img/appThumbnail/app-todo.jpg" alt="Todo App サムネイル">
+              </a>
+              <div class="text-box">
+                <span class="date">Update&nbsp;:&nbsp;2023.06.04</span>
+                <span class="languages">Coding&nbsp;:&nbsp;HTML/CSS/PHP/JS</span>
+                <span class="languages"><a href="https://dotinstall.com/" target="_blank" rel="noopener noreferrer nofollow"> dot install</a>
+                </span>
+                <p class="app-work-title"><a href="./applications/todo_php" target="_blank" rel="noopener noreferrer nofollow">Todo App</a></p>
+                <p class="app-work-text">
+                  PHPを使用したTodoアプリです<br>
+                  このページはベーシック認証を取り入れ、アクセス制限をかけております。<br>
+                </p>
+                <div class="view-link">
+                  <a href="./applications/todo_php" target="_blank" rel="noopener noreferrer nofollow">アプリを見に行く</a>
                 </div>
               </div>
             </li>
@@ -220,22 +229,13 @@
         </div>
       </section>
 
-      <!-- test -->
-      <!-- test -->
-      <div class="view-link">
-                  <a href="./applications/todo_php" target="_blank"
-                    rel="noopener noreferrer nofollow">todo</a>
-                </div>
-      <!-- test -->
-      <!-- test -->
     </div>
   </main>
   <!-- ************************* -->
   <!-- banner -->
   <!-- ************************* -->
   <aside class="banner">
-    <a data-gtm="banner_777" href="https://buchi.work/pages/demo-page.html" target="_blank"
-      rel="noopener noreferrer nofollow">
+    <a data-gtm="banner_777" href="https://buchi.work/pages/demo-page.html" target="_blank" rel="noopener noreferrer nofollow">
       <picture class="loading-box aspect-4-1">
         <source media="(max-width:750px )" srcset="../../img/banner/dummy-banner.webp">
         <source media="(max-width:750px )" srcset="../../img/banner/dummy-banner.jpeg">
@@ -243,8 +243,7 @@
         <img loading="lazy" src="../../img/banner/dummy-banner-pc.jpeg" alt="banner_777">
       </picture>
     </a>
-    <a data-gtm="banner_999" href="https://buchi.work/pages/demo-page.html" target="_blank"
-      rel="noopener noreferrer nofollow">
+    <a data-gtm="banner_999" href="https://buchi.work/pages/demo-page.html" target="_blank" rel="noopener noreferrer nofollow">
       <picture class="loading-box aspect-4-1">
         <source media="(max-width:750px )" srcset="../../img/banner/dummy-banner.webp">
         <source media="(max-width:750px )" srcset="../../img/banner/dummy-banner.jpeg">

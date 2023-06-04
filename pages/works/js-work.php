@@ -67,8 +67,7 @@
 
 <body style="background: var(--base-bg)">
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGKXNV7" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGKXNV7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- loading html -->
@@ -137,7 +136,7 @@
         <h2 class="page-section-title">Slider（slick）</h2>
         <div class="js-work-item">
           <div class="iframe-header">
-            <a href="https://github.com/Buchi-18" target="_blank" rel="noreferrer noopener nofollow">
+            <a href="https://github.com/Buchi-18/slider-slick" target="_blank" rel="noreferrer noopener nofollow">
               githubでsrcを見る
               <span class="icon-image">
                 <img src="../../img/fontAwesome/github-white.svg" alt="github icon">
@@ -145,8 +144,7 @@
             </a>
           </div>
           <div id="inlineFrameWrap">
-            <iframe id="iframe" loading="lazy" src="../../iFrames/slider-slick.html" style="height: 380px"
-              frameborder="0" title="Slider with slick.js"></iframe>
+            <iframe id="iframe" loading="lazy" src="../../iFrames/slider-slick.html" style="height: 380px" frameborder="0" title="Slider with slick.js"></iframe>
           </div>
           <div class="description">
             <p>
@@ -159,7 +157,7 @@
         <div class="js-work-item">
           <h2 class="page-section-title">Slider（Vanilla.js）</h2>
           <div class="iframe-header">
-            <a href="https://github.com/Buchi-18" target="_blank" rel="noreferrer noopener nofollow">
+            <a href="https://github.com/Buchi-18/slider_vanilla" target="_blank" rel="noreferrer noopener nofollow">
               githubでsrcを見る
               <span class="icon-image">
                 <img src="../../img/fontAwesome/github-white.svg" alt="github icon">
@@ -167,8 +165,7 @@
             </a>
           </div>
           <div id="inlineFrameWrap">
-            <iframe id="iframe" loading="lazy" src="../../iFrames/slider-vanilla.html" style="height: 380px"
-              frameborder="0" title="Slider with vanilla.js"></iframe>
+            <iframe id="iframe" loading="lazy" src="../../iFrames/slider-vanilla.html" style="height: 380px" frameborder="0" title="Slider with vanilla.js"></iframe>
           </div>
           <div class="description">
             <p>
@@ -192,7 +189,7 @@
         <div class="js-work-item">
           <h2 class="page-section-title">Modal（Lity）</h2>
           <div class="iframe-header">
-            <a href="https://github.com/Buchi-18" target="_blank" rel="noreferrer noopener nofollow">
+            <a href="https://github.com/Buchi-18/modal-lity" target="_blank" rel="noreferrer noopener nofollow">
               githubでsrcを見る
               <span class="icon-image">
                 <img src="../../img/fontAwesome/github-white.svg" alt="github icon">
@@ -200,8 +197,7 @@
             </a>
           </div>
           <div id="inlineFrameWrap">
-            <iframe id="iframe" loading="lazy" src="../../iFrames/modal-lity.html" style="height: 450px" frameborder="0"
-              title="Modal with lity.js"></iframe>
+            <iframe id="iframe" loading="lazy" src="../../iFrames/modal-lity.html" style="height: 450px" frameborder="0" title="Modal with lity.js"></iframe>
           </div>
           <div class="description">
             <p>
@@ -214,7 +210,7 @@
         <div class="js-work-item">
           <h2 class="page-section-title">Modal（Vanilla.js）</h2>
           <div class="iframe-header">
-            <a href="https://github.com/Buchi-18" target="_blank" rel="noreferrer noopener nofollow">
+            <a href="https://github.com/Buchi-18/modal-vanilla" target="_blank" rel="noreferrer noopener nofollow">
               githubでsrcを見る
               <span class="icon-image">
                 <img src="../../img/fontAwesome/github-white.svg" alt="github icon">
@@ -222,8 +218,7 @@
             </a>
           </div>
           <div id="inlineFrameWrap">
-            <iframe id="iframe" loading="lazy" src="../../iFrames/modal-vanilla.html" style="height: 450px"
-              frameborder="0" title="Modal with vanilla.js"></iframe>
+            <iframe id="iframe" loading="lazy" src="../../iFrames/modal-vanilla.html" style="height: 450px" frameborder="0" title="Modal with vanilla.js"></iframe>
           </div>
           <div class="description">
             <p>
@@ -249,7 +244,7 @@
         <div class="js-work-item">
           <h2 style="letter-spacing: -1.5px;" class="page-section-title">using&nbsp;cookie&nbsp;to&nbsp;...</h2>
           <div class="iframe-header">
-            <a href="https://github.com/Buchi-18" target="_blank" rel="noreferrer noopener nofollow">
+            <a href="https://github.com/Buchi-18/using-cookies-to" target="_blank" rel="noreferrer noopener nofollow">
               githubでsrcを見る
               <span class="icon-image">
                 <img src="../../img/fontAwesome/github-white.svg" alt="github icon">
@@ -257,8 +252,7 @@
             </a>
           </div>
           <div id="inlineFrameWrap">
-            <iframe id="iframe" loading="lazy" src="../../iFrames/using-cookie-to.html" style="height: 400px"
-              frameborder="0" title="cookie with vanilla.js"></iframe>
+            <iframe id="iframe" loading="lazy" src="../../iFrames/using-cookie-to.html" style="height: 400px" frameborder="0" title="cookie with vanilla.js"></iframe>
           </div>
           <div class="description">
             <p>
@@ -279,8 +273,7 @@
   <!-- banner -->
   <!-- ************************* -->
   <aside class="banner">
-    <a data-gtm="banner_03" href="https://buchi.work/pages/demo-page.html" target="_blank"
-      rel="noopener noreferrer nofollow">
+    <a data-gtm="banner_03" href="https://buchi.work/pages/demo-page.html" target="_blank" rel="noopener noreferrer nofollow">
       <picture class="loading-box aspect-4-1">
         <source media="(max-width:750px )" srcset="https://www.buchi.work/img/banner/dummy-banner.webp">
         <source media="(max-width:750px )" srcset="https://www.buchi.work/img/banner/dummy-banner.jpg">
@@ -288,8 +281,7 @@
         <img loading="lazy" src="https://www.buchi.work/img/banner/dummy-banner-pc.jpg" alt="banner_03">
       </picture>
     </a>
-    <a data-gtm="banner_04" href="https://buchi.work/pages/demo-page.html" target="_blank"
-      rel="noopener noreferrer nofollow">
+    <a data-gtm="banner_04" href="https://buchi.work/pages/demo-page.html" target="_blank" rel="noopener noreferrer nofollow">
       <picture class="loading-box aspect-4-1">
         <source media="(max-width:750px )" srcset="https://www.buchi.work/img/banner/dummy-banner.webp">
         <source media="(max-width:750px )" srcset="https://www.buchi.work/img/banner/dummy-banner.jpg">
@@ -317,9 +309,9 @@
               <a href="https://www.buchi.work/pages/works/app-work.php#fakeWeather">
                 <div class="width-bg-anim bg-light-blue"><!-- background animation div --></div>
                 <div class="img-scale-anim">
-                <picture>
-                      <source srcset="../../img/clipping/clipping-app-01.webp">
-                      <img loading="lazy" src="../../img/clipping/clipping-app-01.jpg" alt="clipping-app-01 image">
+                  <picture>
+                    <source srcset="../../img/clipping/clipping-app-01.webp">
+                    <img loading="lazy" src="../../img/clipping/clipping-app-01.jpg" alt="clipping-app-01 image">
                   </picture>
                 </div>
               </a>
@@ -337,9 +329,9 @@
               <a href="https://www.buchi.work/pages/works/app-work.php#keepImitationApp">
                 <div class="width-bg-anim bg-light-blue"><!-- background animation div --></div>
                 <div class="img-scale-anim">
-                <picture>
-                      <source srcset="../../img/clipping/clipping-app-02.webp">
-                      <img loading="lazy" src="../../img/clipping/clipping-app-02.jpg" alt="clipping-app-02 image">
+                  <picture>
+                    <source srcset="../../img/clipping/clipping-app-02.webp">
+                    <img loading="lazy" src="../../img/clipping/clipping-app-02.jpg" alt="clipping-app-02 image">
                   </picture>
                 </div>
               </a>
@@ -358,8 +350,8 @@
                 <div class="width-bg-anim bg-light-blue"><!-- background animation div --></div>
                 <div class="img-scale-anim">
                   <picture>
-                      <source srcset="../../img/clipping/clipping-app-03.webp">
-                      <img loading="lazy" src="../../img/clipping/clipping-app-03.jpg" alt="clipping-app-03 image">
+                    <source srcset="../../img/clipping/clipping-app-03.webp">
+                    <img loading="lazy" src="../../img/clipping/clipping-app-03.jpg" alt="clipping-app-03 image">
                   </picture>
                 </div>
               </a>
@@ -369,6 +361,23 @@
             <span class="en">Pass generator</span>
             <span class="ja">パスワード自動生成</span>
             <a href="https://www.buchi.work/pages/works/app-work.php#passGenerator">#app works</a>
+          </div>
+        </li>
+        <li>
+          <div class="clipping-horizontal-img">
+            <figure>
+              <a href="https://www.buchi.work/pages/works/app-work.php#todos">
+                <div class="width-bg-anim bg-light-blue"><!-- background animation div --></div>
+                <div class="img-scale-anim">
+                  <img loading="lazy" src="../../img/clipping/clipping-app-04.jpg" alt="clipping-app-04 image">
+                </div>
+              </a>
+            </figure>
+          </div>
+          <div class="clipping-horizontal-text">
+            <span class="en">Todo App</span>
+            <span class="ja">Todo アプリ (PHP)</span>
+            <a href="https://www.buchi.work/pages/works/app-work.php#todos">#app works</a>
           </div>
         </li>
       </ul>

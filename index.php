@@ -24,8 +24,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="個人でWeb開発をしているBuchiのポートフォリオサイトです。/ HTML CSS JavaScriptを使用した成果物やAbodeソフトを使用して制作した作品の一部を掲載しています。">
+  <meta name="description" content="個人でWeb開発をしているBuchiのポートフォリオサイトです。/ HTML CSS JavaScriptを使用した成果物やAbodeソフトを使用して制作した作品の一部を掲載しています。">
   <link rel="canonical" href="https://www.buchi.work/" />
   <title>BUCHI</title>
   <!-- ********** meta OGP ********** -->
@@ -34,8 +33,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.buchi.work/" />
   <meta property="og:image" content="https://www.buchi.work/img/meta/ogp-portfolio.jpg" />
-  <meta property="og:description"
-    content="個人でWeb開発をしているBuchiのポートフォリオサイトです。/ HTML CSS JavaScriptを使用した成果物やAbodeソフトを使用して制作した作品の一部を掲載しています。" />
+  <meta property="og:description" content="個人でWeb開発をしているBuchiのポートフォリオサイトです。/ HTML CSS JavaScriptを使用した成果物やAbodeソフトを使用して制作した作品の一部を掲載しています。" />
   <meta name="twitter:card" content="summary_large_image">
   <!-- ********** favicon ********** -->
   <link rel="icon" href="https://www.buchi.work/favicon/favicon.ico">
@@ -63,15 +61,14 @@
 
 <body style="background: var(--base-bg)">
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGKXNV7" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGKXNV7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- ************************* -->
   <!-- header -->
   <!-- ************************* -->
   <?php
-      include("./_php_app/_parts/_header.php");
+  include("./_php_app/_parts/_header.php");
   ?>
 
   <!-- ************************* -->
@@ -111,8 +108,7 @@
             <li>
               <div class="contents-box">
                 <div class="contents-image">
-                  <a href="https://buchi-18.github.io/hero-header-dubh-sidhe/" target="_blank"
-                    rel="noreferrer noopener nofollow">
+                  <a href="https://buchi-18.github.io/hero-header-dubh-sidhe/" target="_blank" rel="noreferrer noopener nofollow">
                     <picture>
                       <source srcset="./img/heroWork/hero-thumbnail-01.webp">
                       <img loading="eager" src="./img/heroWork/hero-thumbnail-01.png" alt="hero-thumbnail-01">
@@ -130,12 +126,10 @@
                   <ul>
                     <li>
                       <div class="width-bg-anim bg-light-blue">
-                        <a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/POd35V_uE4k" target="_blank"
-                          rel="noreferrer noopener nofollow">
+                        <a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/POd35V_uE4k" target="_blank" rel="noreferrer noopener nofollow">
                           <picture>
                             <source srcset="./img/heroWork/heroMaterial/material-ballet-dancer.webp">
-                            <img class="img-scale-anim" loading="lazy"
-                              src="./img/heroWork/heroMaterial/material-ballet-dancer.jpg" alt="material-ballet-dancer">
+                            <img class="img-scale-anim" loading="lazy" src="./img/heroWork/heroMaterial/material-ballet-dancer.jpg" alt="material-ballet-dancer">
                           </picture>
                         </a>
                       </div>
@@ -144,8 +138,7 @@
                       <div class="width-bg-anim bg-light-blue">
                         <picture>
                           <source srcset="./img/heroWork/heroMaterial/material-no-material.webp">
-                          <img class="img-scale-anim" loading="lazy"
-                            src="./img/heroWork/heroMaterial/material-no-material.jpg" alt="no-material">
+                          <img class="img-scale-anim" loading="lazy" src="./img/heroWork/heroMaterial/material-no-material.jpg" alt="no-material">
                         </picture>
                       </div>
                     </li>
@@ -153,8 +146,7 @@
                       <div class="width-bg-anim bg-light-blue">
                         <picture>
                           <source srcset="./img/heroWork/heroMaterial/material-no-material.webp">
-                          <img class="img-scale-anim" loading="lazy"
-                            src="./img/heroWork/heroMaterial/material-no-material.jpg" alt="no-material">
+                          <img class="img-scale-anim" loading="lazy" src="./img/heroWork/heroMaterial/material-no-material.jpg" alt="no-material">
                         </picture>
                       </div>
                     </li>
@@ -168,8 +160,7 @@
             <li>
               <div class="contents-box">
                 <div class="contents-image">
-                  <a href="https://buchi-18.github.io/hero-header-water-holic/" target="_blank"
-                    rel="noreferrer noopener nofollow">
+                  <a href="https://buchi-18.github.io/hero-header-water-holic/" target="_blank" rel="noreferrer noopener nofollow">
                     <picture class="loading-box aspect-3-1">
                       <source srcset="./img/heroWork/hero-thumbnail-02.webp">
                       <img loading="lazy" src="./img/heroWork/hero-thumbnail-02.png" alt="hero-thumbnail-02">
@@ -185,39 +176,30 @@
                   <ul>
                     <li>
                       <div class="width-bg-anim bg-light-blue">
-                        <a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/k9x2sIOrbf4" target="_blank"
-                          rel="noreferrer noopener nofollow">
+                        <a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/k9x2sIOrbf4" target="_blank" rel="noreferrer noopener nofollow">
                           <picture>
                             <source srcset="./img/heroWork/heroMaterial/material-water-holic-01.webp">
-                            <img class="img-scale-anim" loading="lazy"
-                              src="./img/heroWork/heroMaterial/material-water-holic-01.jpg"
-                              alt="material-water-holic-01">
+                            <img class="img-scale-anim" loading="lazy" src="./img/heroWork/heroMaterial/material-water-holic-01.jpg" alt="material-water-holic-01">
                           </picture>
                         </a>
                       </div>
                     </li>
                     <li>
                       <div class="width-bg-anim bg-light-blue">
-                        <a href="https://pixabay.com/images/id-1850648/" target="_blank"
-                          rel="noreferrer noopener nofollow">
+                        <a href="https://pixabay.com/images/id-1850648/" target="_blank" rel="noreferrer noopener nofollow">
                           <picture>
                             <source srcset="./img/heroWork/heroMaterial/material-water-holic-02.webp">
-                            <img class="img-scale-anim" loading="lazy"
-                              src="./img/heroWork/heroMaterial/material-water-holic-02.jpg"
-                              alt="material-water-holic-02">
+                            <img class="img-scale-anim" loading="lazy" src="./img/heroWork/heroMaterial/material-water-holic-02.jpg" alt="material-water-holic-02">
                           </picture>
                         </a>
                       </div>
                     </li>
                     <li>
                       <div class="width-bg-anim bg-light-blue">
-                        <a href="https://www.ac-illust.com/main/detail.php?id=23222123&word=%E3%82%A8%E3%83%B3%E3%83%96%E3%83%AC%E3%83%A0-%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89%E8%83%8C%E6%99%AF%E9%80%8F%E6%98%8E"
-                          target="_blank" rel="noreferrer noopener nofollow">
+                        <a href="https://www.ac-illust.com/main/detail.php?id=23222123&word=%E3%82%A8%E3%83%B3%E3%83%96%E3%83%AC%E3%83%A0-%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89%E8%83%8C%E6%99%AF%E9%80%8F%E6%98%8E" target="_blank" rel="noreferrer noopener nofollow">
                           <picture>
                             <source srcset="./img/heroWork/heroMaterial/material-water-holic-03.webp">
-                            <img class="img-scale-anim" loading="lazy"
-                              src="./img/heroWork/heroMaterial/material-water-holic-03.jpg"
-                              alt="material-water-holic-03">
+                            <img class="img-scale-anim" loading="lazy" src="./img/heroWork/heroMaterial/material-water-holic-03.jpg" alt="material-water-holic-03">
                           </picture>
                         </a>
                       </div>
@@ -290,8 +272,7 @@
       <!-- banner -->
       <!-- ************************* -->
       <aside class="banner">
-        <a data-gtm="banner_01" href="https://buchi.work/pages/demo-page.html" target="_blank"
-          rel="noopener noreferrer nofollow">
+        <a data-gtm="banner_01" href="https://buchi.work/pages/demo-page.html" target="_blank" rel="noopener noreferrer nofollow">
           <picture class="loading-box aspect-4-1">
             <source media="(max-width:750px )" srcset="https://www.buchi.work/img/banner/dummy-banner.webp">
             <source media="(max-width:750px )" srcset="https://www.buchi.work/img/banner/dummy-banner.jpg">
@@ -299,8 +280,7 @@
             <img loading="lazy" src="https://www.buchi.work/img/banner/dummy-banner-pc.jpg" alt="banner_01">
           </picture>
         </a>
-        <a data-gtm="banner_02" href="https://buchi.work/pages/demo-page.html" target="_blank"
-          rel="noopener noreferrer nofollow">
+        <a data-gtm="banner_02" href="https://buchi.work/pages/demo-page.html" target="_blank" rel="noopener noreferrer nofollow">
           <picture class="loading-box aspect-4-1">
             <source media="(max-width:750px )" srcset="https://www.buchi.work/img/banner/dummy-banner.webp">
             <source media="(max-width:750px )" srcset="https://www.buchi.work/img/banner/dummy-banner.jpg">
@@ -336,7 +316,7 @@
             チームでの開発経験はありませんが、普段からバージョン管理にgitやgithubを使用することで、スムーズにチーム開発に携われるように心がけております。<br>
             サーバーサイドに関しては、PHPを学び、<br>
             DB接続やセキリティ関連の知識を取り入れています。
-            
+
           </div>
         </div>
       </section>
@@ -395,7 +375,7 @@
   <!-- footer -->
   <!-- ************************* -->
   <?php
-      include("./_php_app/_parts/_footer.php");
+  include("./_php_app/_parts/_footer.php");
   ?>
 
   <script src="./js/main.js"></script>

@@ -141,7 +141,7 @@
               <div class="text-box">
                 <span class="date">Update&nbsp;:&nbsp;2023.03.16</span>
                 <span class="languages">Coding&nbsp;:&nbsp;HTML/CSS/JS/JSON</span>
-                <span class="languages"><a href="https://github.com/Buchi-18/weather-app" target="_blank" rel="noopener noreferrer nofollow"> Learning&nbsp;:&nbsp;独自開発</a>
+                <span class="learning"><a href="https://github.com/Buchi-18/weather-app" target="_blank" rel="noopener noreferrer nofollow"> Learning&nbsp;:&nbsp;独自開発</a>
                 </span>
                 <p class="app-work-title"><a href="./applications/fakeWeather/weather.html" target="_blank" rel="noopener noreferrer nofollow">Fake&nbsp;weather</a></p>
                 <p class="app-work-text">
@@ -168,7 +168,7 @@
               <div class="text-box">
                 <span class="date">Update&nbsp;:&nbsp;2023.03.02</span>
                 <span class="languages">Coding&nbsp;:&nbsp;HTML/CSS/JS</span>
-                <span class="languages"><a href="https://scrimba.com/" target="_blank" rel="noopener noreferrer nofollow"> Learning&nbsp;:&nbsp;Scrimba</a>
+                <span class="learning"><a href="https://scrimba.com/" target="_blank" rel="noopener noreferrer nofollow"> Learning&nbsp;:&nbsp;Scrimba</a>
                 </span>
                 <p class="app-work-title"><a href="./applications/keepImitationApp/keep-imitation.html" target="_blank" rel="noopener noreferrer nofollow">Keep&nbsp;...Imitation app</a></p>
                 <p class="app-work-text">
@@ -190,7 +190,7 @@
               <div class="text-box">
                 <span class="date">Update&nbsp;:&nbsp;2023.03.02</span>
                 <span class="languages">Coding&nbsp;:&nbsp;HTML/CSS/JS</span>
-                <span class="languages"><a href="https://scrimba.com/" target="_blank" rel="noopener noreferrer nofollow"> Learning&nbsp;:&nbsp;Scrimba</a>
+                <span class="learning"><a href="https://scrimba.com/" target="_blank" rel="noopener noreferrer nofollow"> Learning&nbsp;:&nbsp;Scrimba</a>
                 </span>
                 <p class="app-work-title"><a href="./applications/passGenerator/pass-generator.html" target="_blank" rel="noopener noreferrer nofollow">Pass&nbsp;generator</a></p>
                 <p class="app-work-text">
@@ -212,7 +212,7 @@
               <div class="text-box">
                 <span class="date">Update&nbsp;:&nbsp;2023.06.04</span>
                 <span class="languages">Coding&nbsp;:&nbsp;HTML/CSS/PHP/JS</span>
-                <span class="languages"><a href="https://dotinstall.com/" target="_blank" rel="noopener noreferrer nofollow"> dot install</a>
+                <span class="learning"><a href="https://dotinstall.com/" target="_blank" rel="noopener noreferrer nofollow">Learning&nbsp;:&nbsp;dot install</a>
                 </span>
                 <p class="app-work-title"><a href="./applications/todo_php" target="_blank" rel="noopener noreferrer nofollow">Todo App</a></p>
                 <p class="app-work-text">

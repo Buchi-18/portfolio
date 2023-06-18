@@ -738,6 +738,8 @@ h3.contents-title {
 
 .contents-image {
   position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .contents-image span {

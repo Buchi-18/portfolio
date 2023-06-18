@@ -259,7 +259,7 @@ main {
 }
 
 .comparison-mouth picture:nth-child(2) img,
-.comparison-eye picture:nth-child(2) img{
+.comparison-eye picture:nth-child(2) img {
   padding-left: 5vw;
 }
 
@@ -420,7 +420,8 @@ main {
 }
 
 .app-lists .date,
-.app-lists .languages {
+.app-lists .languages,
+.app-lists .learning {
   display: block;
   font-size: var(--txt-xSmall);
 }
